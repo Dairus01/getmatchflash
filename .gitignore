@@ -1,5 +1,59 @@
+# Dependencies
 node_modules/
-.env
-server/.data/
 server/node_modules/
+/.pnp
+.pnp.js
+
+# Build Outputs
+.next/
 server/dist/
+dist/
+out/
+build/
+*.tsbuildinfo
+
+# Environment Variables
+.env*
+!.env.example
+!server/.env.example
+
+# AI / Agent Coordination Artifacts
+.agents/
+.claude/
+.claude-flow/
+.codex/
+.cursor/
+.memory/
+CLAUDE.md
+CODEX_HANDOFF.md
+claude-flow.config.json
+.mcp.json
+*report*.md
+*agent*.md
+
+# Local Databases
+*.db
+*.sqlite
+*.sqlite3
+server/.data/
+
+# Logs & Caches
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.npm/
+.eslintcache
+.stylelintcache
+
+# Temporary & OS Files
+.DS_Store
+*.pem
+.temp/
+.tmp/
+
+# Editor / IDE
+.vscode/
+.idea/
+*.swp
+*.swo
