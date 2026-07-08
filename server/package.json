@@ -4,16 +4,28 @@
   "type": "module",
   "scripts": {
     "bootstrap:txline": "tsx src/bootstrap-txline.ts",
-    "ingest:txline": "tsx src/ingest-txline.ts"
+    "ingest:txline": "tsx src/ingest-txline.ts",
+    "ingest": "tsx src/ingest.ts",
+    "archive:ingest": "tsx src/archive-ingest.ts",
+    "archive:batch": "tsx src/batch-ingest.ts",
+    "replay:server": "tsx src/replay.ts",
+    "api:server": "tsx src/api-server.ts",
+    "bot": "tsx --env-file=.env src/bot.ts",
+    "test": "node --import tsx --test src/*.test.ts",
+    "typecheck": "tsc --noEmit --target ES2022 --module NodeNext --moduleResolution NodeNext --esModuleInterop src/*.ts"
   },
   "dependencies": {
     "@solana/spl-token": "^0.4.14",
     "@solana/web3.js": "^1.98.4",
-    "better-sqlite3": "^12.11.1",
-    "tweetnacl": "^1.0.3"
+    "better-sqlite3": "^11.8.1",
+    "grammy": "^1.44.0",
+    "tweetnacl": "^1.0.3",
+    "ws": "^8.21.0"
   },
   "devDependencies": {
     "@types/better-sqlite3": "^7.6.13",
+    "@types/node": "^26.1.1",
+    "@types/ws": "^8.18.1",
     "tsx": "^4.20.6",
     "typescript": "^5.9.3"
   }
