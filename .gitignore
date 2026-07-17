@@ -46,6 +46,10 @@ yarn-error.log*
 .eslintcache
 .stylelintcache
 
+# VPS Deployment Scripts (contain secrets)
+deploy-vps.sh
+start-services.sh
+
 # Temporary & OS Files
 .DS_Store
 *.pem
