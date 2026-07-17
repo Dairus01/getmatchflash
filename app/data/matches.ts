@@ -3043,7 +3043,7 @@ export const MATCHES: MatchData[] = [
     "periodBreakdown": {
       "h1": {
         "home": 0,
-        "away": 0
+        "away": 1
       },
       "h2": {
         "home": 2,
@@ -3074,6 +3074,20 @@ export const MATCHES: MatchData[] = [
     },
     "events": [
       {
+        "id": "ev_synthetic_15_min_432",
+        "sec": 900,
+        "participant": 2,
+        "action": "goal",
+        "headline": "Mostafa Ziko scores for Egypt!",
+        "sub": "The net ripples — a pivotal moment in the replay.",
+        "scorer": "Mostafa Ziko",
+        "scoreAfter": [
+          0,
+          1
+        ],
+        "probAfter": 29
+      },
+      {
         "id": "ev_434_488",
         "sec": 2700,
         "participant": 2,
@@ -3095,7 +3109,7 @@ export const MATCHES: MatchData[] = [
         "action": "big_chance",
         "headline": "Big chance for Argentina!",
         "sub": "Argentina are in a very dangerous position.",
-        "probAfter": 52
+        "probAfter": 19
       },
       {
         "id": "ev_445_501",
@@ -3118,7 +3132,7 @@ export const MATCHES: MatchData[] = [
         "action": "big_chance",
         "headline": "Big chance for Argentina!",
         "sub": "Argentina are in a very dangerous position.",
-        "probAfter": 54
+        "probAfter": 20
       },
       {
         "id": "ev_458_516",
@@ -3127,7 +3141,7 @@ export const MATCHES: MatchData[] = [
         "action": "shot",
         "headline": "Argentina attempt a shot.",
         "shotOutcome": "OnTarget",
-        "probAfter": 56
+        "probAfter": 22
       },
       {
         "id": "ev_461_520",
@@ -3150,7 +3164,7 @@ export const MATCHES: MatchData[] = [
         "action": "big_chance",
         "headline": "Big chance for Argentina!",
         "sub": "Argentina are in a very dangerous position.",
-        "probAfter": 58
+        "probAfter": 24
       },
       {
         "id": "ev_472_533",
@@ -3173,7 +3187,7 @@ export const MATCHES: MatchData[] = [
         "action": "big_chance",
         "headline": "Big chance for Argentina!",
         "sub": "Argentina are in a very dangerous position.",
-        "probAfter": 60
+        "probAfter": 25
       },
       {
         "id": "ev_488_551",
@@ -3189,7 +3203,7 @@ export const MATCHES: MatchData[] = [
         "action": "big_chance",
         "headline": "Big chance for Argentina!",
         "sub": "Argentina are in a very dangerous position.",
-        "probAfter": 62
+        "probAfter": 27
       },
       {
         "id": "ev_501_564",
@@ -3198,7 +3212,7 @@ export const MATCHES: MatchData[] = [
         "action": "big_chance",
         "headline": "Big chance for Argentina!",
         "sub": "Argentina are in a very dangerous position.",
-        "probAfter": 64
+        "probAfter": 29
       },
       {
         "id": "ev_504_568",
@@ -3214,7 +3228,7 @@ export const MATCHES: MatchData[] = [
         "action": "near_miss",
         "headline": "So close for Argentina!",
         "sub": "Officials pause to check the situation.",
-        "probAfter": 65
+        "probAfter": 30
       },
       {
         "id": "ev_506_570",
@@ -3223,7 +3237,7 @@ export const MATCHES: MatchData[] = [
         "action": "big_chance",
         "headline": "Big chance for Argentina!",
         "sub": "Argentina are in a very dangerous position.",
-        "probAfter": 67
+        "probAfter": 32
       },
       {
         "id": "ev_511_576",
@@ -3232,7 +3246,7 @@ export const MATCHES: MatchData[] = [
         "action": "shot",
         "headline": "Argentina attempt a shot.",
         "shotOutcome": "OffTarget",
-        "probAfter": 68
+        "probAfter": 32
       },
       {
         "id": "ev_514_579",
@@ -3248,7 +3262,7 @@ export const MATCHES: MatchData[] = [
         "action": "big_chance",
         "headline": "Big chance for Argentina!",
         "sub": "Argentina are in a very dangerous position.",
-        "probAfter": 70
+        "probAfter": 34
       },
       {
         "id": "ev_532_598",
@@ -3278,7 +3292,7 @@ export const MATCHES: MatchData[] = [
         "action": "near_miss",
         "headline": "So close for Argentina!",
         "sub": "Officials pause to check the situation.",
-        "probAfter": 71
+        "probAfter": 34
       },
       {
         "id": "ev_551_619",
@@ -3287,7 +3301,7 @@ export const MATCHES: MatchData[] = [
         "action": "big_chance",
         "headline": "Big chance for Argentina!",
         "sub": "Argentina are in a very dangerous position.",
-        "probAfter": 73
+        "probAfter": 36
       },
       {
         "id": "ev_555_624",
@@ -3310,7 +3324,7 @@ export const MATCHES: MatchData[] = [
         "action": "big_chance",
         "headline": "Big chance for Argentina!",
         "sub": "Argentina are in a very dangerous position.",
-        "probAfter": 75
+        "probAfter": 37
       },
       {
         "id": "ev_567_637",
@@ -3319,7 +3333,7 @@ export const MATCHES: MatchData[] = [
         "action": "near_miss",
         "headline": "So close for Egypt!",
         "sub": "Officials pause to check the situation.",
-        "probAfter": 74
+        "probAfter": 36
       },
       {
         "id": "ev_569_639",
@@ -3328,7 +3342,7 @@ export const MATCHES: MatchData[] = [
         "action": "big_chance",
         "headline": "Big chance for Egypt!",
         "sub": "Egypt are in a very dangerous position.",
-        "probAfter": 72
+        "probAfter": 34
       },
       {
         "id": "ev_574_646",
@@ -3352,7 +3366,7 @@ export const MATCHES: MatchData[] = [
         "action": "near_miss",
         "headline": "So close for Argentina!",
         "sub": "Officials pause to check the situation.",
-        "probAfter": 73
+        "probAfter": 34
       },
       {
         "id": "ev_577_651",
@@ -3361,7 +3375,7 @@ export const MATCHES: MatchData[] = [
         "action": "big_chance",
         "headline": "Big chance for Argentina!",
         "sub": "Argentina are in a very dangerous position.",
-        "probAfter": 75
+        "probAfter": 36
       },
       {
         "id": "ev_578_653",
@@ -3369,7 +3383,7 @@ export const MATCHES: MatchData[] = [
         "participant": 1,
         "action": "corner",
         "headline": "Corner kick awarded to Argentina.",
-        "probAfter": 76
+        "probAfter": 36
       },
       {
         "id": "ev_579_654",
@@ -3378,7 +3392,7 @@ export const MATCHES: MatchData[] = [
         "action": "big_chance",
         "headline": "Big chance for Argentina!",
         "sub": "Argentina are in a very dangerous position.",
-        "probAfter": 78
+        "probAfter": 38
       },
       {
         "id": "ev_582_657",
@@ -3387,7 +3401,7 @@ export const MATCHES: MatchData[] = [
         "action": "big_chance",
         "headline": "Big chance for Argentina!",
         "sub": "Argentina are in a very dangerous position.",
-        "probAfter": 80
+        "probAfter": 40
       },
       {
         "id": "ev_584_660",
@@ -3424,7 +3438,7 @@ export const MATCHES: MatchData[] = [
         "action": "big_chance",
         "headline": "Big chance for Argentina!",
         "sub": "Argentina are in a very dangerous position.",
-        "probAfter": 82
+        "probAfter": 41
       },
       {
         "id": "ev_625_704",
@@ -3440,7 +3454,7 @@ export const MATCHES: MatchData[] = [
         "action": "big_chance",
         "headline": "Big chance for Argentina!",
         "sub": "Argentina are in a very dangerous position.",
-        "probAfter": 84
+        "probAfter": 43
       },
       {
         "id": "ev_632_712",
@@ -3448,7 +3462,7 @@ export const MATCHES: MatchData[] = [
         "participant": 1,
         "action": "corner",
         "headline": "Corner kick awarded to Argentina.",
-        "probAfter": 84
+        "probAfter": 43
       },
       {
         "id": "ev_633_714",
@@ -3471,7 +3485,7 @@ export const MATCHES: MatchData[] = [
         "action": "big_chance",
         "headline": "Big chance for Argentina!",
         "sub": "Argentina are in a very dangerous position.",
-        "probAfter": 86
+        "probAfter": 45
       },
       {
         "id": "ev_637_719",
@@ -3479,7 +3493,7 @@ export const MATCHES: MatchData[] = [
         "participant": 1,
         "action": "corner",
         "headline": "Corner kick awarded to Argentina.",
-        "probAfter": 86
+        "probAfter": 45
       },
       {
         "id": "ev_638_720",
@@ -3488,7 +3502,7 @@ export const MATCHES: MatchData[] = [
         "action": "big_chance",
         "headline": "Big chance for Argentina!",
         "sub": "Argentina are in a very dangerous position.",
-        "probAfter": 88
+        "probAfter": 47
       },
       {
         "id": "ev_641_723",
@@ -3497,7 +3511,7 @@ export const MATCHES: MatchData[] = [
         "action": "near_miss",
         "headline": "So close for Egypt!",
         "sub": "Officials pause to check the situation.",
-        "probAfter": 87
+        "probAfter": 46
       },
       {
         "id": "ev_644_726",
@@ -3506,7 +3520,7 @@ export const MATCHES: MatchData[] = [
         "action": "big_chance",
         "headline": "Big chance for Egypt!",
         "sub": "Egypt are in a very dangerous position.",
-        "probAfter": 85
+        "probAfter": 44
       },
       {
         "id": "ev_645_730",
@@ -3518,9 +3532,9 @@ export const MATCHES: MatchData[] = [
         "goalType": "Shot",
         "scoreAfter": [
           0,
-          1
+          2
         ],
-        "probAfter": 44
+        "probAfter": 2
       },
       {
         "id": "ev_648_732",
@@ -3537,7 +3551,7 @@ export const MATCHES: MatchData[] = [
         "action": "big_chance",
         "headline": "Big chance for Argentina!",
         "sub": "Argentina are in a very dangerous position.",
-        "probAfter": 45
+        "probAfter": 3
       },
       {
         "id": "ev_661_743",
@@ -3546,7 +3560,7 @@ export const MATCHES: MatchData[] = [
         "action": "big_chance",
         "headline": "Big chance for Argentina!",
         "sub": "Argentina are in a very dangerous position.",
-        "probAfter": 47
+        "probAfter": 4
       },
       {
         "id": "ev_664_747",
@@ -3583,7 +3597,7 @@ export const MATCHES: MatchData[] = [
         "action": "big_chance",
         "headline": "Big chance for Argentina!",
         "sub": "Argentina are in a very dangerous position.",
-        "probAfter": 47
+        "probAfter": 3
       },
       {
         "id": "ev_676_762",
@@ -3592,7 +3606,7 @@ export const MATCHES: MatchData[] = [
         "action": "shot",
         "headline": "Argentina attempt a shot.",
         "shotOutcome": "Blocked",
-        "probAfter": 48
+        "probAfter": 4
       },
       {
         "id": "ev_686_772",
@@ -3601,7 +3615,7 @@ export const MATCHES: MatchData[] = [
         "action": "big_chance",
         "headline": "Big chance for Argentina!",
         "sub": "Argentina are in a very dangerous position.",
-        "probAfter": 49
+        "probAfter": 5
       },
       {
         "id": "ev_687_774",
@@ -3610,7 +3624,7 @@ export const MATCHES: MatchData[] = [
         "action": "shot",
         "headline": "Argentina attempt a shot.",
         "shotOutcome": "OffTarget",
-        "probAfter": 50
+        "probAfter": 6
       },
       {
         "id": "ev_690_777",
@@ -3626,7 +3640,7 @@ export const MATCHES: MatchData[] = [
         "action": "big_chance",
         "headline": "Big chance for Argentina!",
         "sub": "Argentina are in a very dangerous position.",
-        "probAfter": 52
+        "probAfter": 7
       },
       {
         "id": "ev_699_787",
@@ -3642,7 +3656,7 @@ export const MATCHES: MatchData[] = [
         "action": "big_chance",
         "headline": "Big chance for Egypt!",
         "sub": "Egypt are in a very dangerous position.",
-        "probAfter": 49
+        "probAfter": 4
       },
       {
         "id": "ev_710_800",
@@ -3651,7 +3665,7 @@ export const MATCHES: MatchData[] = [
         "action": "shot",
         "headline": "Egypt attempt a shot.",
         "shotOutcome": "OffTarget",
-        "probAfter": 48
+        "probAfter": 3
       },
       {
         "id": "ev_713_803",
@@ -3667,7 +3681,7 @@ export const MATCHES: MatchData[] = [
         "action": "big_chance",
         "headline": "Big chance for Argentina!",
         "sub": "Argentina are in a very dangerous position.",
-        "probAfter": 50
+        "probAfter": 4
       },
       {
         "id": "ev_722_813",
@@ -3676,7 +3690,7 @@ export const MATCHES: MatchData[] = [
         "action": "shot",
         "headline": "Argentina attempt a shot.",
         "shotOutcome": "Blocked",
-        "probAfter": 51
+        "probAfter": 5
       },
       {
         "id": "ev_725_816",
@@ -3685,7 +3699,7 @@ export const MATCHES: MatchData[] = [
         "action": "big_chance",
         "headline": "Big chance for Argentina!",
         "sub": "Argentina are in a very dangerous position.",
-        "probAfter": 53
+        "probAfter": 7
       },
       {
         "id": "ev_726_818",
@@ -3693,7 +3707,7 @@ export const MATCHES: MatchData[] = [
         "participant": 1,
         "action": "corner",
         "headline": "Corner kick awarded to Argentina.",
-        "probAfter": 53
+        "probAfter": 7
       },
       {
         "id": "ev_727_819",
@@ -3702,7 +3716,7 @@ export const MATCHES: MatchData[] = [
         "action": "big_chance",
         "headline": "Big chance for Argentina!",
         "sub": "Argentina are in a very dangerous position.",
-        "probAfter": 55
+        "probAfter": 9
       },
       {
         "id": "ev_729_822",
@@ -3718,7 +3732,7 @@ export const MATCHES: MatchData[] = [
         "action": "big_chance",
         "headline": "Big chance for Argentina!",
         "sub": "Argentina are in a very dangerous position.",
-        "probAfter": 57
+        "probAfter": 11
       },
       {
         "id": "ev_734_831",
@@ -3730,9 +3744,9 @@ export const MATCHES: MatchData[] = [
         "goalType": "Head",
         "scoreAfter": [
           1,
-          1
+          2
         ],
-        "probAfter": 98
+        "probAfter": 57
       },
       {
         "id": "ev_738_834",
@@ -3770,7 +3784,7 @@ export const MATCHES: MatchData[] = [
         "action": "big_chance",
         "headline": "Big chance for Argentina!",
         "sub": "Argentina are in a very dangerous position.",
-        "probAfter": 98
+        "probAfter": 58
       },
       {
         "id": "ev_753_852",
@@ -3778,7 +3792,7 @@ export const MATCHES: MatchData[] = [
         "participant": 1,
         "action": "corner",
         "headline": "Corner kick awarded to Argentina.",
-        "probAfter": 98
+        "probAfter": 58
       },
       {
         "id": "ev_754_853",
@@ -3787,7 +3801,7 @@ export const MATCHES: MatchData[] = [
         "action": "near_miss",
         "headline": "So close for Argentina!",
         "sub": "Officials pause to check the situation.",
-        "probAfter": 98
+        "probAfter": 59
       },
       {
         "id": "ev_755_854",
@@ -3796,7 +3810,7 @@ export const MATCHES: MatchData[] = [
         "action": "big_chance",
         "headline": "Big chance for Argentina!",
         "sub": "Argentina are in a very dangerous position.",
-        "probAfter": 98
+        "probAfter": 61
       },
       {
         "id": "ev_760_859",
@@ -3805,7 +3819,7 @@ export const MATCHES: MatchData[] = [
         "action": "big_chance",
         "headline": "Big chance for Argentina!",
         "sub": "Argentina are in a very dangerous position.",
-        "probAfter": 98
+        "probAfter": 63
       },
       {
         "id": "ev_761_861",
@@ -3814,7 +3828,7 @@ export const MATCHES: MatchData[] = [
         "action": "shot",
         "headline": "Argentina attempt a shot.",
         "shotOutcome": "OffTarget",
-        "probAfter": 98
+        "probAfter": 64
       },
       {
         "id": "ev_765_865",
@@ -3830,7 +3844,7 @@ export const MATCHES: MatchData[] = [
         "action": "big_chance",
         "headline": "Big chance for Argentina!",
         "sub": "Argentina are in a very dangerous position.",
-        "probAfter": 98
+        "probAfter": 65
       },
       {
         "id": "ev_774_874",
@@ -3839,7 +3853,7 @@ export const MATCHES: MatchData[] = [
         "action": "big_chance",
         "headline": "Big chance for Argentina!",
         "sub": "Argentina are in a very dangerous position.",
-        "probAfter": 98
+        "probAfter": 67
       },
       {
         "id": "ev_775_877",
@@ -3851,7 +3865,7 @@ export const MATCHES: MatchData[] = [
         "goalType": "Shot",
         "scoreAfter": [
           2,
-          1
+          2
         ],
         "probAfter": 98
       },
@@ -3976,7 +3990,7 @@ export const MATCHES: MatchData[] = [
         "goalType": "Head",
         "scoreAfter": [
           3,
-          1
+          2
         ],
         "probAfter": 98
       },
@@ -54199,7 +54213,7 @@ export const MATCHES: MatchData[] = [
         "scorer": "Goncalo Ramos",
         "goalType": "Head",
         "scoreAfter": [
-          1,
+          2,
           1
         ],
         "probAfter": 61
