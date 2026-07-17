@@ -5,10 +5,7 @@ import { useEffect, useState } from "react";
 import CountryFlag from "./CountryFlag";
 import { castVote, fetchMatch, type MatchSnapshot, type PredictionChoice } from "../lib/match-api";
 
-const fallback: Record<number, MatchSnapshot> = {
-  18257865: { fixtureId: 18257865, homeTeam: "France", awayTeam: "England", competition: "World Cup 2026", kickoffAt: "2026-07-18T19:00:00.000Z", status: "upcoming", market: { home: 0, draw: 0, away: 0 }, score: { home: 0, away: 0 }, latestEvent: null, community: { total: 0, counts: { home: 0, draw: 0, away: 0 }, percentages: { home: 0, draw: 0, away: 0 } } },
-  18257739: { fixtureId: 18257739, homeTeam: "Spain", awayTeam: "Argentina", competition: "World Cup 2026", kickoffAt: "2026-07-19T19:00:00.000Z", status: "upcoming", market: { home: 0, draw: 0, away: 0 }, score: { home: 0, away: 0 }, latestEvent: null, community: { total: 0, counts: { home: 0, draw: 0, away: 0 }, percentages: { home: 0, draw: 0, away: 0 } } },
-};
+
 
 function formatDate(value: string) { return new Intl.DateTimeFormat("en", { weekday: "long", month: "short", day: "numeric", year: "numeric", hour: "numeric", minute: "2-digit" }).format(new Date(value)); }
 function formatCountdown(value: string) { const ms = Math.max(0, new Date(value).getTime() - Date.now()); const hours = Math.floor(ms / 3_600_000); return `${Math.floor(hours / 24)}d ${hours % 24}h ${Math.floor((ms % 3_600_000) / 60_000)}m`; }
@@ -46,12 +43,8 @@ function LiveView({ initial }: { initial: MatchSnapshot }) {
   return <div className="mf-experience-page"><Link href="/" className="mf-back-link">← Match centre</Link><p className="mf-mode-pill mf-mode-pill-live"><i className="mf-mode-dot mf-mode-dot-playing" /> Live now</p><section className="mf-live-hero"><div><p className="mf-cinematic-eyebrow">{match.competition}</p><h1>{match.homeTeam} <span>vs</span> {match.awayTeam}</h1><p className="mf-live-feed-label">Live event stream · TxLINE verified</p></div><div className="mf-live-score"><strong>{match.score.home} — {match.score.away}</strong><span>LIVE</span></div></section><div className="mf-live-grid"><section className="mf-live-market"><p>Live probability</p><div className="mf-live-probabilities">{(["home", "draw", "away"] as PredictionChoice[]).map((key) => <div key={key}><strong>{match.market[key]}%</strong><span>{label(key, match)}</span><i><em style={{ width: `${match.market[key]}%` }} /></i></div>)}</div><div className="mf-momentum-rail"><span>Momentum</span><i><em style={{ width: `${match.market.home}%` }} /></i><b>{match.homeTeam}</b></div></section><section className="mf-live-events"><div className="mf-panel-heading"><div><p>Latest event</p><h2>Live event feed</h2></div><span><i /> Polling every 10s</span></div><article><strong>{match.latestEvent ?? "Waiting for the next on-pitch update"}</strong><p>{match.latestEvent ? "The latest verified TxLINE event has moved the match state." : "The stream is connected. New goals, shots, cards and VAR moments will appear here."}</p></article></section></div><section className="mf-live-vote"><div><p>Community prediction</p><h2>Keep your call live.</h2></div><div>{(["home", "draw", "away"] as PredictionChoice[]).map((key) => <button key={key} type="button" className={choice === key ? "is-selected" : ""} onClick={() => vote(key)}>{label(key, match)} <b>{match.community.percentages[key]}%</b></button>)}</div></section></div>;
 }
 
-export default function MatchExperience({ fixtureId }: { fixtureId: number }) {
-  const [match, setMatch] = useState<MatchSnapshot | null>(fallback[fixtureId] ?? null);
-  const [loading, setLoading] = useState(true);
-  const refresh = () => fetchMatch(fixtureId).then((next) => { setMatch(next); return next; }).catch(() => undefined).finally(() => setLoading(false));
-  useEffect(() => { refresh(); }, [fixtureId]);
-  if (!match) return <div className="mf-experience-page mf-not-found"><p>Match not found.</p><Link href="/" className="mf-back-link">← Back to match centre</Link></div>;
-  if (loading && !fallback[fixtureId]) return <div className="mf-experience-page"><p className="mf-loading-line" /> <p className="mf-loading-line mf-loading-line-short" /></div>;
+export default function MatchExperience({ initialMatch }: { initialMatch: MatchSnapshot }) {
+  const [match, setMatch] = useState<MatchSnapshot>(initialMatch);
+  const refresh = () => fetchMatch(initialMatch.fixtureId).then((next) => { if (next) setMatch(next); return next; }).catch(() => undefined);
   return match.status === "live" ? <LiveView initial={match} /> : <UpcomingView initial={match} onRefresh={refresh} />;
 }

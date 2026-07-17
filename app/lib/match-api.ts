@@ -29,10 +29,10 @@ async function requestJson<T>(url: string, init: RequestInit, label: string): Pr
   return response.json() as Promise<T>;
 }
 
-export async function fetchMatch(fixtureId: number, signal?: AbortSignal) {
+export async function fetchMatch(fixtureId: number, initOpts: RequestInit = { cache: "no-store" }, signal?: AbortSignal) {
   const result = await requestJson<{ match: MatchSnapshot }>(
     `${API_URL}/api/matches/${fixtureId}`,
-    { signal, cache: "no-store" },
+    { signal, ...initOpts },
     "Match API",
   );
   return result.match;
