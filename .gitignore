@@ -56,6 +56,12 @@ start-services.sh
 .temp/
 .tmp/
 
+# Custom one-off scripts
+check-*.js
+devnet-examples-text.txt
+server/src/download-historical.ts
+server/src/inject-missing-goals.ts
+
 # Editor / IDE
 .vscode/
 .idea/
