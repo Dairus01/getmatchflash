@@ -27314,6 +27314,1470 @@ export const MATCHES: MatchData[] = [
     ]
   },
   {
+    "id": 18257865,
+    "home": "France",
+    "away": "England",
+    "date": "Jul 18, 2026",
+    "maxSec": 5905,
+    "totalEvents": 379,
+    "finalScore": [
+      4,
+      6
+    ],
+    "market": {
+      "home": 50,
+      "draw": 0,
+      "away": 50
+    },
+    "periodBreakdown": {
+      "h1": {
+        "home": 2,
+        "away": 3
+      },
+      "h2": {
+        "home": 2,
+        "away": 1
+      },
+      "et": {
+        "home": 1,
+        "away": 1
+      }
+    },
+    "finalStats": {
+      "home": {
+        "shots": 6,
+        "shotsOnTarget": 2,
+        "possession": 51,
+        "yellowCards": 0,
+        "redCards": 0,
+        "corners": 3
+      },
+      "away": {
+        "shots": 3,
+        "shotsOnTarget": 1,
+        "possession": 49,
+        "yellowCards": 0,
+        "redCards": 0,
+        "corners": 4
+      }
+    },
+    "lineups": {
+      "home": {
+        "formation": "4-3-3",
+        "starters": [
+          {
+            "id": 1206139,
+            "name": "Mathis Rayan Cherki",
+            "number": "24",
+            "positionId": 36,
+            "dob": "2003-08-17",
+            "goals": 0,
+            "yellowCards": 0,
+            "redCards": 0
+          },
+          {
+            "id": 10094001,
+            "name": "Desire Doue",
+            "number": "20",
+            "positionId": 37,
+            "dob": "2005-06-03",
+            "goals": 0,
+            "yellowCards": 0,
+            "redCards": 0
+          },
+          {
+            "id": 10096574,
+            "name": "Malo Arthur Gusto",
+            "number": "2",
+            "positionId": 35,
+            "dob": "2003-05-19",
+            "goals": 0,
+            "yellowCards": 0,
+            "redCards": 0
+          },
+          {
+            "id": 517705,
+            "name": "Theo Hernandez",
+            "number": "19",
+            "positionId": 35,
+            "dob": "1997-10-06",
+            "goals": 0,
+            "yellowCards": 0,
+            "redCards": 0
+          },
+          {
+            "id": 735125,
+            "name": "Ibrahima Konate",
+            "number": "15",
+            "positionId": 35,
+            "dob": "1999-05-25",
+            "goals": 0,
+            "yellowCards": 0,
+            "redCards": 0
+          },
+          {
+            "id": 1044257,
+            "name": "Maxence Lacroix",
+            "number": "26",
+            "positionId": 35,
+            "dob": "2000-04-06",
+            "goals": 0,
+            "yellowCards": 0,
+            "redCards": 0
+          },
+          {
+            "id": 450704,
+            "name": "Mike Maignan",
+            "number": "16",
+            "positionId": 34,
+            "dob": "1995-07-03",
+            "goals": 0,
+            "yellowCards": 0,
+            "redCards": 0
+          },
+          {
+            "id": 453928,
+            "name": "Kylian Mbappe Lottin",
+            "number": "10",
+            "positionId": 37,
+            "dob": "1998-12-20",
+            "goals": 2,
+            "yellowCards": 0,
+            "redCards": 0
+          },
+          {
+            "id": 1101562,
+            "name": "Michael Olise",
+            "number": "11",
+            "positionId": 37,
+            "dob": "2001-12-12",
+            "goals": 0,
+            "yellowCards": 0,
+            "redCards": 0
+          },
+          {
+            "id": 182068,
+            "name": "Adrien Rabiot",
+            "number": "14",
+            "positionId": 36,
+            "dob": "1995-04-03",
+            "goals": 0,
+            "yellowCards": 0,
+            "redCards": 0
+          },
+          {
+            "id": 10092574,
+            "name": "Warren Zaire-Emery",
+            "number": "18",
+            "positionId": 36,
+            "dob": "2006-03-08",
+            "goals": 0,
+            "yellowCards": 0,
+            "redCards": 0
+          }
+        ],
+        "bench": [
+          {
+            "id": 10092796,
+            "name": "Maghnes Akliouche",
+            "number": "25",
+            "positionId": 37,
+            "dob": "2002-02-25",
+            "goals": 0,
+            "yellowCards": 0,
+            "redCards": 0
+          },
+          {
+            "id": 10096031,
+            "name": "Bradley Barcola",
+            "number": "12",
+            "positionId": 37,
+            "dob": "2002-09-02",
+            "goals": 1,
+            "yellowCards": 0,
+            "redCards": 0
+          },
+          {
+            "id": 413676,
+            "name": "Ousmane Dembele",
+            "number": "7",
+            "positionId": 37,
+            "dob": "1997-05-15",
+            "goals": 1,
+            "yellowCards": 0,
+            "redCards": 0
+          },
+          {
+            "id": 50556,
+            "name": "Lucas Digne",
+            "number": "3",
+            "positionId": 35,
+            "dob": "1993-07-20",
+            "goals": 0,
+            "yellowCards": 0,
+            "redCards": 0
+          },
+          {
+            "id": 517635,
+            "name": "Lucas Hernandez",
+            "number": "21",
+            "positionId": 35,
+            "dob": "1996-02-14",
+            "goals": 0,
+            "yellowCards": 0,
+            "redCards": 0
+          },
+          {
+            "id": 519884,
+            "name": "N'Golo Kante",
+            "number": "13",
+            "positionId": 36,
+            "dob": "1991-03-29",
+            "goals": 0,
+            "yellowCards": 0,
+            "redCards": 0
+          },
+          {
+            "id": 1088303,
+            "name": "Kouadio Kone",
+            "number": "6",
+            "positionId": 36,
+            "dob": "2001-05-17",
+            "goals": 0,
+            "yellowCards": 0,
+            "redCards": 0
+          },
+          {
+            "id": 602326,
+            "name": "Jules Kounde",
+            "number": "5",
+            "positionId": 35,
+            "dob": "1998-11-12",
+            "goals": 0,
+            "yellowCards": 0,
+            "redCards": 0
+          },
+          {
+            "id": 453324,
+            "name": "Jean-Philippe Mateta",
+            "number": "22",
+            "positionId": 37,
+            "dob": "1997-06-28",
+            "goals": 0,
+            "yellowCards": 0,
+            "redCards": 0
+          },
+          {
+            "id": 10134057,
+            "name": "Robin Risser",
+            "number": "23",
+            "positionId": 34,
+            "dob": "2004-12-02",
+            "goals": 0,
+            "yellowCards": 0,
+            "redCards": 0
+          },
+          {
+            "id": 1023287,
+            "name": "William Saliba",
+            "number": "17",
+            "positionId": 35,
+            "dob": "2001-03-24",
+            "goals": 0,
+            "yellowCards": 0,
+            "redCards": 0
+          },
+          {
+            "id": 478746,
+            "name": "Brice Samba",
+            "number": "1",
+            "positionId": 34,
+            "dob": "1994-04-25",
+            "goals": 0,
+            "yellowCards": 0,
+            "redCards": 0
+          },
+          {
+            "id": 907093,
+            "name": "Aurelien Tchouameni",
+            "number": "8",
+            "positionId": 36,
+            "dob": "2000-01-27",
+            "goals": 0,
+            "yellowCards": 0,
+            "redCards": 0
+          },
+          {
+            "id": 490753,
+            "name": "Marcus Thuram",
+            "number": "9",
+            "positionId": 37,
+            "dob": "1997-08-06",
+            "goals": 0,
+            "yellowCards": 0,
+            "redCards": 0
+          },
+          {
+            "id": 493403,
+            "name": "Dayotchanculle Upamecano",
+            "number": "4",
+            "positionId": 35,
+            "dob": "1998-10-27",
+            "goals": 0,
+            "yellowCards": 0,
+            "redCards": 0
+          }
+        ]
+      },
+      "away": {
+        "formation": "4-3-3",
+        "starters": [
+          {
+            "id": 721279,
+            "name": "Eberechi Eze",
+            "number": "21",
+            "positionId": 36,
+            "dob": "1998-06-29",
+            "goals": 0,
+            "yellowCards": 0,
+            "redCards": 0
+          },
+          {
+            "id": 889198,
+            "name": "Marc Guehi",
+            "number": "6",
+            "positionId": 35,
+            "dob": "2000-07-13",
+            "goals": 0,
+            "yellowCards": 0,
+            "redCards": 0
+          },
+          {
+            "id": 10095466,
+            "name": "Dean Henderson",
+            "number": "13",
+            "positionId": 34,
+            "dob": "1997-03-12",
+            "goals": 0,
+            "yellowCards": 0,
+            "redCards": 0
+          },
+          {
+            "id": 607553,
+            "name": "Ezri Konsa Ngoyo",
+            "number": "2",
+            "positionId": 35,
+            "dob": "1997-10-23",
+            "goals": 1,
+            "yellowCards": 0,
+            "redCards": 0
+          },
+          {
+            "id": 10095175,
+            "name": "Jarell Quansah",
+            "number": "26",
+            "positionId": 35,
+            "dob": "2003-01-29",
+            "goals": 0,
+            "yellowCards": 0,
+            "redCards": 0
+          },
+          {
+            "id": 591416,
+            "name": "Marcus Rashford",
+            "number": "11",
+            "positionId": 37,
+            "dob": "1997-10-31",
+            "goals": 0,
+            "yellowCards": 0,
+            "redCards": 0
+          },
+          {
+            "id": 720122,
+            "name": "Declan Rice",
+            "number": "4",
+            "positionId": 36,
+            "dob": "1999-01-14",
+            "goals": 1,
+            "yellowCards": 0,
+            "redCards": 0
+          },
+          {
+            "id": 1031091,
+            "name": "Morgan Rogers",
+            "number": "17",
+            "positionId": 36,
+            "dob": "2002-07-26",
+            "goals": 0,
+            "yellowCards": 0,
+            "redCards": 0
+          },
+          {
+            "id": 1069227,
+            "name": "Bukayo Saka",
+            "number": "7",
+            "positionId": 37,
+            "dob": "2001-09-05",
+            "goals": 2,
+            "yellowCards": 0,
+            "redCards": 0
+          },
+          {
+            "id": 1030722,
+            "name": "Djed Spence",
+            "number": "25",
+            "positionId": 35,
+            "dob": "2000-08-09",
+            "goals": 0,
+            "yellowCards": 0,
+            "redCards": 0
+          },
+          {
+            "id": 189771,
+            "name": "Ivan Toney",
+            "number": "22",
+            "positionId": 37,
+            "dob": "1996-03-16",
+            "goals": 0,
+            "yellowCards": 0,
+            "redCards": 0
+          }
+        ],
+        "bench": [
+          {
+            "id": 10015384,
+            "name": "Elliot Anderson",
+            "number": "8",
+            "positionId": 36,
+            "dob": "2002-11-06",
+            "goals": 0,
+            "yellowCards": 0,
+            "redCards": 0
+          },
+          {
+            "id": 1170403,
+            "name": "Jude Bellingham",
+            "number": "10",
+            "positionId": 36,
+            "dob": "2003-06-29",
+            "goals": 1,
+            "yellowCards": 0,
+            "redCards": 0
+          },
+          {
+            "id": 186778,
+            "name": "Dan Burn",
+            "number": "15",
+            "positionId": 35,
+            "dob": "1992-05-09",
+            "goals": 0,
+            "yellowCards": 0,
+            "redCards": 0
+          },
+          {
+            "id": 405683,
+            "name": "Trevoh Chalobah",
+            "number": "12",
+            "positionId": 35,
+            "dob": "1999-07-05",
+            "goals": 0,
+            "yellowCards": 0,
+            "redCards": 0
+          },
+          {
+            "id": 911404,
+            "name": "Anthony Gordon",
+            "number": "18",
+            "positionId": 37,
+            "dob": "2001-02-24",
+            "goals": 0,
+            "yellowCards": 0,
+            "redCards": 0
+          },
+          {
+            "id": 48693,
+            "name": "Jordan Henderson",
+            "number": "14",
+            "positionId": 36,
+            "dob": "1990-06-17",
+            "goals": 0,
+            "yellowCards": 0,
+            "redCards": 0
+          },
+          {
+            "id": 787880,
+            "name": "Reece (1999) James",
+            "number": "24",
+            "positionId": 35,
+            "dob": "1999-12-08",
+            "goals": 0,
+            "yellowCards": 0,
+            "redCards": 0
+          },
+          {
+            "id": 70481,
+            "name": "Harry Kane",
+            "number": "9",
+            "positionId": 37,
+            "dob": "1993-07-28",
+            "goals": 0,
+            "yellowCards": 0,
+            "redCards": 0
+          },
+          {
+            "id": 10096559,
+            "name": "Chukwunonso Madueke",
+            "number": "20",
+            "positionId": 37,
+            "dob": "2002-03-10",
+            "goals": 0,
+            "yellowCards": 0,
+            "redCards": 0
+          },
+          {
+            "id": 10194364,
+            "name": "Nico O'Reilly",
+            "number": "3",
+            "positionId": 35,
+            "dob": "2005-03-21",
+            "goals": 0,
+            "yellowCards": 0,
+            "redCards": 0
+          },
+          {
+            "id": 983119,
+            "name": "Jordan Pickford",
+            "number": "1",
+            "positionId": 34,
+            "dob": "1994-03-07",
+            "goals": 0,
+            "yellowCards": 0,
+            "redCards": 0
+          },
+          {
+            "id": 162605,
+            "name": "John Stones",
+            "number": "5",
+            "positionId": 35,
+            "dob": "1994-05-28",
+            "goals": 0,
+            "yellowCards": 0,
+            "redCards": 0
+          },
+          {
+            "id": 10096978,
+            "name": "James Trafford",
+            "number": "23",
+            "positionId": 34,
+            "dob": "2002-10-10",
+            "goals": 0,
+            "yellowCards": 0,
+            "redCards": 0
+          },
+          {
+            "id": 497935,
+            "name": "Ollie Watkins",
+            "number": "19",
+            "positionId": 37,
+            "dob": "1995-12-30",
+            "goals": 0,
+            "yellowCards": 0,
+            "redCards": 0
+          }
+        ]
+      }
+    },
+    "events": [
+      {
+        "id": "ev_synthetic_goal_0_0",
+        "sec": 500,
+        "participant": 2,
+        "action": "goal",
+        "headline": "Goal! England score!",
+        "sub": "The net ripples — a pivotal moment in the replay.",
+        "goalType": "Regular",
+        "scoreAfter": [
+          0,
+          1
+        ],
+        "probAfter": 32
+      },
+      {
+        "id": "ev_synthetic_goal_1_1",
+        "sec": 1000,
+        "participant": 1,
+        "action": "goal",
+        "headline": "Goal! France score!",
+        "sub": "The net ripples — a pivotal moment in the replay.",
+        "goalType": "Regular",
+        "scoreAfter": [
+          1,
+          1
+        ],
+        "probAfter": 50
+      },
+      {
+        "id": "ev_synthetic_goal_2_2",
+        "sec": 1500,
+        "participant": 2,
+        "action": "goal",
+        "headline": "Goal! England score!",
+        "sub": "The net ripples — a pivotal moment in the replay.",
+        "goalType": "Regular",
+        "scoreAfter": [
+          1,
+          2
+        ],
+        "probAfter": 25
+      },
+      {
+        "id": "ev_synthetic_goal_3_3",
+        "sec": 2000,
+        "participant": 2,
+        "action": "goal",
+        "headline": "Goal! England score!",
+        "sub": "The net ripples — a pivotal moment in the replay.",
+        "goalType": "Regular",
+        "scoreAfter": [
+          1,
+          3
+        ],
+        "probAfter": 2
+      },
+      {
+        "id": "ev_synthetic_goal_4_4",
+        "sec": 2500,
+        "participant": 1,
+        "action": "goal",
+        "headline": "Goal! France score!",
+        "sub": "The net ripples — a pivotal moment in the replay.",
+        "goalType": "Regular",
+        "scoreAfter": [
+          2,
+          3
+        ],
+        "probAfter": 18
+      },
+      {
+        "id": "ev_12_5",
+        "sec": 0,
+        "participant": 1,
+        "action": "prematch_info",
+        "headline": "Venue: Neutral ground.",
+        "sub": "Match officials make final preparations."
+      },
+      {
+        "id": "ev_synthetic_goal_5_5",
+        "sec": 3000,
+        "participant": 2,
+        "action": "goal",
+        "headline": "Goal! England score!",
+        "sub": "The net ripples — a pivotal moment in the replay.",
+        "goalType": "Regular",
+        "scoreAfter": [
+          2,
+          4
+        ],
+        "probAfter": 2
+      },
+      {
+        "id": "ev_14_7",
+        "sec": 0,
+        "participant": 1,
+        "action": "prematch_info",
+        "headline": "Pitch: Dry, Excellent."
+      },
+      {
+        "id": "ev_16_9",
+        "sec": 0,
+        "participant": 1,
+        "action": "prematch_info",
+        "headline": "Conditions: Cloudy, Day."
+      },
+      {
+        "id": "ev_21_13",
+        "sec": 0,
+        "participant": 1,
+        "action": "jersey",
+        "headline": "France in navyblue.",
+        "jerseyColor": "navyblue"
+      },
+      {
+        "id": "ev_22_14",
+        "sec": 0,
+        "participant": 1,
+        "action": "kickoff_team",
+        "headline": "France kick off."
+      },
+      {
+        "id": "ev_423_455",
+        "sec": 2259,
+        "participant": 1,
+        "action": "var",
+        "headline": "VAR review in progress.",
+        "sub": "The video assistant is checking the incident.",
+        "varType": "Goal"
+      },
+      {
+        "id": "ev_523_563",
+        "sec": 2710,
+        "participant": 1,
+        "action": "additional_time",
+        "headline": "4 minutes of added time.",
+        "sub": "Referee signals added time in the first half.",
+        "addedMinutes": 4
+      },
+      {
+        "id": "ev_552_596",
+        "sec": 2909,
+        "participant": 2,
+        "action": "corner",
+        "headline": "Corner kick awarded to England.",
+        "probAfter": 2
+      },
+      {
+        "id": "ev_558_604",
+        "sec": 3000,
+        "participant": 1,
+        "action": "halftime",
+        "headline": "Half time.",
+        "sub": "The referee brings the half to a close."
+      },
+      {
+        "id": "ev_564_612",
+        "sec": 2700,
+        "participant": 2,
+        "action": "substitution",
+        "headline": "Ollie Watkins on for Marcus Rashford (England).",
+        "playerIn": "Ollie Watkins",
+        "playerOut": "Marcus Rashford"
+      },
+      {
+        "id": "ev_577_627",
+        "sec": 2751,
+        "participant": 1,
+        "action": "free_kick",
+        "headline": "Free kick to France."
+      },
+      {
+        "id": "ev_603_656",
+        "sec": 2906,
+        "participant": 1,
+        "action": "kickoff",
+        "headline": "Second half kickoff!",
+        "sub": "France vs England — play is underway."
+      },
+      {
+        "id": "ev_654_710",
+        "sec": 3118,
+        "participant": 2,
+        "action": "throw_in",
+        "headline": "Throw-in for England."
+      },
+      {
+        "id": "ev_665_721",
+        "sec": 3180,
+        "participant": 1,
+        "action": "big_chance",
+        "headline": "Big chance for France!",
+        "sub": "France are in a very dangerous position.",
+        "probAfter": 2
+      },
+      {
+        "id": "ev_669_725",
+        "sec": 3187,
+        "participant": 2,
+        "action": "near_miss",
+        "headline": "So close for England!",
+        "sub": "Officials pause to check the situation.",
+        "probAfter": 2
+      },
+      {
+        "id": "ev_670_727",
+        "sec": 3189,
+        "participant": 2,
+        "action": "shot",
+        "headline": "England attempt a shot.",
+        "shotOutcome": "OffTarget",
+        "probAfter": 2
+      },
+      {
+        "id": "ev_674_731",
+        "sec": 3198,
+        "participant": 1,
+        "action": "goal_kick",
+        "headline": "Goal kick for France."
+      },
+      {
+        "id": "ev_677_734",
+        "sec": 3217,
+        "participant": 1,
+        "action": "big_chance",
+        "headline": "Big chance for France!",
+        "sub": "France are in a very dangerous position.",
+        "probAfter": 2
+      },
+      {
+        "id": "ev_679_739",
+        "sec": 3220,
+        "participant": 1,
+        "action": "goal",
+        "headline": "Bradley Barcola scores for France!",
+        "sub": "The net ripples — a pivotal moment in the replay.",
+        "scorer": "Bradley Barcola",
+        "goalType": "Shot",
+        "scoreAfter": [
+          2,
+          4
+        ],
+        "probAfter": 15
+      },
+      {
+        "id": "ev_682_741",
+        "sec": 3287,
+        "participant": 1,
+        "action": "kickoff",
+        "headline": "Second half kickoff!",
+        "sub": "France vs England — play is underway."
+      },
+      {
+        "id": "ev_709_774",
+        "sec": 3427,
+        "participant": 2,
+        "action": "free_kick",
+        "headline": "Free kick to England."
+      },
+      {
+        "id": "ev_715_781",
+        "sec": 3483,
+        "participant": 2,
+        "action": "corner",
+        "headline": "Corner kick awarded to England.",
+        "probAfter": 13
+      },
+      {
+        "id": "ev_739_806",
+        "sec": 3605,
+        "participant": 1,
+        "action": "big_chance",
+        "headline": "Big chance for France!",
+        "sub": "France are in a very dangerous position.",
+        "probAfter": 14
+      },
+      {
+        "id": "ev_748_816",
+        "sec": 3627,
+        "participant": 1,
+        "action": "shot",
+        "headline": "France attempt a shot.",
+        "shotOutcome": "OffTarget",
+        "probAfter": 15
+      },
+      {
+        "id": "ev_751_819",
+        "sec": 3631,
+        "participant": 2,
+        "action": "goal_kick",
+        "headline": "Goal kick for England."
+      },
+      {
+        "id": "ev_805_878",
+        "sec": 3884,
+        "participant": 1,
+        "action": "shot",
+        "headline": "France attempt a shot.",
+        "shotOutcome": "OnTarget",
+        "probAfter": 15
+      },
+      {
+        "id": "ev_810_883",
+        "sec": 3912,
+        "participant": 1,
+        "action": "big_chance",
+        "headline": "Big chance for France!",
+        "sub": "France are in a very dangerous position.",
+        "probAfter": 17
+      },
+      {
+        "id": "ev_811_884",
+        "sec": 3914,
+        "participant": 1,
+        "action": "big_chance",
+        "headline": "Big chance for France!",
+        "sub": "France are in a very dangerous position.",
+        "probAfter": 19
+      },
+      {
+        "id": "ev_822_897",
+        "sec": 3951,
+        "participant": 1,
+        "action": "goal",
+        "headline": "Kylian Mbappe Lottin scores for France!",
+        "sub": "The net ripples — a pivotal moment in the replay.",
+        "scorer": "Kylian Mbappe Lottin",
+        "goalType": "Shot",
+        "scoreAfter": [
+          3,
+          4
+        ],
+        "probAfter": 60
+      },
+      {
+        "id": "ev_824_899",
+        "sec": 4021,
+        "participant": 1,
+        "action": "kickoff",
+        "headline": "Second half kickoff!",
+        "sub": "France vs England — play is underway."
+      },
+      {
+        "id": "ev_827_902",
+        "sec": 4023,
+        "participant": 1,
+        "action": "big_chance",
+        "headline": "Big chance for France!",
+        "sub": "France are in a very dangerous position.",
+        "probAfter": 62
+      },
+      {
+        "id": "ev_830_905",
+        "sec": 4038,
+        "participant": 2,
+        "action": "goal_kick",
+        "headline": "Goal kick for England."
+      },
+      {
+        "id": "ev_835_911",
+        "sec": 4290,
+        "participant": 2,
+        "action": "free_kick",
+        "headline": "Free kick to England."
+      },
+      {
+        "id": "ev_838_915",
+        "sec": 4318,
+        "participant": 2,
+        "action": "free_kick",
+        "headline": "Free kick to England."
+      },
+      {
+        "id": "ev_847_925",
+        "sec": 4363,
+        "participant": 2,
+        "action": "free_kick",
+        "headline": "Free kick to England."
+      },
+      {
+        "id": "ev_862_940",
+        "sec": 4443,
+        "participant": 1,
+        "action": "big_chance",
+        "headline": "Big chance for France!",
+        "sub": "France are in a very dangerous position.",
+        "probAfter": 64
+      },
+      {
+        "id": "ev_863_942",
+        "sec": 4445,
+        "participant": 1,
+        "action": "shot",
+        "headline": "France attempt a shot.",
+        "shotOutcome": "OffTarget",
+        "probAfter": 65
+      },
+      {
+        "id": "ev_866_945",
+        "sec": 4450,
+        "participant": 2,
+        "action": "goal_kick",
+        "headline": "Goal kick for England."
+      },
+      {
+        "id": "ev_877_956",
+        "sec": 4507,
+        "participant": 1,
+        "action": "big_chance",
+        "headline": "Big chance for France!",
+        "sub": "France are in a very dangerous position.",
+        "probAfter": 67
+      },
+      {
+        "id": "ev_879_958",
+        "sec": 4515,
+        "participant": 1,
+        "action": "big_chance",
+        "headline": "Big chance for France!",
+        "sub": "France are in a very dangerous position.",
+        "probAfter": 69
+      },
+      {
+        "id": "ev_883_963",
+        "sec": 4529,
+        "participant": 2,
+        "action": "free_kick",
+        "headline": "Free kick to England."
+      },
+      {
+        "id": "ev_884_966",
+        "sec": 4550,
+        "participant": 2,
+        "action": "injury",
+        "headline": "Bukayo Saka (England) receives treatment.",
+        "injuryPlayer": "Bukayo Saka"
+      },
+      {
+        "id": "ev_891_973",
+        "sec": 4588,
+        "participant": 1,
+        "action": "big_chance",
+        "headline": "Big chance for France!",
+        "sub": "France are in a very dangerous position.",
+        "probAfter": 71
+      },
+      {
+        "id": "ev_892_975",
+        "sec": 4595,
+        "participant": 1,
+        "action": "throw_in",
+        "headline": "Throw-in for France."
+      },
+      {
+        "id": "ev_894_977",
+        "sec": 4602,
+        "participant": 1,
+        "action": "big_chance",
+        "headline": "Big chance for France!",
+        "sub": "France are in a very dangerous position.",
+        "probAfter": 73
+      },
+      {
+        "id": "ev_895_978",
+        "sec": 4607,
+        "participant": 1,
+        "action": "big_chance",
+        "headline": "Big chance for France!",
+        "sub": "France are in a very dangerous position.",
+        "probAfter": 75
+      },
+      {
+        "id": "ev_897_981",
+        "sec": 4616,
+        "participant": 1,
+        "action": "free_kick",
+        "headline": "Free kick to France."
+      },
+      {
+        "id": "ev_898_982",
+        "sec": 4619,
+        "participant": 1,
+        "action": "near_miss",
+        "headline": "So close for France!",
+        "sub": "Officials pause to check the situation.",
+        "probAfter": 76
+      },
+      {
+        "id": "ev_899_983",
+        "sec": 4660,
+        "participant": 1,
+        "action": "big_chance",
+        "headline": "Big chance for France!",
+        "sub": "France are in a very dangerous position.",
+        "probAfter": 78
+      },
+      {
+        "id": "ev_904_988",
+        "sec": 4679,
+        "participant": 1,
+        "action": "big_chance",
+        "headline": "Big chance for France!",
+        "sub": "France are in a very dangerous position.",
+        "probAfter": 80
+      },
+      {
+        "id": "ev_905_989",
+        "sec": 4682,
+        "participant": 1,
+        "action": "big_chance",
+        "headline": "Big chance for France!",
+        "sub": "France are in a very dangerous position.",
+        "probAfter": 82
+      },
+      {
+        "id": "ev_909_994",
+        "sec": 4693,
+        "participant": 2,
+        "action": "free_kick",
+        "headline": "Free kick to England."
+      },
+      {
+        "id": "ev_911_997",
+        "sec": 4738,
+        "participant": 2,
+        "action": "substitution",
+        "headline": "Elliot Anderson on for Eberechi Eze (England).",
+        "playerIn": "Elliot Anderson",
+        "playerOut": "Eberechi Eze"
+      },
+      {
+        "id": "ev_912_998",
+        "sec": 4738,
+        "participant": 2,
+        "action": "substitution",
+        "headline": "Jude Bellingham on for Ivan Toney (England).",
+        "playerIn": "Jude Bellingham",
+        "playerOut": "Ivan Toney"
+      },
+      {
+        "id": "ev_921_1003",
+        "sec": 4776,
+        "participant": 1,
+        "action": "big_chance",
+        "headline": "Big chance for France!",
+        "sub": "France are in a very dangerous position.",
+        "probAfter": 84
+      },
+      {
+        "id": "ev_925_1007",
+        "sec": 4786,
+        "participant": 2,
+        "action": "near_miss",
+        "headline": "So close for England!",
+        "sub": "Officials pause to check the situation.",
+        "probAfter": 83
+      },
+      {
+        "id": "ev_927_1009",
+        "sec": 4792,
+        "participant": 2,
+        "action": "big_chance",
+        "headline": "Big chance for England!",
+        "sub": "England are in a very dangerous position.",
+        "probAfter": 81
+      },
+      {
+        "id": "ev_928_1011",
+        "sec": 4796,
+        "participant": 2,
+        "action": "shot",
+        "headline": "England attempt a shot.",
+        "shotOutcome": "OnTarget",
+        "probAfter": 79
+      },
+      {
+        "id": "ev_929_1013",
+        "sec": 4800,
+        "participant": 2,
+        "action": "shot",
+        "headline": "England attempt a shot.",
+        "shotOutcome": "Blocked",
+        "probAfter": 78
+      },
+      {
+        "id": "ev_935_1019",
+        "sec": 4810,
+        "participant": 1,
+        "action": "big_chance",
+        "headline": "Big chance for France!",
+        "sub": "France are in a very dangerous position.",
+        "probAfter": 80
+      },
+      {
+        "id": "ev_936_1020",
+        "sec": 4814,
+        "participant": 1,
+        "action": "big_chance",
+        "headline": "Big chance for France!",
+        "sub": "France are in a very dangerous position.",
+        "probAfter": 82
+      },
+      {
+        "id": "ev_937_1021",
+        "sec": 4818,
+        "participant": 1,
+        "action": "big_chance",
+        "headline": "Big chance for France!",
+        "sub": "France are in a very dangerous position.",
+        "probAfter": 84
+      },
+      {
+        "id": "ev_938_1022",
+        "sec": 4821,
+        "participant": 1,
+        "action": "big_chance",
+        "headline": "Big chance for France!",
+        "sub": "France are in a very dangerous position.",
+        "probAfter": 86
+      },
+      {
+        "id": "ev_939_1024",
+        "sec": 4824,
+        "participant": 1,
+        "action": "shot",
+        "headline": "France attempt a shot.",
+        "shotOutcome": "OffTarget",
+        "probAfter": 87
+      },
+      {
+        "id": "ev_942_1027",
+        "sec": 4831,
+        "participant": 2,
+        "action": "goal_kick",
+        "headline": "Goal kick for England."
+      },
+      {
+        "id": "ev_944_1031",
+        "sec": 4907,
+        "participant": 2,
+        "action": "injury",
+        "headline": "Jarell Quansah (England) receives treatment.",
+        "injuryPlayer": "Jarell Quansah"
+      },
+      {
+        "id": "ev_946_1034",
+        "sec": 4963,
+        "participant": 2,
+        "action": "substitution",
+        "headline": "Reece (1999) James on for Jarell Quansah (England).",
+        "playerIn": "Reece (1999) James",
+        "playerOut": "Jarell Quansah"
+      },
+      {
+        "id": "ev_957_1046",
+        "sec": 5009,
+        "participant": 1,
+        "action": "shot",
+        "headline": "France attempt a shot.",
+        "shotOutcome": "OnTarget",
+        "probAfter": 89
+      },
+      {
+        "id": "ev_968_1057",
+        "sec": 5065,
+        "participant": 2,
+        "action": "big_chance",
+        "headline": "Big chance for England!",
+        "sub": "England are in a very dangerous position.",
+        "probAfter": 87
+      },
+      {
+        "id": "ev_969_1059",
+        "sec": 5068,
+        "participant": 2,
+        "action": "penalty",
+        "headline": "Penalty to England!"
+      },
+      {
+        "id": "ev_972_1064",
+        "sec": 5281,
+        "participant": 1,
+        "action": "kickoff",
+        "headline": "Second half kickoff!",
+        "sub": "France vs England — play is underway."
+      },
+      {
+        "id": "ev_1002_1095",
+        "sec": 5423,
+        "participant": 1,
+        "action": "additional_time",
+        "headline": "7 minutes of added time.",
+        "sub": "Referee signals added time in the second half.",
+        "addedMinutes": 7
+      },
+      {
+        "id": "ev_1001_1096",
+        "sec": 5413,
+        "participant": 1,
+        "action": "corner",
+        "headline": "Corner kick awarded to France.",
+        "probAfter": 87
+      },
+      {
+        "id": "ev_1003_1098",
+        "sec": 5439,
+        "participant": 1,
+        "action": "substitution",
+        "headline": "Jules Kounde on for Malo Arthur Gusto (France).",
+        "playerIn": "Jules Kounde",
+        "playerOut": "Malo Arthur Gusto"
+      },
+      {
+        "id": "ev_1004_1099",
+        "sec": 5441,
+        "participant": 1,
+        "action": "big_chance",
+        "headline": "Big chance for France!",
+        "sub": "France are in a very dangerous position.",
+        "probAfter": 89
+      },
+      {
+        "id": "ev_1005_1100",
+        "sec": 5442,
+        "participant": 1,
+        "action": "near_miss",
+        "headline": "So close for France!",
+        "sub": "Officials pause to check the situation.",
+        "probAfter": 90
+      },
+      {
+        "id": "ev_1007_1103",
+        "sec": 5453,
+        "participant": 2,
+        "action": "free_kick",
+        "headline": "Free kick to England."
+      },
+      {
+        "id": "ev_1000_1105",
+        "sec": 5412,
+        "participant": 1,
+        "action": "shot",
+        "headline": "France attempt a shot.",
+        "shotOutcome": "Blocked",
+        "probAfter": 91
+      },
+      {
+        "id": "ev_1017_1115",
+        "sec": 5509,
+        "participant": 2,
+        "action": "free_kick",
+        "headline": "Free kick to England."
+      },
+      {
+        "id": "ev_1018_1117",
+        "sec": 5545,
+        "participant": 2,
+        "action": "substitution",
+        "headline": "Trevoh Chalobah on for Marc Guehi (England).",
+        "playerIn": "Trevoh Chalobah",
+        "playerOut": "Marc Guehi"
+      },
+      {
+        "id": "ev_1027_1126",
+        "sec": 5571,
+        "participant": 1,
+        "action": "big_chance",
+        "headline": "Big chance for France!",
+        "sub": "France are in a very dangerous position.",
+        "probAfter": 93
+      },
+      {
+        "id": "ev_1028_1127",
+        "sec": 5579,
+        "participant": 1,
+        "action": "big_chance",
+        "headline": "Big chance for France!",
+        "sub": "France are in a very dangerous position.",
+        "probAfter": 95
+      },
+      {
+        "id": "ev_1037_1136",
+        "sec": 5603,
+        "participant": 1,
+        "action": "big_chance",
+        "headline": "Big chance for France!",
+        "sub": "France are in a very dangerous position.",
+        "probAfter": 97
+      },
+      {
+        "id": "ev_1044_1145",
+        "sec": 5633,
+        "participant": 2,
+        "action": "injury",
+        "headline": "Djed Spence (England) receives treatment.",
+        "injuryPlayer": "Djed Spence"
+      },
+      {
+        "id": "ev_1064_1161",
+        "sec": 5716,
+        "participant": 1,
+        "action": "near_miss",
+        "headline": "So close for France!",
+        "sub": "Officials pause to check the situation.",
+        "probAfter": 98
+      },
+      {
+        "id": "ev_1066_1163",
+        "sec": 5718,
+        "participant": 1,
+        "action": "big_chance",
+        "headline": "Big chance for France!",
+        "sub": "France are in a very dangerous position.",
+        "probAfter": 98
+      },
+      {
+        "id": "ev_1067_1167",
+        "sec": 5720,
+        "participant": 1,
+        "action": "goal",
+        "headline": "Ousmane Dembele scores for France!",
+        "sub": "The net ripples — a pivotal moment in the replay.",
+        "scorer": "Ousmane Dembele",
+        "goalType": "Shot",
+        "scoreAfter": [
+          4,
+          5
+        ],
+        "probAfter": 98
+      },
+      {
+        "id": "ev_1070_1169",
+        "sec": 5782,
+        "participant": 1,
+        "action": "kickoff",
+        "headline": "Extra time, first half!",
+        "sub": "France vs England — play is underway."
+      },
+      {
+        "id": "ev_1083_1182",
+        "sec": 5824,
+        "participant": 2,
+        "action": "near_miss",
+        "headline": "So close for England!",
+        "sub": "Officials pause to check the situation.",
+        "probAfter": 98
+      },
+      {
+        "id": "ev_1085_1184",
+        "sec": 5828,
+        "participant": 2,
+        "action": "big_chance",
+        "headline": "Big chance for England!",
+        "sub": "England are in a very dangerous position.",
+        "probAfter": 98
+      },
+      {
+        "id": "ev_1086_1189",
+        "sec": 5833,
+        "participant": 2,
+        "action": "goal",
+        "headline": "Jude Bellingham scores for England!",
+        "sub": "The net ripples — a pivotal moment in the replay.",
+        "scorer": "Jude Bellingham",
+        "goalType": "Shot",
+        "scoreAfter": [
+          4,
+          6
+        ],
+        "probAfter": 97
+      },
+      {
+        "id": "ev_1090_1191",
+        "sec": 5905,
+        "participant": 1,
+        "action": "kickoff",
+        "headline": "Extra time, first half!",
+        "sub": "France vs England — play is underway."
+      },
+      {
+        "id": "ev_1096_1195",
+        "sec": 5905,
+        "participant": 1,
+        "action": "fulltime",
+        "headline": "Final whistle!",
+        "sub": "The match is over. Full time."
+      }
+    ]
+  },
+  {
     "id": 18209181,
     "home": "France",
     "away": "Morocco",

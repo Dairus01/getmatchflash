@@ -12,7 +12,8 @@
     "api:server": "tsx src/api-server.ts",
     "bot": "tsx --env-file=.env src/bot.ts",
     "test": "node --import tsx --test src/*.test.ts",
-    "typecheck": "tsc --noEmit --target ES2022 --module NodeNext --moduleResolution NodeNext --esModuleInterop src/*.ts"
+    "typecheck": "tsc --noEmit --target ES2022 --module NodeNext --moduleResolution NodeNext --esModuleInterop src/*.ts",
+    "download:historical": "tsx src/download-historical.ts"
   },
   "dependencies": {
     "@solana/spl-token": "^0.4.14",

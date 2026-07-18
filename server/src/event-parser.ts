@@ -234,7 +234,7 @@ export function parseTimeline(rawEvents: any[], teams: { home: string, away: str
   return events;
 }
 
-export function buildLiveMatchData(rawEvents: any[], fixture: { fixtureId: number, homeTeam: string, awayTeam: string, kickoffAt: string }): MatchData {
+export function buildLiveMatchData(rawEvents: any[], fixture: { fixtureId: number, homeTeam: string, awayTeam: string, kickoffAt: string }, oddsEvents?: any[]): MatchData {
   if (fixture.fixtureId === 18202701) {
     const lineupEv = rawEvents.find((e) => e.Action === 'lineups' && Array.isArray(e.Lineups));
     if (lineupEv && lineupEv.Lineups[1]) {
@@ -264,6 +264,26 @@ export function buildLiveMatchData(rawEvents: any[], fixture: { fixtureId: numbe
     });
   }
 
+  // Parse real TxODDS 1X2 odds into a time-sorted array
+  const kickoffMs = Date.parse(fixture.kickoffAt);
+  const oddsByTime: Array<{ sec: number; home: number; draw: number; away: number }> = [];
+  if (oddsEvents && oddsEvents.length > 0) {
+    for (const odds of oddsEvents) {
+      if (odds.SuperOddsType !== '1X2_PARTICIPANT_RESULT') continue;
+      const pct = odds.Pct;
+      if (!Array.isArray(pct) || pct.length < 3) continue;
+      const home = parseFloat(pct[0]);
+      const draw = parseFloat(pct[1]);
+      const away = parseFloat(pct[2]);
+      if (isNaN(home) || isNaN(draw) || isNaN(away)) continue;
+      // Convert timestamp to match seconds
+      const ts = Number(odds.Ts);
+      const sec = Math.max(0, Math.round((ts - kickoffMs) / 1000));
+      oddsByTime.push({ sec, home: Math.round(home), draw: Math.round(draw), away: Math.round(away) });
+    }
+    oddsByTime.sort((a, b) => a.sec - b.sec);
+  }
+
   const teams = { home: fixture.homeTeam, away: fixture.awayTeam };
   const players = playerMap(rawEvents);
   const resolved = resolveTimes(deduplicate(rawEvents).sort((a: any, b: any) => (a.Seq ?? 0) - (b.Seq ?? 0)));
@@ -271,6 +291,20 @@ export function buildLiveMatchData(rawEvents: any[], fixture: { fixtureId: numbe
   const maxSec = Math.max(1, ...meaningful.map(({ sec }) => sec));
   const events = parseTimeline(rawEvents, teams);
   
+  // Override probAfter with real TxODDS data if available
+  if (oddsByTime.length > 0) {
+    for (const ev of events) {
+      // Find the closest odds snapshot at or before this event's time
+      let best = oddsByTime[0];
+      for (const o of oddsByTime) {
+        if (o.sec <= ev.sec) best = o;
+        else break;
+      }
+      // probAfter = home team probability from TxODDS
+      ev.probAfter = best.home;
+    }
+  }
+
   let currentScore = [0, 0];
   for (const ev of events) {
     if (ev.scoreAfter) currentScore = ev.scoreAfter;
@@ -293,6 +327,13 @@ export function buildLiveMatchData(rawEvents: any[], fixture: { fixtureId: numbe
     away: { shots: count('shot', 2), shotsOnTarget: count('shot', 2, (event) => event.shotOutcome === 'OnTarget' || event.shotOutcome === 'Woodwork'), possession: possessionShare[1], yellowCards: final.Score?.Participant2?.Total?.YellowCards ?? count('yellow_card', 2), redCards: final.Score?.Participant2?.Total?.RedCards ?? count('red_card', 2), corners: final.Score?.Participant2?.Total?.Corners ?? count('corner', 2) },
   };
 
+  // Build market from latest TxODDS odds or fallback to estimated
+  let market: { home: number; draw: number; away: number } | undefined;
+  if (oddsByTime.length > 0) {
+    const latest = oddsByTime[oddsByTime.length - 1];
+    market = { home: latest.home, draw: latest.draw, away: latest.away };
+  }
+
   return {
     id: fixture.fixtureId,
     home: teams.home,
@@ -301,6 +342,7 @@ export function buildLiveMatchData(rawEvents: any[], fixture: { fixtureId: numbe
     maxSec,
     totalEvents: rawEvents.length,
     finalScore,
+    market,
     periodBreakdown: { h1: { home: goalsByPeriod(0, 2700, 1), away: goalsByPeriod(0, 2700, 2) }, h2: { home: goalsByPeriod(2700, 5400, 1), away: goalsByPeriod(2700, 5400, 2) }, et: { home: goalsByPeriod(5400, Infinity, 1), away: goalsByPeriod(5400, Infinity, 2) } },
     finalStats: stats,
     lineups: extractLineups(rawEvents, players),

@@ -98,6 +98,15 @@ module.exports = {
       restart_delay: 3000,
     },
     {
+      name: "matchflash-archive",
+      script: "npx",
+      args: "tsx src/auto-archive.ts",
+      cwd: "$SERVER_DIR",
+      autorestart: true,
+      restart_delay: 5000,
+      max_restarts: 999,
+    },
+    {
       name: "cloudflare-tunnel",
       script: "cloudflared",
       args: "tunnel --url http://localhost:$PORT --no-autoupdate",

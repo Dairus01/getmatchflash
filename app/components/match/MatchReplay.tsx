@@ -37,7 +37,7 @@ function VerificationPanel({ match }: { match: MatchData }) {
 }
 
 export default function MatchReplay({ match, isLive, market }: { match: MatchData, isLive?: boolean, market?: { home: number; draw: number; away: number } }) {
-  const displayMarket = market || match.market || { home: 45, draw: 25, away: 30 };
+  const fallbackMarket = market || match.market || { home: 50, draw: 25, away: 25 };
   const [elapsed, setElapsed] = useState(isLive ? match.maxSec : 0);
   const [playing, setPlaying] = useState(false);
   const [speed, setSpeed] = useState<Speed>(10);
@@ -98,6 +98,24 @@ export default function MatchReplay({ match, isLive, market }: { match: MatchDat
   const complete = elapsed >= match.maxSec;
   const mode = complete ? (isLive ? "Live" : "Complete") : playing ? `Replaying at ${speed}×` : elapsed ? "Paused" : "Ready";
   const probabilityDelta = current.probability - previousProbability;
+
+  // Dynamic probability: find the closest probAfter value at or before the current elapsed time
+  const dynamicMarket = (() => {
+    const visibleEvents = match.events.filter(e => e.sec <= elapsed && e.probAfter !== undefined);
+    if (!visibleEvents.length) return fallbackMarket;
+    const lastEvent = visibleEvents[visibleEvents.length - 1];
+    const homeProb = lastEvent.probAfter!;
+    // Distribute remaining probability across draw and away proportionally
+    const remaining = 100 - homeProb;
+    // Use fallback ratios for draw/away split
+    const fallbackDrawRatio = fallbackMarket.draw / Math.max(1, fallbackMarket.draw + fallbackMarket.away);
+    return {
+      home: homeProb,
+      draw: Math.round(remaining * fallbackDrawRatio),
+      away: Math.round(remaining * (1 - fallbackDrawRatio)),
+    };
+  })();
+  const displayMarket = dynamicMarket;
 
   return <div className="mf-match-page">
     <Link href="/" className="mf-back-link">← Archive</Link>

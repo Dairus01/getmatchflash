@@ -174,17 +174,27 @@ function latestEvent(database: Database.Database, fixtureId: number) {
 
 function recordFrom(database: Database.Database, fixture: typeof CONFIRMED_FIXTURES[number], payload?: TxlineFixture): FixtureRecord {
   const kickoffAt = kickoffOf(payload ?? {}, fixture.kickoffAt);
-  const status = stateOf(payload ?? {}, kickoffAt);
+  let status = stateOf(payload ?? {}, kickoffAt);
   const homeTeam = fixtureName(payload ?? {}, "Participant1", fixture.homeTeam);
   const awayTeam = fixtureName(payload ?? {}, "Participant2", fixture.awayTeam);
   
+  // Override status if we have a game_finalised event in the database
+  const finalisedCount = (database.prepare("SELECT COUNT(*) AS c FROM txline_events WHERE fixture_id = ? AND source = 'scores' AND payload LIKE '%game_finalised%'").get(fixture.fixtureId) as { c: number }).c;
+  if (finalisedCount > 0) status = "completed";
+
   const eventRows = database.prepare("SELECT payload FROM txline_events WHERE fixture_id = ? ORDER BY id ASC").all(fixture.fixtureId) as EventRow[];
   const rawEvents = eventRows.map((r) => {
     try { return JSON.parse(r.payload); } catch { return null; }
   }).filter(Boolean);
   
+  // Fetch 1X2 odds events for real probability data
+  const oddsRows = database.prepare("SELECT payload FROM txline_events WHERE fixture_id = ? AND source = 'odds' AND payload LIKE '%1X2_PARTICIPANT_RESULT%' ORDER BY id ASC").all(fixture.fixtureId) as EventRow[];
+  const oddsEvents = oddsRows.map((r) => {
+    try { return JSON.parse(r.payload); } catch { return null; }
+  }).filter(Boolean);
+
   const events = parseTimeline(rawEvents, { home: homeTeam, away: awayTeam }).slice(-20);
-  const replayData = status !== "upcoming" ? buildLiveMatchData(rawEvents, { fixtureId: fixture.fixtureId, homeTeam, awayTeam, kickoffAt: fixture.kickoffAt }) : null;
+  const replayData = status !== "upcoming" ? buildLiveMatchData(rawEvents, { fixtureId: fixture.fixtureId, homeTeam, awayTeam, kickoffAt: fixture.kickoffAt }, oddsEvents) : null;
 
   return {
     fixtureId: fixture.fixtureId,
