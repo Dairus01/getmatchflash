@@ -11,6 +11,7 @@ import LineupPanel from "./LineupPanel";
 import TrustMark from "../TrustMark";
 import CountryFlag from "../CountryFlag";
 import { countryCode } from "../../../lib/flags";
+import SocialLinks from "../SocialLinks";
 
 type Speed = 1 | 2 | 10 | 20 | 60;
 type Tab = "timeline" | "lineups" | "stats" | "verification";
@@ -35,17 +36,19 @@ function VerificationPanel({ match }: { match: MatchData }) {
   </section>;
 }
 
-export default function MatchReplay({ match }: { match: MatchData }) {
-  const [elapsed, setElapsed] = useState(0);
+export default function MatchReplay({ match, isLive, market }: { match: MatchData, isLive?: boolean, market?: { home: number; draw: number; away: number } }) {
+  const displayMarket = market || match.market || { home: 45, draw: 25, away: 30 };
+  const [elapsed, setElapsed] = useState(isLive ? match.maxSec : 0);
   const [playing, setPlaying] = useState(false);
   const [speed, setSpeed] = useState<Speed>(10);
   const [tab, setTab] = useState<Tab>("timeline");
   const [previousProbability, setPreviousProbability] = useState(50);
   const animation = useRef<number | undefined>(undefined);
   const lastTick = useRef<number | undefined>(undefined);
-  const elapsedRef = useRef(0);
+  const elapsedRef = useRef(isLive ? match.maxSec : 0);
   const playingRef = useRef(false);
   const speedRef = useRef<Speed>(10);
+  const previousMaxSec = useRef(match.maxSec);
 
   useEffect(() => { playingRef.current = playing; }, [playing]);
   useEffect(() => { speedRef.current = speed; }, [speed]);
@@ -72,6 +75,14 @@ export default function MatchReplay({ match }: { match: MatchData }) {
     if (next >= match.maxSec) setPlaying(false);
   };
   useEffect(() => {
+    if (isLive && match.maxSec > previousMaxSec.current) {
+      if (elapsedRef.current >= previousMaxSec.current) {
+        seek(match.maxSec);
+      }
+      previousMaxSec.current = match.maxSec;
+    }
+  }, [match.maxSec, isLive]);
+  useEffect(() => {
     const tick = (time: number) => {
       if (playingRef.current) {
         if (lastTick.current !== undefined) seek(elapsedRef.current + ((time - lastTick.current) / 1000) * speedRef.current);
@@ -85,7 +96,7 @@ export default function MatchReplay({ match }: { match: MatchData }) {
 
   const current = stateAt(elapsed);
   const complete = elapsed >= match.maxSec;
-  const mode = complete ? "Complete" : playing ? `Replaying at ${speed}×` : elapsed ? "Paused" : "Ready";
+  const mode = complete ? (isLive ? "Live" : "Complete") : playing ? `Replaying at ${speed}×` : elapsed ? "Paused" : "Ready";
   const probabilityDelta = current.probability - previousProbability;
 
   return <div className="mf-match-page">
@@ -98,11 +109,30 @@ export default function MatchReplay({ match }: { match: MatchData }) {
     </section>
     <div className="mf-content-grid">
       <aside>
-        <section className="mf-chart-panel">
-          <p>{match.home} estimated match-momentum probability</p>
-          <strong>{current.probability}% {probabilityDelta !== 0 && <small className={probabilityDelta > 0 ? "mf-positive" : "mf-negative"}>{probabilityDelta > 0 ? "▲" : "▼"} {Math.abs(probabilityDelta)} pts</small>}</strong>
-          <WinProbabilityChart match={match} elapsed={elapsed} probability={current.probability} />
-          <footer><span>Kickoff</span><span>{formatClock(elapsed)}</span></footer>
+        <section className="mf-live-market" style={{ padding: "20px", border: "1px solid var(--mf-border)", borderRadius: "15px", background: "var(--mf-surface)" }}>
+          <p style={{ margin: "0 0 20px", color: "var(--mf-market)", fontSize: "9px", fontFamily: "var(--font-mono)", fontWeight: 600, letterSpacing: "0.1em", textTransform: "uppercase" }}>Live probability</p>
+          <div className="mf-live-probabilities" style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: "12px" }}>
+            <div style={{ display: "grid", gap: "5px" }}>
+              <strong style={{ color: "var(--mf-text)", fontSize: "27px", fontFamily: "var(--font-mono)", fontWeight: 700 }}>{displayMarket.home}%</strong>
+              <span style={{ color: "var(--mf-text-muted)", fontSize: "11px" }}>{match.home} win</span>
+              <i style={{ display: "block", height: "6px", background: "var(--mf-surface-2)", borderRadius: "999px" }}><em style={{ display: "block", height: "100%", background: "var(--mf-market)", borderRadius: "inherit", width: `${displayMarket.home}%` }} /></i>
+            </div>
+            <div style={{ display: "grid", gap: "5px" }}>
+              <strong style={{ color: "var(--mf-text)", fontSize: "27px", fontFamily: "var(--font-mono)", fontWeight: 700 }}>{displayMarket.draw}%</strong>
+              <span style={{ color: "var(--mf-text-muted)", fontSize: "11px" }}>Draw</span>
+              <i style={{ display: "block", height: "6px", background: "var(--mf-surface-2)", borderRadius: "999px" }}><em className="mf-market-fill-draw" style={{ display: "block", height: "100%", background: "var(--mf-flash)", borderRadius: "inherit", width: `${displayMarket.draw}%` }} /></i>
+            </div>
+            <div style={{ display: "grid", gap: "5px" }}>
+              <strong style={{ color: "var(--mf-text)", fontSize: "27px", fontFamily: "var(--font-mono)", fontWeight: 700 }}>{displayMarket.away}%</strong>
+              <span style={{ color: "var(--mf-text-muted)", fontSize: "11px" }}>{match.away} win</span>
+              <i style={{ display: "block", height: "6px", background: "var(--mf-surface-2)", borderRadius: "999px" }}><em className="mf-market-fill-away" style={{ display: "block", height: "100%", background: "var(--mf-positive)", borderRadius: "inherit", width: `${displayMarket.away}%` }} /></i>
+            </div>
+          </div>
+          <div className="mf-momentum-rail" style={{ display: "grid", gridTemplateColumns: "auto 1fr auto", alignItems: "center", gap: "9px", marginTop: "32px", fontSize: "10px", color: "var(--mf-text-faint)" }}>
+            <span>Momentum</span>
+            <i style={{ height: "6px", background: "var(--mf-surface-2)", borderRadius: "999px" }}><em style={{ display: "block", height: "100%", background: "var(--mf-market)", borderRadius: "inherit", width: `${displayMarket.home}%` }} /></i>
+            <b style={{ color: "var(--mf-text-muted)", fontWeight: 500 }}>{match.home}</b>
+          </div>
         </section>
         <section className="mf-controls"><ReplayControls match={match} elapsed={elapsed} playing={playing} complete={complete} speed={speed} onSeek={seek} onPlayingChange={setPlaying} onSpeedChange={setSpeed} formatTime={formatTime} /></section>
       </aside>
@@ -119,5 +149,8 @@ export default function MatchReplay({ match }: { match: MatchData }) {
         {tab === "verification" && <VerificationPanel match={match} />}
       </section>
     </div>
+    <footer style={{ marginTop: "60px", padding: "40px 0", borderTop: "1px solid var(--mf-border)" }}>
+      <SocialLinks />
+    </footer>
   </div>;
 }

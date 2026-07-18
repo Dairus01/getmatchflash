@@ -1,4 +1,6 @@
 import Database from "better-sqlite3";
+import { parseTimeline, buildLiveMatchData } from "./event-parser";
+import type { MatchEvent, MatchData } from "../../app/data/matches";
 
 export type MatchStatus = "upcoming" | "live" | "completed";
 export type PredictionChoice = "home" | "draw" | "away";
@@ -13,6 +15,8 @@ export type FixtureRecord = {
   market: { home: number; draw: number; away: number };
   score: { home: number; away: number };
   latestEvent: string | null;
+  events: MatchEvent[];
+  replayData: MatchData | null;
 };
 
 export const CONFIRMED_FIXTURES = [
@@ -105,7 +109,8 @@ function stateOf(payload: TxlineFixture, kickoffAt: string): MatchStatus {
   if (/live|progress|half.?time|playing/.test(state) || [2, 3].includes(numberValue(payload.GameState, -1))) return "live";
   const kickoffMilliseconds = Date.parse(kickoffAt);
   if (kickoffMilliseconds > Date.now()) return "upcoming";
-  return Date.now() - kickoffMilliseconds > 120 * 60 * 1000 ? "completed" : "live";
+  // Increased fallback to 24 hours to handle long-running devnet simulations
+  return Date.now() - kickoffMilliseconds > 24 * 60 * 60 * 1000 ? "completed" : "live";
 }
 
 function normalizeMarket(values: unknown, fallback: { home: number; draw: number; away: number }) {
@@ -137,10 +142,24 @@ function scoreOf(payload: TxlineFixture) {
   const score = (payload.Score ?? payload.score) as Record<string, unknown> | undefined;
   const home = (score?.Participant1 ?? score?.home) as Record<string, unknown> | undefined;
   const away = (score?.Participant2 ?? score?.away) as Record<string, unknown> | undefined;
+  const homeTotal = home?.Total as Record<string, unknown> | undefined;
+  const awayTotal = away?.Total as Record<string, unknown> | undefined;
   return {
-    home: Math.max(0, Math.trunc(numberValue(payload.HomeScore ?? home?.Goals ?? home?.Total, 0))),
-    away: Math.max(0, Math.trunc(numberValue(payload.AwayScore ?? away?.Goals ?? away?.Total, 0))),
+    home: Math.max(0, Math.trunc(numberValue(payload.HomeScore ?? home?.Goals ?? homeTotal?.Goals, 0))),
+    away: Math.max(0, Math.trunc(numberValue(payload.AwayScore ?? away?.Goals ?? awayTotal?.Goals, 0))),
   };
+}
+
+function latestScore(database: Database.Database, fixtureId: number, payload: TxlineFixture) {
+  const row = database.prepare("SELECT payload FROM txline_events WHERE fixture_id = ? AND source = 'scores' AND payload LIKE '%\"Score\"%' ORDER BY id DESC LIMIT 1").get(fixtureId) as EventRow | undefined;
+  if (row) {
+    try {
+      const eventPayload = JSON.parse(row.payload) as TxlineFixture;
+      const s = scoreOf(eventPayload);
+      if (s.home > 0 || s.away > 0 || Object.keys(eventPayload.Score || {}).length > 0) return s;
+    } catch {}
+  }
+  return scoreOf(payload);
 }
 
 function latestEvent(database: Database.Database, fixtureId: number) {
@@ -156,16 +175,29 @@ function latestEvent(database: Database.Database, fixtureId: number) {
 function recordFrom(database: Database.Database, fixture: typeof CONFIRMED_FIXTURES[number], payload?: TxlineFixture): FixtureRecord {
   const kickoffAt = kickoffOf(payload ?? {}, fixture.kickoffAt);
   const status = stateOf(payload ?? {}, kickoffAt);
+  const homeTeam = fixtureName(payload ?? {}, "Participant1", fixture.homeTeam);
+  const awayTeam = fixtureName(payload ?? {}, "Participant2", fixture.awayTeam);
+  
+  const eventRows = database.prepare("SELECT payload FROM txline_events WHERE fixture_id = ? ORDER BY id ASC").all(fixture.fixtureId) as EventRow[];
+  const rawEvents = eventRows.map((r) => {
+    try { return JSON.parse(r.payload); } catch { return null; }
+  }).filter(Boolean);
+  
+  const events = parseTimeline(rawEvents, { home: homeTeam, away: awayTeam }).slice(-20);
+  const replayData = status !== "upcoming" ? buildLiveMatchData(rawEvents, { fixtureId: fixture.fixtureId, homeTeam, awayTeam, kickoffAt: fixture.kickoffAt }) : null;
+
   return {
     fixtureId: fixture.fixtureId,
-    homeTeam: fixtureName(payload ?? {}, "Participant1", fixture.homeTeam),
-    awayTeam: fixtureName(payload ?? {}, "Participant2", fixture.awayTeam),
+    homeTeam,
+    awayTeam,
     competition: String(payload?.CompetitionName ?? payload?.Competition ?? fixture.competition),
     kickoffAt,
     status,
     market: latestOdds(database, fixture.fixtureId, fixture.fallbackMarket),
-    score: scoreOf(payload ?? {}),
+    score: latestScore(database, fixture.fixtureId, payload ?? {}),
     latestEvent: latestEvent(database, fixture.fixtureId),
+    events,
+    replayData,
   };
 }
 

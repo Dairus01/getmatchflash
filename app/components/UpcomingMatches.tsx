@@ -6,8 +6,8 @@ import CountryFlag from "./CountryFlag";
 import { fetchMatches, type MatchSnapshot } from "../lib/match-api";
 
 const fallbackFixtures: MatchSnapshot[] = [
-  { fixtureId: 18257865, homeTeam: "France", awayTeam: "England", competition: "World Cup 2026", kickoffAt: "2026-07-18T19:00:00.000Z", status: "upcoming", market: { home: 0, draw: 0, away: 0 }, score: { home: 0, away: 0 }, latestEvent: null, community: { total: 0, counts: { home: 0, draw: 0, away: 0 }, percentages: { home: 0, draw: 0, away: 0 } } },
-  { fixtureId: 18257739, homeTeam: "Spain", awayTeam: "Argentina", competition: "World Cup 2026", kickoffAt: "2026-07-19T19:00:00.000Z", status: "upcoming", market: { home: 0, draw: 0, away: 0 }, score: { home: 0, away: 0 }, latestEvent: null, community: { total: 0, counts: { home: 0, draw: 0, away: 0 }, percentages: { home: 0, draw: 0, away: 0 } } },
+  { fixtureId: 18257865, homeTeam: "France", awayTeam: "England", competition: "World Cup 2026", kickoffAt: "2026-07-18T19:00:00.000Z", status: "upcoming", market: { home: 0, draw: 0, away: 0 }, score: { home: 0, away: 0 }, latestEvent: null, community: { total: 0, counts: { home: 0, draw: 0, away: 0 }, percentages: { home: 0, draw: 0, away: 0 } }, events: [], replayData: null },
+  { fixtureId: 18257739, homeTeam: "Spain", awayTeam: "Argentina", competition: "World Cup 2026", kickoffAt: "2026-07-19T19:00:00.000Z", status: "upcoming", market: { home: 0, draw: 0, away: 0 }, score: { home: 0, away: 0 }, latestEvent: null, community: { total: 0, counts: { home: 0, draw: 0, away: 0 }, percentages: { home: 0, draw: 0, away: 0 } }, events: [], replayData: null },
 ];
 
 function formatKickoff(value: string) {

@@ -1,3 +1,5 @@
+import type { MatchEvent, MatchData } from "../data/matches";
+
 export type MatchStatus = "upcoming" | "live" | "completed";
 export type PredictionChoice = "home" | "draw" | "away";
 
@@ -19,6 +21,8 @@ export type MatchSnapshot = {
   score: { home: number; away: number };
   latestEvent: string | null;
   community: CommunitySummary;
+  events: MatchEvent[];
+  replayData: MatchData | null;
 };
 
 const API_URL = (process.env.NEXT_PUBLIC_API_URL || "http://localhost:3001").replace(/\/$/, "");

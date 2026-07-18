@@ -5,7 +5,7 @@ export type MatchAction = 'prematch_info' | 'jersey' | 'kickoff_team' | 'kickoff
 export interface LineupPlayer { id: number; name: string; number: string; positionId: 34 | 35 | 36 | 37; dob: string | null; photo?: string; goals: number; yellowCards: number; redCards: number; }
 export interface TeamLineup { formation: string; starters: LineupPlayer[]; bench: LineupPlayer[]; }
 export interface MatchEvent { id: string; sec: number; participant: 1 | 2; action: MatchAction; headline: string; sub?: string; scorer?: string; goalType?: string; shotOutcome?: 'OnTarget' | 'OffTarget' | 'Blocked' | 'Woodwork'; cardPlayer?: string; playerIn?: string; playerOut?: string; scoreAfter?: [number, number]; probAfter?: number; addedMinutes?: number; jerseyColor?: string; varType?: string; varOutcome?: string; injuryPlayer?: string; injuryOutcome?: string; }
-export interface MatchData { id: number; home: string; away: string; date: string; maxSec: number; totalEvents: number; finalScore: [number, number]; periodBreakdown: { h1: { home: number; away: number }; h2: { home: number; away: number }; et: { home: number; away: number } }; finalStats: { home: { shots: number; shotsOnTarget: number; possession: number; yellowCards: number; redCards: number; corners: number }; away: { shots: number; shotsOnTarget: number; possession: number; yellowCards: number; redCards: number; corners: number } }; lineups?: { home: TeamLineup; away: TeamLineup }; events: MatchEvent[]; }
+export interface MatchData { id: number; home: string; away: string; date: string; maxSec: number; totalEvents: number; finalScore: [number, number]; market?: { home: number; draw: number; away: number }; periodBreakdown: { h1: { home: number; away: number }; h2: { home: number; away: number }; et: { home: number; away: number } }; finalStats: { home: { shots: number; shotsOnTarget: number; possession: number; yellowCards: number; redCards: number; corners: number }; away: { shots: number; shotsOnTarget: number; possession: number; yellowCards: number; redCards: number; corners: number } }; lineups?: { home: TeamLineup; away: TeamLineup }; events: MatchEvent[]; }
 
 export const MATCHES: MatchData[] = [
   {
@@ -19,6 +19,11 @@ export const MATCHES: MatchData[] = [
       3,
       2
     ],
+    "market": {
+      "home": 50,
+      "draw": 0,
+      "away": 50
+    },
     "periodBreakdown": {
       "h1": {
         "home": 1,
@@ -3040,6 +3045,11 @@ export const MATCHES: MatchData[] = [
       3,
       2
     ],
+    "market": {
+      "home": 50,
+      "draw": 0,
+      "away": 50
+    },
     "periodBreakdown": {
       "h1": {
         "home": 0,
@@ -4130,6 +4140,11 @@ export const MATCHES: MatchData[] = [
       3,
       1
     ],
+    "market": {
+      "home": 50,
+      "draw": 0,
+      "away": 50
+    },
     "periodBreakdown": {
       "h1": {
         "home": 1,
@@ -7187,6 +7202,11 @@ export const MATCHES: MatchData[] = [
       1,
       1
     ],
+    "market": {
+      "home": 50,
+      "draw": 0,
+      "away": 50
+    },
     "periodBreakdown": {
       "h1": {
         "home": 0,
@@ -10098,6 +10118,11 @@ export const MATCHES: MatchData[] = [
       3,
       2
     ],
+    "market": {
+      "home": 50,
+      "draw": 0,
+      "away": 50
+    },
     "periodBreakdown": {
       "h1": {
         "home": 0,
@@ -12989,6 +13014,11 @@ export const MATCHES: MatchData[] = [
       2,
       1
     ],
+    "market": {
+      "home": 50,
+      "draw": 0,
+      "away": 50
+    },
     "periodBreakdown": {
       "h1": {
         "home": 0,
@@ -15417,6 +15447,11 @@ export const MATCHES: MatchData[] = [
       1,
       2
     ],
+    "market": {
+      "home": 50,
+      "draw": 0,
+      "away": 50
+    },
     "periodBreakdown": {
       "h1": {
         "home": 0,
@@ -17720,6 +17755,11 @@ export const MATCHES: MatchData[] = [
       0,
       3
     ],
+    "market": {
+      "home": 50,
+      "draw": 0,
+      "away": 50
+    },
     "periodBreakdown": {
       "h1": {
         "home": 0,
@@ -19955,6 +19995,11 @@ export const MATCHES: MatchData[] = [
       1,
       0
     ],
+    "market": {
+      "home": 50,
+      "draw": 0,
+      "away": 50
+    },
     "periodBreakdown": {
       "h1": {
         "home": 1,
@@ -22129,6 +22174,11 @@ export const MATCHES: MatchData[] = [
       1,
       2
     ],
+    "market": {
+      "home": 50,
+      "draw": 0,
+      "away": 50
+    },
     "periodBreakdown": {
       "h1": {
         "home": 0,
@@ -24382,6 +24432,11 @@ export const MATCHES: MatchData[] = [
       2,
       1
     ],
+    "market": {
+      "home": 50,
+      "draw": 0,
+      "away": 50
+    },
     "periodBreakdown": {
       "h1": {
         "home": 0,
@@ -27269,6 +27324,11 @@ export const MATCHES: MatchData[] = [
       2,
       0
     ],
+    "market": {
+      "home": 50,
+      "draw": 0,
+      "away": 50
+    },
     "periodBreakdown": {
       "h1": {
         "home": 0,
@@ -29891,6 +29951,11 @@ export const MATCHES: MatchData[] = [
       0,
       2
     ],
+    "market": {
+      "home": 50,
+      "draw": 0,
+      "away": 50
+    },
     "periodBreakdown": {
       "h1": {
         "home": 0,
@@ -32305,6 +32370,11 @@ export const MATCHES: MatchData[] = [
       3,
       0
     ],
+    "market": {
+      "home": 50,
+      "draw": 0,
+      "away": 50
+    },
     "periodBreakdown": {
       "h1": {
         "home": 1,
@@ -34571,6 +34641,11 @@ export const MATCHES: MatchData[] = [
       1,
       1
     ],
+    "market": {
+      "home": 50,
+      "draw": 0,
+      "away": 50
+    },
     "periodBreakdown": {
       "h1": {
         "home": 0,
@@ -37223,6 +37298,11 @@ export const MATCHES: MatchData[] = [
       1,
       2
     ],
+    "market": {
+      "home": 50,
+      "draw": 0,
+      "away": 50
+    },
     "periodBreakdown": {
       "h1": {
         "home": 0,
@@ -39772,6 +39852,11 @@ export const MATCHES: MatchData[] = [
       2,
       0
     ],
+    "market": {
+      "home": 50,
+      "draw": 0,
+      "away": 50
+    },
     "periodBreakdown": {
       "h1": {
         "home": 2,
@@ -42149,6 +42234,11 @@ export const MATCHES: MatchData[] = [
       2,
       3
     ],
+    "market": {
+      "home": 50,
+      "draw": 0,
+      "away": 50
+    },
     "periodBreakdown": {
       "h1": {
         "home": 1,
@@ -44695,6 +44785,11 @@ export const MATCHES: MatchData[] = [
       1,
       1
     ],
+    "market": {
+      "home": 50,
+      "draw": 0,
+      "away": 50
+    },
     "periodBreakdown": {
       "h1": {
         "home": 0,
@@ -47351,6 +47446,11 @@ export const MATCHES: MatchData[] = [
       1,
       2
     ],
+    "market": {
+      "home": 50,
+      "draw": 0,
+      "away": 50
+    },
     "periodBreakdown": {
       "h1": {
         "home": 1,
@@ -49809,6 +49909,11 @@ export const MATCHES: MatchData[] = [
       0,
       1
     ],
+    "market": {
+      "home": 50,
+      "draw": 0,
+      "away": 50
+    },
     "periodBreakdown": {
       "h1": {
         "home": 0,
@@ -52073,6 +52178,11 @@ export const MATCHES: MatchData[] = [
       2,
       1
     ],
+    "market": {
+      "home": 50,
+      "draw": 0,
+      "away": 50
+    },
     "periodBreakdown": {
       "h1": {
         "home": 0,
@@ -54401,6 +54511,11 @@ export const MATCHES: MatchData[] = [
       0,
       1
     ],
+    "market": {
+      "home": 50,
+      "draw": 0,
+      "away": 50
+    },
     "periodBreakdown": {
       "h1": {
         "home": 0,
@@ -56638,6 +56753,11 @@ export const MATCHES: MatchData[] = [
       0,
       1
     ],
+    "market": {
+      "home": 50,
+      "draw": 0,
+      "away": 50
+    },
     "periodBreakdown": {
       "h1": {
         "home": 0,
@@ -58787,6 +58907,11 @@ export const MATCHES: MatchData[] = [
       3,
       0
     ],
+    "market": {
+      "home": 50,
+      "draw": 0,
+      "away": 50
+    },
     "periodBreakdown": {
       "h1": {
         "home": 1,
@@ -60996,6 +61121,11 @@ export const MATCHES: MatchData[] = [
       2,
       1
     ],
+    "market": {
+      "home": 50,
+      "draw": 0,
+      "away": 50
+    },
     "periodBreakdown": {
       "h1": {
         "home": 1,
@@ -63399,6 +63529,11 @@ export const MATCHES: MatchData[] = [
       2,
       0
     ],
+    "market": {
+      "home": 50,
+      "draw": 0,
+      "away": 50
+    },
     "periodBreakdown": {
       "h1": {
         "home": 1,
@@ -65706,6 +65841,11 @@ export const MATCHES: MatchData[] = [
       0,
       0
     ],
+    "market": {
+      "home": 50,
+      "draw": 0,
+      "away": 50
+    },
     "periodBreakdown": {
       "h1": {
         "home": 0,
@@ -68528,6 +68668,11 @@ export const MATCHES: MatchData[] = [
       2,
       0
     ],
+    "market": {
+      "home": 50,
+      "draw": 0,
+      "away": 50
+    },
     "periodBreakdown": {
       "h1": {
         "home": 1,
@@ -70875,6 +71020,11 @@ export const MATCHES: MatchData[] = [
       1,
       4
     ],
+    "market": {
+      "home": 50,
+      "draw": 0,
+      "away": 50
+    },
     "periodBreakdown": {
       "h1": {
         "home": 1,
