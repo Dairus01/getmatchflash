@@ -138,7 +138,7 @@ The result is a sports experience with an audit trail: every moment has a place 
 
 [![MatchFlash Demo](https://img.youtube.com/vi/o4CqM7dh-p4/maxresdefault.jpg)](https://youtu.be/o4CqM7dh-p4)
 
-▶ Click the thumbnail above to watch the full demo on YouTube. (A local MP4 is also available in the repository at `./public/matchflash-demo.mp4`).
+▶ Click the thumbnail above to watch the full demo on YouTube.
 
 ## What makes it different
 
