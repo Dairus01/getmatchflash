@@ -134,6 +134,12 @@ The result is a sports experience with an audit trail: every moment has a place 
 **Lineups & Formations**
 ![Lineups View](./public/lineups-view.png)
 
+### Demo
+
+[![MatchFlash Demo](https://img.youtube.com/vi/o4CqM7dh-p4/maxresdefault.jpg)](https://youtu.be/o4CqM7dh-p4)
+
+▶ Click the thumbnail above to watch the full demo on YouTube. (A local MP4 is also available in the repository at `./public/matchflash-demo.mp4`).
+
 ## What makes it different
 
 Flashscore, SofaScore, ESPN, and traditional score apps are optimized for the present: live scores, current tables, alerts, and quick match facts. MatchFlash is designed for the moment after the moment.
@@ -382,7 +388,6 @@ As the archive grows, the same event model can support searchable tactical patte
 
 | Resource | Link |
 | --- | --- |
-| Demo video | [YouTube Video](https://youtu.be/o4CqM7dh-p4) <br/> [Local MP4](./public/matchflash-demo.mp4) |
 | Live application | [https://getmatchflash.vercel.app/](https://getmatchflash.vercel.app/) |
 | Source code | [https://github.com/Dairus01/getmatchflash](https://github.com/Dairus01/getmatchflash) |
 | TxLINE OpenAPI contract | [`docs/txline-openapi.yaml`](./docs/txline-openapi.yaml) |
