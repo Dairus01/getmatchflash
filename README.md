@@ -26,6 +26,12 @@
 
 > Built for the **TxLINE World Cup Hackathon 2026**.
 
+### Demo
+
+[![MatchFlash Demo](./public/matchflash-demo-thumbnail.png)](https://youtu.be/o4CqM7dh-p4)
+
+▶ Click the thumbnail above to watch the full demo on YouTube.
+
 ## Table of contents
 
 - [The short version](#the-short-version)
@@ -134,11 +140,6 @@ The result is a sports experience with an audit trail: every moment has a place 
 **Lineups & Formations**
 ![Lineups View](./public/lineups-view.png)
 
-### Demo
-
-[![MatchFlash Demo](https://img.youtube.com/vi/o4CqM7dh-p4/maxresdefault.jpg)](https://youtu.be/o4CqM7dh-p4)
-
-▶ Click the thumbnail above to watch the full demo on YouTube.
 
 ## What makes it different
 
