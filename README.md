@@ -357,7 +357,6 @@ Together, these choices make MatchFlash feel less like a score utility and more 
 | Live application | [https://getmatchflash.vercel.app/](https://getmatchflash.vercel.app/) |
 | Source code | [https://github.com/Dairus01/getmatchflash](https://github.com/Dairus01/getmatchflash) |
 | TxLINE OpenAPI contract | [`docs/txline-openapi.yaml`](./docs/txline-openapi.yaml) |
-| Hackathon submission | _Pending submission_ |
 
 The intended demo flow is short and legible:
 
