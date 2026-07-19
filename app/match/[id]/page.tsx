@@ -33,23 +33,13 @@ export default async function MatchPage({ params }: { params: Promise<{ id: stri
     );
   }
 
-  // For confirmed fixtures not yet archived, use the live/upcoming experience
-  if (fixtureId === 18257865 || fixtureId === 18257739) {
-    return (
-      <MatchLayout>
-        <Suspense fallback={<div className="mf-experience-page"><p className="mf-loading-line" /> <p className="mf-loading-line mf-loading-line-short" /></div>}>
-          <LiveMatchLoader fixtureId={fixtureId} />
-        </Suspense>
-      </MatchLayout>
-    );
-  }
-
+  // For fixtures not yet archived, use the live/upcoming experience.
+  // The LiveMatchLoader will handle fetching from the API and showing "Match not found" if it truly doesn't exist.
   return (
     <MatchLayout>
-      <div className="mf-match-page mf-not-found">
-        <p>Match not found.</p>
-        <Link href="/" className="mf-back-link">← Back to archive</Link>
-      </div>
+      <Suspense fallback={<div className="mf-experience-page"><p className="mf-loading-line" /> <p className="mf-loading-line mf-loading-line-short" /></div>}>
+        <LiveMatchLoader fixtureId={fixtureId} />
+      </Suspense>
     </MatchLayout>
   );
 }

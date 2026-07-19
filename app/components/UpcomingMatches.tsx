@@ -5,10 +5,7 @@ import { useEffect, useState } from "react";
 import CountryFlag from "./CountryFlag";
 import { fetchMatches, type MatchSnapshot } from "../lib/match-api";
 
-const fallbackFixtures: MatchSnapshot[] = [
-  { fixtureId: 18257865, homeTeam: "France", awayTeam: "England", competition: "World Cup 2026", kickoffAt: "2026-07-18T19:00:00.000Z", status: "upcoming", market: { home: 0, draw: 0, away: 0 }, score: { home: 0, away: 0 }, latestEvent: null, community: { total: 0, counts: { home: 0, draw: 0, away: 0 }, percentages: { home: 0, draw: 0, away: 0 } }, events: [], replayData: null },
-  { fixtureId: 18257739, homeTeam: "Spain", awayTeam: "Argentina", competition: "World Cup 2026", kickoffAt: "2026-07-19T19:00:00.000Z", status: "upcoming", market: { home: 0, draw: 0, away: 0 }, score: { home: 0, away: 0 }, latestEvent: null, community: { total: 0, counts: { home: 0, draw: 0, away: 0 }, percentages: { home: 0, draw: 0, away: 0 } }, events: [], replayData: null },
-];
+const fallbackFixtures: MatchSnapshot[] = [];
 
 function formatKickoff(value: string) {
   return new Intl.DateTimeFormat("en", { weekday: "short", month: "short", day: "numeric", hour: "numeric", minute: "2-digit" }).format(new Date(value));
@@ -27,7 +24,7 @@ export default function UpcomingMatches() {
 
   useEffect(() => {
     const controller = new AbortController();
-    const load = () => fetchMatches(undefined, controller.signal).then((items) => { const active = items.filter((item) => item.status === "upcoming" || item.status === "live"); if (active.length) setMatches(active); setConnected(true); }).catch(() => undefined);
+    const load = () => fetchMatches("upcoming", controller.signal).then((items) => { const active = items.filter((item) => item.status === "upcoming" || item.status === "live"); setMatches(active); setConnected(true); }).catch(() => undefined);
     void load();
     const timer = window.setInterval(load, 30_000);
     return () => { controller.abort(); window.clearInterval(timer); };
@@ -39,15 +36,21 @@ export default function UpcomingMatches() {
       <p>Predict the next chapter before it happens.</p>
     </div>
     <div className="mf-upcoming-grid">
-      {matches.map((match) => <Link href={`/match/${match.fixtureId}`} className="mf-upcoming-card" key={match.fixtureId}>
-        <div className="mf-upcoming-card-top"><span className="mf-upcoming-status"><i /> {match.status === "live" ? "Live now" : "Upcoming"}</span><span>{match.competition}</span></div>
-        <div className="mf-upcoming-teams">
-          <span><CountryFlag country={match.homeTeam} size="card" />{match.homeTeam}</span>
-          <b>vs</b>
-          <span><CountryFlag country={match.awayTeam} size="card" />{match.awayTeam}</span>
+      {matches.length === 0 ? (
+        <div className="mf-no-upcoming" style={{ gridColumn: "1 / -1", padding: "2rem", textAlign: "center", background: "var(--bg-glass)", borderRadius: "var(--radius-lg)", border: "1px solid var(--border-light)" }}>
+          <p style={{ color: "var(--text-secondary)", fontSize: "1.125rem" }}>{connected ? "There are no upcoming matches available at this time." : "Loading upcoming matches..."}</p>
         </div>
-        <div className="mf-upcoming-card-bottom"><span>{formatKickoff(match.kickoffAt)}</span><strong>{match.status === "live" ? "Open live match" : `Starts in ${countdown(match.kickoffAt)}`}</strong></div>
-      </Link>)}
+      ) : (
+        matches.map((match) => <Link href={`/match/${match.fixtureId}`} className="mf-upcoming-card" key={match.fixtureId}>
+          <div className="mf-upcoming-card-top"><span className="mf-upcoming-status"><i /> {match.status === "live" ? "Live now" : "Upcoming"}</span><span>{match.competition}</span></div>
+          <div className="mf-upcoming-teams">
+            <span><CountryFlag country={match.homeTeam} size="card" />{match.homeTeam}</span>
+            <b>vs</b>
+            <span><CountryFlag country={match.awayTeam} size="card" />{match.awayTeam}</span>
+          </div>
+          <div className="mf-upcoming-card-bottom"><span>{formatKickoff(match.kickoffAt)}</span><strong>{match.status === "live" ? "Open live match" : `Starts in ${countdown(match.kickoffAt)}`}</strong></div>
+        </Link>)
+      )}
     </div>
     <p className={`mf-data-note ${connected ? "mf-data-note-live" : ""}`}><i /> {connected ? "Live from MatchFlash API" : "Fixture schedule cached for preview · API reconnecting"}</p>
   </section>;

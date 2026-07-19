@@ -61577,6 +61577,2727 @@ export const MATCHES: MatchData[] = [
     ]
   },
   {
+    "id": 18257739,
+    "home": "Spain",
+    "away": "Argentina",
+    "date": "Jul 19, 2026",
+    "maxSec": 7502,
+    "totalEvents": 1387,
+    "finalScore": [
+      1,
+      0
+    ],
+    "market": {
+      "home": 50,
+      "draw": 0,
+      "away": 50
+    },
+    "periodBreakdown": {
+      "h1": {
+        "home": 0,
+        "away": 0
+      },
+      "h2": {
+        "home": 0,
+        "away": 0
+      },
+      "et": {
+        "home": 1,
+        "away": 0
+      }
+    },
+    "finalStats": {
+      "home": {
+        "shots": 20,
+        "shotsOnTarget": 12,
+        "possession": 57,
+        "yellowCards": 0,
+        "redCards": 0,
+        "corners": 9
+      },
+      "away": {
+        "shots": 3,
+        "shotsOnTarget": 0,
+        "possession": 43,
+        "yellowCards": 4,
+        "redCards": 1,
+        "corners": 4
+      }
+    },
+    "lineups": {
+      "home": {
+        "formation": "4-4-2",
+        "starters": [
+          {
+            "id": 10008043,
+            "name": "Alex Baena",
+            "number": "15",
+            "positionId": 36,
+            "dob": "2001-07-20",
+            "goals": 0,
+            "yellowCards": 0,
+            "redCards": 0
+          },
+          {
+            "id": 10093448,
+            "name": "Pau Cubarsi",
+            "number": "22",
+            "positionId": 35,
+            "dob": "2007-01-22",
+            "goals": 0,
+            "yellowCards": 0,
+            "redCards": 0
+          },
+          {
+            "id": 409307,
+            "name": "Marc Cucurella Saseta",
+            "number": "24",
+            "positionId": 35,
+            "dob": "1998-07-22",
+            "goals": 0,
+            "yellowCards": 0,
+            "redCards": 0
+          },
+          {
+            "id": 517547,
+            "name": "Rodrigo Hernandez Cascante",
+            "number": "16",
+            "positionId": 36,
+            "dob": "1996-06-22",
+            "goals": 0,
+            "yellowCards": 0,
+            "redCards": 0
+          },
+          {
+            "id": 162407,
+            "name": "Aymeric Laporte",
+            "number": "14",
+            "positionId": 35,
+            "dob": "1994-05-27",
+            "goals": 0,
+            "yellowCards": 0,
+            "redCards": 0
+          },
+          {
+            "id": 464544,
+            "name": "Daniel Olmo",
+            "number": "10",
+            "positionId": 36,
+            "dob": "1998-05-07",
+            "goals": 0,
+            "yellowCards": 0,
+            "redCards": 0
+          },
+          {
+            "id": 463984,
+            "name": "Mikel Oyarzabal Ugarte",
+            "number": "21",
+            "positionId": 37,
+            "dob": "1997-04-21",
+            "goals": 0,
+            "yellowCards": 0,
+            "redCards": 0
+          },
+          {
+            "id": 907005,
+            "name": "Pedro Porro",
+            "number": "12",
+            "positionId": 35,
+            "dob": "1999-09-13",
+            "goals": 0,
+            "yellowCards": 0,
+            "redCards": 0
+          },
+          {
+            "id": 533573,
+            "name": "Fabian Ruiz Pena",
+            "number": "8",
+            "positionId": 36,
+            "dob": "1996-04-03",
+            "goals": 0,
+            "yellowCards": 0,
+            "redCards": 0
+          },
+          {
+            "id": 535724,
+            "name": "Unai Simon Mendibil",
+            "number": "23",
+            "positionId": 34,
+            "dob": "1997-06-11",
+            "goals": 0,
+            "yellowCards": 0,
+            "redCards": 0
+          },
+          {
+            "id": 10040792,
+            "name": "Lamine Yamal",
+            "number": "19",
+            "positionId": 37,
+            "dob": "2007-07-13",
+            "goals": 0,
+            "yellowCards": 0,
+            "redCards": 0
+          }
+        ],
+        "bench": [
+          {
+            "id": 889206,
+            "name": "Eric Garcia Martret",
+            "number": "4",
+            "positionId": 35,
+            "dob": "2001-01-09",
+            "goals": 0,
+            "yellowCards": 0,
+            "redCards": 0
+          },
+          {
+            "id": 10096213,
+            "name": "Joan Garcia",
+            "number": "13",
+            "positionId": 34,
+            "dob": "2001-05-04",
+            "goals": 0,
+            "yellowCards": 0,
+            "redCards": 0
+          },
+          {
+            "id": 516250,
+            "name": "Alejandro Grimaldo Garcia",
+            "number": "3",
+            "positionId": 35,
+            "dob": "1995-09-20",
+            "goals": 0,
+            "yellowCards": 0,
+            "redCards": 0
+          },
+          {
+            "id": 433877,
+            "name": "Borja Iglesias Quintas",
+            "number": "26",
+            "positionId": 37,
+            "dob": "1993-01-17",
+            "goals": 0,
+            "yellowCards": 0,
+            "redCards": 0
+          },
+          {
+            "id": 251153,
+            "name": "Marcos Llorente",
+            "number": "5",
+            "positionId": 35,
+            "dob": "1995-01-30",
+            "goals": 0,
+            "yellowCards": 0,
+            "redCards": 0
+          },
+          {
+            "id": 224293,
+            "name": "Pedro Lopez",
+            "number": "20",
+            "positionId": 36,
+            "dob": "2002-11-25",
+            "goals": 0,
+            "yellowCards": 0,
+            "redCards": 0
+          },
+          {
+            "id": 525288,
+            "name": "Mikel Merino Zazon",
+            "number": "6",
+            "positionId": 36,
+            "dob": "1996-06-22",
+            "goals": 0,
+            "yellowCards": 0,
+            "redCards": 0
+          },
+          {
+            "id": 10234647,
+            "name": "Victor Munoz Villanueva",
+            "number": "25",
+            "positionId": 37,
+            "dob": "2003-07-13",
+            "goals": 0,
+            "yellowCards": 0,
+            "redCards": 0
+          },
+          {
+            "id": 10093452,
+            "name": "Pablo Martin Paez Gavira",
+            "number": "9",
+            "positionId": 36,
+            "dob": "2004-08-05",
+            "goals": 0,
+            "yellowCards": 0,
+            "redCards": 0
+          },
+          {
+            "id": 10096631,
+            "name": "Yeremy Pino",
+            "number": "11",
+            "positionId": 37,
+            "dob": "2002-10-20",
+            "goals": 0,
+            "yellowCards": 0,
+            "redCards": 0
+          },
+          {
+            "id": 10094261,
+            "name": "Marc Pubill",
+            "number": "2",
+            "positionId": 35,
+            "dob": "2003-06-20",
+            "goals": 0,
+            "yellowCards": 0,
+            "redCards": 0
+          },
+          {
+            "id": 10094832,
+            "name": "David Raya Martin",
+            "number": "1",
+            "positionId": 34,
+            "dob": "1995-09-15",
+            "goals": 0,
+            "yellowCards": 0,
+            "redCards": 0
+          },
+          {
+            "id": 889209,
+            "name": "Ferran Torres Garcia",
+            "number": "7",
+            "positionId": 37,
+            "dob": "2000-02-29",
+            "goals": 1,
+            "yellowCards": 0,
+            "redCards": 0
+          },
+          {
+            "id": 10035611,
+            "name": "Nico Williams",
+            "number": "17",
+            "positionId": 37,
+            "dob": "2002-07-12",
+            "goals": 0,
+            "yellowCards": 0,
+            "redCards": 0
+          },
+          {
+            "id": 1109410,
+            "name": "Martin Zubimendi Ibanez",
+            "number": "18",
+            "positionId": 36,
+            "dob": "1999-02-02",
+            "goals": 0,
+            "yellowCards": 0,
+            "redCards": 0
+          }
+        ]
+      },
+      "away": {
+        "formation": "4-3-3",
+        "starters": [
+          {
+            "id": 1072568,
+            "name": "Julian Alvarez",
+            "number": "9",
+            "positionId": 37,
+            "dob": "2000-01-31",
+            "goals": 0,
+            "yellowCards": 0,
+            "redCards": 0
+          },
+          {
+            "id": 10093937,
+            "name": "Rodrigo De Paul",
+            "number": "7",
+            "positionId": 36,
+            "dob": "1994-05-24",
+            "goals": 0,
+            "yellowCards": 0,
+            "redCards": 0
+          },
+          {
+            "id": 10035609,
+            "name": "Enzo Fernandez",
+            "number": "24",
+            "positionId": 36,
+            "dob": "2001-01-17",
+            "goals": 0,
+            "yellowCards": 1,
+            "redCards": 1
+          },
+          {
+            "id": 1027429,
+            "name": "Nicolas Ivan Gonzalez",
+            "number": "15",
+            "positionId": 37,
+            "dob": "1998-04-06",
+            "goals": 0,
+            "yellowCards": 0,
+            "redCards": 0
+          },
+          {
+            "id": 1184377,
+            "name": "Alexis Mac Allister",
+            "number": "20",
+            "positionId": 36,
+            "dob": "1998-12-24",
+            "goals": 0,
+            "yellowCards": 1,
+            "redCards": 0
+          },
+          {
+            "id": 524438,
+            "name": "Damian Emiliano Martinez",
+            "number": "23",
+            "positionId": 34,
+            "dob": "1992-09-02",
+            "goals": 0,
+            "yellowCards": 0,
+            "redCards": 0
+          },
+          {
+            "id": 1103557,
+            "name": "Lisandro Martinez",
+            "number": "6",
+            "positionId": 35,
+            "dob": "1998-01-18",
+            "goals": 0,
+            "yellowCards": 1,
+            "redCards": 0
+          },
+          {
+            "id": 46557,
+            "name": "Lionel Messi",
+            "number": "10",
+            "positionId": 37,
+            "dob": "1987-06-24",
+            "goals": 0,
+            "yellowCards": 0,
+            "redCards": 0
+          },
+          {
+            "id": 892872,
+            "name": "Gonzalo Ariel Montiel",
+            "number": "4",
+            "positionId": 35,
+            "dob": "1997-01-01",
+            "goals": 0,
+            "yellowCards": 0,
+            "redCards": 0
+          },
+          {
+            "id": 1055356,
+            "name": "Cristian Gabriel Romero",
+            "number": "13",
+            "positionId": 35,
+            "dob": "1998-04-27",
+            "goals": 0,
+            "yellowCards": 0,
+            "redCards": 0
+          },
+          {
+            "id": 10092897,
+            "name": "Nicolas Alejandro Tagliafico",
+            "number": "3",
+            "positionId": 35,
+            "dob": "1992-08-31",
+            "goals": 0,
+            "yellowCards": 0,
+            "redCards": 0
+          }
+        ],
+        "bench": [
+          {
+            "id": 10096940,
+            "name": "Thiago Almada",
+            "number": "16",
+            "positionId": 37,
+            "dob": "2001-04-26",
+            "goals": 0,
+            "yellowCards": 0,
+            "redCards": 0
+          },
+          {
+            "id": 1063105,
+            "name": "Leonardo Julian Balerdi Rossa",
+            "number": "2",
+            "positionId": 35,
+            "dob": "1999-01-26",
+            "goals": 0,
+            "yellowCards": 0,
+            "redCards": 0
+          },
+          {
+            "id": 10098924,
+            "name": "Valentin Barco",
+            "number": "8",
+            "positionId": 36,
+            "dob": "2004-07-23",
+            "goals": 0,
+            "yellowCards": 0,
+            "redCards": 0
+          },
+          {
+            "id": 667745,
+            "name": "Giovani Lo Celso",
+            "number": "11",
+            "positionId": 36,
+            "dob": "1996-04-09",
+            "goals": 0,
+            "yellowCards": 0,
+            "redCards": 0
+          },
+          {
+            "id": 10113696,
+            "name": "Jose Manuel Lopez",
+            "number": "21",
+            "positionId": 37,
+            "dob": "2000-12-06",
+            "goals": 0,
+            "yellowCards": 0,
+            "redCards": 0
+          },
+          {
+            "id": 948167,
+            "name": "Lautaro Javier Martinez",
+            "number": "22",
+            "positionId": 37,
+            "dob": "1997-08-22",
+            "goals": 0,
+            "yellowCards": 0,
+            "redCards": 0
+          },
+          {
+            "id": 10092867,
+            "name": "Facundo Medina",
+            "number": "25",
+            "positionId": 35,
+            "dob": "1999-05-28",
+            "goals": 0,
+            "yellowCards": 0,
+            "redCards": 0
+          },
+          {
+            "id": 10093946,
+            "name": "Nahuel Molina Lucero",
+            "number": "26",
+            "positionId": 35,
+            "dob": "1998-04-06",
+            "goals": 0,
+            "yellowCards": 0,
+            "redCards": 0
+          },
+          {
+            "id": 526862,
+            "name": "Juan Agustin Musso",
+            "number": "1",
+            "positionId": 34,
+            "dob": "1994-05-06",
+            "goals": 0,
+            "yellowCards": 0,
+            "redCards": 0
+          },
+          {
+            "id": 46945,
+            "name": "Nicolas Otamendi",
+            "number": "19",
+            "positionId": 35,
+            "dob": "1988-02-12",
+            "goals": 0,
+            "yellowCards": 0,
+            "redCards": 0
+          },
+          {
+            "id": 466225,
+            "name": "Exequiel Palacios",
+            "number": "14",
+            "positionId": 36,
+            "dob": "1998-10-05",
+            "goals": 0,
+            "yellowCards": 0,
+            "redCards": 0
+          },
+          {
+            "id": 223309,
+            "name": "Leandro Paredes",
+            "number": "5",
+            "positionId": 36,
+            "dob": "1994-06-29",
+            "goals": 0,
+            "yellowCards": 1,
+            "redCards": 0
+          },
+          {
+            "id": 10093616,
+            "name": "Nicolas Paz Martinez",
+            "number": "18",
+            "positionId": 37,
+            "dob": "2004-09-08",
+            "goals": 0,
+            "yellowCards": 0,
+            "redCards": 0
+          },
+          {
+            "id": 533611,
+            "name": "Geronimo Rulli",
+            "number": "12",
+            "positionId": 34,
+            "dob": "1992-05-20",
+            "goals": 0,
+            "yellowCards": 0,
+            "redCards": 0
+          },
+          {
+            "id": 1188644,
+            "name": "Marcos Senesi",
+            "number": "2",
+            "positionId": 35,
+            "dob": "1997-05-10",
+            "goals": 0,
+            "yellowCards": 0,
+            "redCards": 0
+          },
+          {
+            "id": 10093427,
+            "name": "Giuliano Simeone",
+            "number": "17",
+            "positionId": 37,
+            "dob": "2002-12-18",
+            "goals": 0,
+            "yellowCards": 0,
+            "redCards": 0
+          }
+        ]
+      }
+    },
+    "events": [
+      {
+        "id": "ev_9_3",
+        "sec": 0,
+        "participant": 1,
+        "action": "prematch_info",
+        "headline": "Venue: Neutral ground.",
+        "sub": "Match officials make final preparations."
+      },
+      {
+        "id": "ev_11_4",
+        "sec": 0,
+        "participant": 1,
+        "action": "prematch_info",
+        "headline": "Pitch: Excellent."
+      },
+      {
+        "id": "ev_12_5",
+        "sec": 0,
+        "participant": 1,
+        "action": "prematch_info",
+        "headline": "Pitch: Dry, Excellent."
+      },
+      {
+        "id": "ev_15_8",
+        "sec": 0,
+        "participant": 1,
+        "action": "prematch_info",
+        "headline": "Conditions: Day."
+      },
+      {
+        "id": "ev_16_9",
+        "sec": 0,
+        "participant": 1,
+        "action": "prematch_info",
+        "headline": "Conditions: Day."
+      },
+      {
+        "id": "ev_17_10",
+        "sec": 0,
+        "participant": 1,
+        "action": "prematch_info",
+        "headline": "Conditions: Sunny, Day."
+      },
+      {
+        "id": "ev_19_11",
+        "sec": 0,
+        "participant": 1,
+        "action": "jersey",
+        "headline": "Spain in red.",
+        "jerseyColor": "red"
+      },
+      {
+        "id": "ev_20_12",
+        "sec": 0,
+        "participant": 2,
+        "action": "jersey",
+        "headline": "Argentina in white.",
+        "jerseyColor": "white"
+      },
+      {
+        "id": "ev_23_15",
+        "sec": 0,
+        "participant": 2,
+        "action": "kickoff_team",
+        "headline": "Argentina kick off."
+      },
+      {
+        "id": "ev_26_20",
+        "sec": 0,
+        "participant": 1,
+        "action": "kickoff",
+        "headline": "Kickoff!",
+        "sub": "Spain vs Argentina — play is underway."
+      },
+      {
+        "id": "ev_38_32",
+        "sec": 84,
+        "participant": 2,
+        "action": "free_kick",
+        "headline": "Free kick to Argentina."
+      },
+      {
+        "id": "ev_50_45",
+        "sec": 195,
+        "participant": 1,
+        "action": "throw_in",
+        "headline": "Throw-in for Spain."
+      },
+      {
+        "id": "ev_52_48",
+        "sec": 217,
+        "participant": 1,
+        "action": "free_kick",
+        "headline": "Free kick to Spain."
+      },
+      {
+        "id": "ev_56_52",
+        "sec": 253,
+        "participant": 1,
+        "action": "big_chance",
+        "headline": "Big chance for Spain!",
+        "sub": "Spain are in a very dangerous position.",
+        "probAfter": 52
+      },
+      {
+        "id": "ev_57_54",
+        "sec": 257,
+        "participant": 1,
+        "action": "shot",
+        "headline": "Spain attempt a shot.",
+        "shotOutcome": "OnTarget",
+        "probAfter": 54
+      },
+      {
+        "id": "ev_63_60",
+        "sec": 279,
+        "participant": 1,
+        "action": "big_chance",
+        "headline": "Big chance for Spain!",
+        "sub": "Spain are in a very dangerous position.",
+        "probAfter": 56
+      },
+      {
+        "id": "ev_72_69",
+        "sec": 295,
+        "participant": 2,
+        "action": "near_miss",
+        "headline": "So close for Argentina!",
+        "sub": "Officials pause to check the situation.",
+        "probAfter": 55
+      },
+      {
+        "id": "ev_97_95",
+        "sec": 416,
+        "participant": 1,
+        "action": "throw_in",
+        "headline": "Throw-in for Spain."
+      },
+      {
+        "id": "ev_107_106",
+        "sec": 459,
+        "participant": 2,
+        "action": "free_kick",
+        "headline": "Free kick to Argentina."
+      },
+      {
+        "id": "ev_111_111",
+        "sec": 503,
+        "participant": 2,
+        "action": "throw_in",
+        "headline": "Throw-in for Argentina."
+      },
+      {
+        "id": "ev_115_116",
+        "sec": 539,
+        "participant": 1,
+        "action": "throw_in",
+        "headline": "Throw-in for Spain."
+      },
+      {
+        "id": "ev_118_120",
+        "sec": 567,
+        "participant": 2,
+        "action": "throw_in",
+        "headline": "Throw-in for Argentina."
+      },
+      {
+        "id": "ev_125_128",
+        "sec": 606,
+        "participant": 2,
+        "action": "throw_in",
+        "headline": "Throw-in for Argentina."
+      },
+      {
+        "id": "ev_133_137",
+        "sec": 648,
+        "participant": 1,
+        "action": "throw_in",
+        "headline": "Throw-in for Spain."
+      },
+      {
+        "id": "ev_138_142",
+        "sec": 678,
+        "participant": 1,
+        "action": "big_chance",
+        "headline": "Big chance for Spain!",
+        "sub": "Spain are in a very dangerous position.",
+        "probAfter": 57
+      },
+      {
+        "id": "ev_139_144",
+        "sec": 682,
+        "participant": 1,
+        "action": "corner",
+        "headline": "Corner kick awarded to Spain.",
+        "probAfter": 57
+      },
+      {
+        "id": "ev_140_145",
+        "sec": 727,
+        "participant": 1,
+        "action": "big_chance",
+        "headline": "Big chance for Spain!",
+        "sub": "Spain are in a very dangerous position.",
+        "probAfter": 59
+      },
+      {
+        "id": "ev_142_147",
+        "sec": 742,
+        "participant": 1,
+        "action": "big_chance",
+        "headline": "Big chance for Spain!",
+        "sub": "Spain are in a very dangerous position.",
+        "probAfter": 61
+      },
+      {
+        "id": "ev_144_150",
+        "sec": 747,
+        "participant": 1,
+        "action": "throw_in",
+        "headline": "Throw-in for Spain."
+      },
+      {
+        "id": "ev_153_160",
+        "sec": 834,
+        "participant": 1,
+        "action": "free_kick",
+        "headline": "Free kick to Spain."
+      },
+      {
+        "id": "ev_162_170",
+        "sec": 930,
+        "participant": 2,
+        "action": "free_kick",
+        "headline": "Free kick to Argentina."
+      },
+      {
+        "id": "ev_164_172",
+        "sec": 981,
+        "participant": 2,
+        "action": "big_chance",
+        "headline": "Big chance for Argentina!",
+        "sub": "Argentina are in a very dangerous position.",
+        "probAfter": 59
+      },
+      {
+        "id": "ev_167_175",
+        "sec": 984,
+        "participant": 1,
+        "action": "goal_kick",
+        "headline": "Goal kick for Spain."
+      },
+      {
+        "id": "ev_171_179",
+        "sec": 1012,
+        "participant": 1,
+        "action": "big_chance",
+        "headline": "Big chance for Spain!",
+        "sub": "Spain are in a very dangerous position.",
+        "probAfter": 61
+      },
+      {
+        "id": "ev_177_186",
+        "sec": 1039,
+        "participant": 2,
+        "action": "throw_in",
+        "headline": "Throw-in for Argentina."
+      },
+      {
+        "id": "ev_185_195",
+        "sec": 1079,
+        "participant": 1,
+        "action": "free_kick",
+        "headline": "Free kick to Spain."
+      },
+      {
+        "id": "ev_190_201",
+        "sec": 1134,
+        "participant": 2,
+        "action": "throw_in",
+        "headline": "Throw-in for Argentina."
+      },
+      {
+        "id": "ev_192_204",
+        "sec": 1152,
+        "participant": 2,
+        "action": "free_kick",
+        "headline": "Free kick to Argentina."
+      },
+      {
+        "id": "ev_202_215",
+        "sec": 1252,
+        "participant": 2,
+        "action": "free_kick",
+        "headline": "Free kick to Argentina."
+      },
+      {
+        "id": "ev_205_219",
+        "sec": 1264,
+        "participant": 2,
+        "action": "throw_in",
+        "headline": "Throw-in for Argentina."
+      },
+      {
+        "id": "ev_211_226",
+        "sec": 1291,
+        "participant": 1,
+        "action": "free_kick",
+        "headline": "Free kick to Spain."
+      },
+      {
+        "id": "ev_218_233",
+        "sec": 1331,
+        "participant": 1,
+        "action": "big_chance",
+        "headline": "Big chance for Spain!",
+        "sub": "Spain are in a very dangerous position.",
+        "probAfter": 63
+      },
+      {
+        "id": "ev_219_234",
+        "sec": 1332,
+        "participant": 1,
+        "action": "near_miss",
+        "headline": "So close for Spain!",
+        "sub": "Officials pause to check the situation.",
+        "probAfter": 64
+      },
+      {
+        "id": "ev_228_244",
+        "sec": 1367,
+        "participant": 1,
+        "action": "corner",
+        "headline": "Corner kick awarded to Spain.",
+        "probAfter": 65
+      },
+      {
+        "id": "ev_229_245",
+        "sec": 1396,
+        "participant": 1,
+        "action": "big_chance",
+        "headline": "Big chance for Spain!",
+        "sub": "Spain are in a very dangerous position.",
+        "probAfter": 67
+      },
+      {
+        "id": "ev_234_251",
+        "sec": 1433,
+        "participant": 2,
+        "action": "free_kick",
+        "headline": "Free kick to Argentina."
+      },
+      {
+        "id": "ev_238_256",
+        "sec": 1652,
+        "participant": 1,
+        "action": "free_kick",
+        "headline": "Free kick to Spain."
+      },
+      {
+        "id": "ev_241_260",
+        "sec": 1676,
+        "participant": 1,
+        "action": "throw_in",
+        "headline": "Throw-in for Spain."
+      },
+      {
+        "id": "ev_244_264",
+        "sec": 1705,
+        "participant": 1,
+        "action": "free_kick",
+        "headline": "Free kick to Spain."
+      },
+      {
+        "id": "ev_253_274",
+        "sec": 1774,
+        "participant": 1,
+        "action": "throw_in",
+        "headline": "Throw-in for Spain."
+      },
+      {
+        "id": "ev_258_279",
+        "sec": 1820,
+        "participant": 1,
+        "action": "big_chance",
+        "headline": "Big chance for Spain!",
+        "sub": "Spain are in a very dangerous position.",
+        "probAfter": 69
+      },
+      {
+        "id": "ev_261_282",
+        "sec": 1825,
+        "participant": 2,
+        "action": "goal_kick",
+        "headline": "Goal kick for Argentina."
+      },
+      {
+        "id": "ev_272_293",
+        "sec": 1898,
+        "participant": 1,
+        "action": "big_chance",
+        "headline": "Big chance for Spain!",
+        "sub": "Spain are in a very dangerous position.",
+        "probAfter": 71
+      },
+      {
+        "id": "ev_282_304",
+        "sec": 1947,
+        "participant": 2,
+        "action": "free_kick",
+        "headline": "Free kick to Argentina."
+      },
+      {
+        "id": "ev_283_305",
+        "sec": 1963,
+        "participant": 2,
+        "action": "near_miss",
+        "headline": "So close for Argentina!",
+        "sub": "Officials pause to check the situation.",
+        "probAfter": 69
+      },
+      {
+        "id": "ev_288_311",
+        "sec": 2007,
+        "participant": 1,
+        "action": "free_kick",
+        "headline": "Free kick to Spain."
+      },
+      {
+        "id": "ev_296_319",
+        "sec": 2060,
+        "participant": 1,
+        "action": "big_chance",
+        "headline": "Big chance for Spain!",
+        "sub": "Spain are in a very dangerous position.",
+        "probAfter": 71
+      },
+      {
+        "id": "ev_298_322",
+        "sec": 2066,
+        "participant": 2,
+        "action": "free_kick",
+        "headline": "Free kick to Argentina."
+      },
+      {
+        "id": "ev_300_325",
+        "sec": 2118,
+        "participant": 2,
+        "action": "throw_in",
+        "headline": "Throw-in for Argentina."
+      },
+      {
+        "id": "ev_302_328",
+        "sec": 2141,
+        "participant": 1,
+        "action": "free_kick",
+        "headline": "Free kick to Spain."
+      },
+      {
+        "id": "ev_309_336",
+        "sec": 2186,
+        "participant": 1,
+        "action": "throw_in",
+        "headline": "Throw-in for Spain."
+      },
+      {
+        "id": "ev_314_341",
+        "sec": 2231,
+        "participant": 1,
+        "action": "big_chance",
+        "headline": "Big chance for Spain!",
+        "sub": "Spain are in a very dangerous position.",
+        "probAfter": 73
+      },
+      {
+        "id": "ev_316_343",
+        "sec": 2238,
+        "participant": 1,
+        "action": "big_chance",
+        "headline": "Big chance for Spain!",
+        "sub": "Spain are in a very dangerous position.",
+        "probAfter": 75
+      },
+      {
+        "id": "ev_319_347",
+        "sec": 2252,
+        "participant": 1,
+        "action": "free_kick",
+        "headline": "Free kick to Spain."
+      },
+      {
+        "id": "ev_324_352",
+        "sec": 2277,
+        "participant": 1,
+        "action": "big_chance",
+        "headline": "Big chance for Spain!",
+        "sub": "Spain are in a very dangerous position.",
+        "probAfter": 77
+      },
+      {
+        "id": "ev_331_360",
+        "sec": 2312,
+        "participant": 1,
+        "action": "shot",
+        "headline": "Spain attempt a shot.",
+        "shotOutcome": "OnTarget",
+        "probAfter": 79
+      },
+      {
+        "id": "ev_336_366",
+        "sec": 2339,
+        "participant": 1,
+        "action": "throw_in",
+        "headline": "Throw-in for Spain."
+      },
+      {
+        "id": "ev_347_378",
+        "sec": 2406,
+        "participant": 1,
+        "action": "free_kick",
+        "headline": "Free kick to Spain."
+      },
+      {
+        "id": "ev_348_381",
+        "sec": 2408,
+        "participant": 2,
+        "action": "yellow_card",
+        "headline": "Yellow card — Lisandro Martinez (Argentina).",
+        "cardPlayer": "Lisandro Martinez"
+      },
+      {
+        "id": "ev_359_392",
+        "sec": 2496,
+        "participant": 1,
+        "action": "big_chance",
+        "headline": "Big chance for Spain!",
+        "sub": "Spain are in a very dangerous position.",
+        "probAfter": 81
+      },
+      {
+        "id": "ev_369_402",
+        "sec": 2552,
+        "participant": 1,
+        "action": "big_chance",
+        "headline": "Big chance for Spain!",
+        "sub": "Spain are in a very dangerous position.",
+        "probAfter": 83
+      },
+      {
+        "id": "ev_370_404",
+        "sec": 2554,
+        "participant": 1,
+        "action": "shot",
+        "headline": "Spain attempt a shot.",
+        "shotOutcome": "OffTarget",
+        "probAfter": 84
+      },
+      {
+        "id": "ev_373_407",
+        "sec": 2557,
+        "participant": 2,
+        "action": "goal_kick",
+        "headline": "Goal kick for Argentina."
+      },
+      {
+        "id": "ev_374_410",
+        "sec": 2583,
+        "participant": 2,
+        "action": "injury",
+        "headline": "Lisandro Martinez (Argentina) receives treatment.",
+        "injuryPlayer": "Lisandro Martinez"
+      },
+      {
+        "id": "ev_375_412",
+        "sec": 2614,
+        "participant": 2,
+        "action": "substitution",
+        "headline": "Nicolas Otamendi on for Lisandro Martinez (Argentina).",
+        "playerIn": "Nicolas Otamendi",
+        "playerOut": "Lisandro Martinez"
+      },
+      {
+        "id": "ev_379_417",
+        "sec": 2674,
+        "participant": 2,
+        "action": "throw_in",
+        "headline": "Throw-in for Argentina."
+      },
+      {
+        "id": "ev_382_421",
+        "sec": 2704,
+        "participant": 1,
+        "action": "additional_time",
+        "headline": "4 minutes of added time.",
+        "sub": "Referee signals added time in the first half.",
+        "addedMinutes": 4
+      },
+      {
+        "id": "ev_392_433",
+        "sec": 2753,
+        "participant": 2,
+        "action": "throw_in",
+        "headline": "Throw-in for Argentina."
+      },
+      {
+        "id": "ev_407_449",
+        "sec": 2841,
+        "participant": 2,
+        "action": "free_kick",
+        "headline": "Free kick to Argentina."
+      },
+      {
+        "id": "ev_423_465",
+        "sec": 2941,
+        "participant": 1,
+        "action": "halftime",
+        "headline": "Half time.",
+        "sub": "The referee brings the first half to a close."
+      },
+      {
+        "id": "ev_427_470",
+        "sec": 2700,
+        "participant": 2,
+        "action": "substitution",
+        "headline": "Leandro Paredes on for Nicolas Ivan Gonzalez (Argentina).",
+        "playerIn": "Leandro Paredes",
+        "playerOut": "Nicolas Ivan Gonzalez"
+      },
+      {
+        "id": "ev_430_475",
+        "sec": 2700,
+        "participant": 1,
+        "action": "kickoff",
+        "headline": "Second half kickoff!",
+        "sub": "Spain vs Argentina — play is underway."
+      },
+      {
+        "id": "ev_443_487",
+        "sec": 2742,
+        "participant": 1,
+        "action": "big_chance",
+        "headline": "Big chance for Spain!",
+        "sub": "Spain are in a very dangerous position.",
+        "probAfter": 86
+      },
+      {
+        "id": "ev_444_489",
+        "sec": 2744,
+        "participant": 1,
+        "action": "shot",
+        "headline": "Spain attempt a shot.",
+        "shotOutcome": "OnTarget",
+        "probAfter": 88
+      },
+      {
+        "id": "ev_460_506",
+        "sec": 2824,
+        "participant": 2,
+        "action": "corner",
+        "headline": "Corner kick awarded to Argentina.",
+        "probAfter": 88
+      },
+      {
+        "id": "ev_461_507",
+        "sec": 2857,
+        "participant": 2,
+        "action": "big_chance",
+        "headline": "Big chance for Argentina!",
+        "sub": "Argentina are in a very dangerous position.",
+        "probAfter": 86
+      },
+      {
+        "id": "ev_464_510",
+        "sec": 2864,
+        "participant": 1,
+        "action": "goal_kick",
+        "headline": "Goal kick for Spain."
+      },
+      {
+        "id": "ev_473_520",
+        "sec": 2929,
+        "participant": 2,
+        "action": "throw_in",
+        "headline": "Throw-in for Argentina."
+      },
+      {
+        "id": "ev_476_524",
+        "sec": 2965,
+        "participant": 2,
+        "action": "free_kick",
+        "headline": "Free kick to Argentina."
+      },
+      {
+        "id": "ev_482_531",
+        "sec": 3018,
+        "participant": 2,
+        "action": "free_kick",
+        "headline": "Free kick to Argentina."
+      },
+      {
+        "id": "ev_489_539",
+        "sec": 3061,
+        "participant": 1,
+        "action": "free_kick",
+        "headline": "Free kick to Spain."
+      },
+      {
+        "id": "ev_491_544",
+        "sec": 3078,
+        "participant": 2,
+        "action": "yellow_card",
+        "headline": "Yellow card — Leandro Paredes (Argentina).",
+        "cardPlayer": "Leandro Paredes"
+      },
+      {
+        "id": "ev_504_557",
+        "sec": 3173,
+        "participant": 2,
+        "action": "throw_in",
+        "headline": "Throw-in for Argentina."
+      },
+      {
+        "id": "ev_506_560",
+        "sec": 3194,
+        "participant": 2,
+        "action": "free_kick",
+        "headline": "Free kick to Argentina."
+      },
+      {
+        "id": "ev_508_563",
+        "sec": 3224,
+        "participant": 2,
+        "action": "free_kick",
+        "headline": "Free kick to Argentina."
+      },
+      {
+        "id": "ev_515_570",
+        "sec": 3262,
+        "participant": 1,
+        "action": "near_miss",
+        "headline": "So close for Spain!",
+        "sub": "Officials pause to check the situation.",
+        "probAfter": 87
+      },
+      {
+        "id": "ev_516_571",
+        "sec": 3264,
+        "participant": 1,
+        "action": "big_chance",
+        "headline": "Big chance for Spain!",
+        "sub": "Spain are in a very dangerous position.",
+        "probAfter": 89
+      },
+      {
+        "id": "ev_525_581",
+        "sec": 3312,
+        "participant": 1,
+        "action": "injury",
+        "headline": "Spain player receives treatment."
+      },
+      {
+        "id": "ev_529_585",
+        "sec": 3345,
+        "participant": 1,
+        "action": "big_chance",
+        "headline": "Big chance for Spain!",
+        "sub": "Spain are in a very dangerous position.",
+        "probAfter": 91
+      },
+      {
+        "id": "ev_530_587",
+        "sec": 3347,
+        "participant": 1,
+        "action": "corner",
+        "headline": "Corner kick awarded to Spain.",
+        "probAfter": 91
+      },
+      {
+        "id": "ev_532_589",
+        "sec": 3406,
+        "participant": 1,
+        "action": "big_chance",
+        "headline": "Big chance for Spain!",
+        "sub": "Spain are in a very dangerous position.",
+        "probAfter": 93
+      },
+      {
+        "id": "ev_535_592",
+        "sec": 3408,
+        "participant": 2,
+        "action": "goal_kick",
+        "headline": "Goal kick for Argentina."
+      },
+      {
+        "id": "ev_536_594",
+        "sec": 3440,
+        "participant": 2,
+        "action": "substitution",
+        "headline": "Nahuel Molina Lucero on for Gonzalo Ariel Montiel (Argentina).",
+        "playerIn": "Nahuel Molina Lucero",
+        "playerOut": "Gonzalo Ariel Montiel"
+      },
+      {
+        "id": "ev_538_597",
+        "sec": 3466,
+        "participant": 1,
+        "action": "throw_in",
+        "headline": "Throw-in for Spain."
+      },
+      {
+        "id": "ev_552_612",
+        "sec": 3543,
+        "participant": 1,
+        "action": "free_kick",
+        "headline": "Free kick to Spain."
+      },
+      {
+        "id": "ev_553_613",
+        "sec": 3545,
+        "participant": 1,
+        "action": "near_miss",
+        "headline": "So close for Spain!",
+        "sub": "Officials pause to check the situation.",
+        "probAfter": 95
+      },
+      {
+        "id": "ev_554_614",
+        "sec": 3637,
+        "participant": 1,
+        "action": "big_chance",
+        "headline": "Big chance for Spain!",
+        "sub": "Spain are in a very dangerous position.",
+        "probAfter": 97
+      },
+      {
+        "id": "ev_555_616",
+        "sec": 3638,
+        "participant": 1,
+        "action": "shot",
+        "headline": "Spain attempt a shot.",
+        "shotOutcome": "Blocked",
+        "probAfter": 97
+      },
+      {
+        "id": "ev_558_620",
+        "sec": 3648,
+        "participant": 2,
+        "action": "throw_in",
+        "headline": "Throw-in for Argentina."
+      },
+      {
+        "id": "ev_559_622",
+        "sec": 3675,
+        "participant": 1,
+        "action": "substitution",
+        "headline": "Ferran Torres Garcia on for Fabian Ruiz Pena (Spain).",
+        "playerIn": "Ferran Torres Garcia",
+        "playerOut": "Fabian Ruiz Pena"
+      },
+      {
+        "id": "ev_560_623",
+        "sec": 3675,
+        "participant": 1,
+        "action": "substitution",
+        "headline": "Pedro Lopez on for Mikel Oyarzabal Ugarte (Spain).",
+        "playerIn": "Pedro Lopez",
+        "playerOut": "Mikel Oyarzabal Ugarte"
+      },
+      {
+        "id": "ev_564_628",
+        "sec": 3706,
+        "participant": 1,
+        "action": "free_kick",
+        "headline": "Free kick to Spain."
+      },
+      {
+        "id": "ev_565_629",
+        "sec": 3711,
+        "participant": 1,
+        "action": "near_miss",
+        "headline": "So close for Spain!",
+        "sub": "Officials pause to check the situation.",
+        "probAfter": 98
+      },
+      {
+        "id": "ev_570_634",
+        "sec": 3734,
+        "participant": 2,
+        "action": "goal_kick",
+        "headline": "Goal kick for Argentina."
+      },
+      {
+        "id": "ev_579_644",
+        "sec": 3806,
+        "participant": 1,
+        "action": "shot",
+        "headline": "Spain attempt a shot.",
+        "shotOutcome": "OnTarget",
+        "probAfter": 98
+      },
+      {
+        "id": "ev_580_646",
+        "sec": 3808,
+        "participant": 1,
+        "action": "corner",
+        "headline": "Corner kick awarded to Spain.",
+        "probAfter": 98
+      },
+      {
+        "id": "ev_581_647",
+        "sec": 3858,
+        "participant": 1,
+        "action": "big_chance",
+        "headline": "Big chance for Spain!",
+        "sub": "Spain are in a very dangerous position.",
+        "probAfter": 98
+      },
+      {
+        "id": "ev_583_649",
+        "sec": 3865,
+        "participant": 1,
+        "action": "big_chance",
+        "headline": "Big chance for Spain!",
+        "sub": "Spain are in a very dangerous position.",
+        "probAfter": 98
+      },
+      {
+        "id": "ev_584_651",
+        "sec": 3869,
+        "participant": 1,
+        "action": "corner",
+        "headline": "Corner kick awarded to Spain.",
+        "probAfter": 98
+      },
+      {
+        "id": "ev_585_652",
+        "sec": 3886,
+        "participant": 1,
+        "action": "big_chance",
+        "headline": "Big chance for Spain!",
+        "sub": "Spain are in a very dangerous position.",
+        "probAfter": 98
+      },
+      {
+        "id": "ev_593_660",
+        "sec": 3938,
+        "participant": 1,
+        "action": "big_chance",
+        "headline": "Big chance for Spain!",
+        "sub": "Spain are in a very dangerous position.",
+        "probAfter": 98
+      },
+      {
+        "id": "ev_594_662",
+        "sec": 3942,
+        "participant": 1,
+        "action": "corner",
+        "headline": "Corner kick awarded to Spain.",
+        "probAfter": 98
+      },
+      {
+        "id": "ev_595_663",
+        "sec": 3971,
+        "participant": 1,
+        "action": "big_chance",
+        "headline": "Big chance for Spain!",
+        "sub": "Spain are in a very dangerous position.",
+        "probAfter": 98
+      },
+      {
+        "id": "ev_597_665",
+        "sec": 3979,
+        "participant": 1,
+        "action": "big_chance",
+        "headline": "Big chance for Spain!",
+        "sub": "Spain are in a very dangerous position.",
+        "probAfter": 98
+      },
+      {
+        "id": "ev_598_667",
+        "sec": 3982,
+        "participant": 1,
+        "action": "shot",
+        "headline": "Spain attempt a shot.",
+        "shotOutcome": "OnTarget",
+        "probAfter": 98
+      },
+      {
+        "id": "ev_603_673",
+        "sec": 4019,
+        "participant": 2,
+        "action": "injury",
+        "headline": "Argentina player receives treatment."
+      },
+      {
+        "id": "ev_607_677",
+        "sec": 4196,
+        "participant": 2,
+        "action": "substitution",
+        "headline": "Giuliano Simeone on for Rodrigo De Paul (Argentina).",
+        "playerIn": "Giuliano Simeone",
+        "playerOut": "Rodrigo De Paul"
+      },
+      {
+        "id": "ev_608_678",
+        "sec": 4196,
+        "participant": 2,
+        "action": "substitution",
+        "headline": "Facundo Medina on for Cristian Gabriel Romero (Argentina).",
+        "playerIn": "Facundo Medina",
+        "playerOut": "Cristian Gabriel Romero"
+      },
+      {
+        "id": "ev_616_686",
+        "sec": 4249,
+        "participant": 1,
+        "action": "throw_in",
+        "headline": "Throw-in for Spain."
+      },
+      {
+        "id": "ev_618_689",
+        "sec": 4264,
+        "participant": 2,
+        "action": "throw_in",
+        "headline": "Throw-in for Argentina."
+      },
+      {
+        "id": "ev_652_724",
+        "sec": 4421,
+        "participant": 1,
+        "action": "shot",
+        "headline": "Spain attempt a shot.",
+        "shotOutcome": "OffTarget",
+        "probAfter": 98
+      },
+      {
+        "id": "ev_655_727",
+        "sec": 4424,
+        "participant": 2,
+        "action": "goal_kick",
+        "headline": "Goal kick for Argentina."
+      },
+      {
+        "id": "ev_657_730",
+        "sec": 4459,
+        "participant": 1,
+        "action": "throw_in",
+        "headline": "Throw-in for Spain."
+      },
+      {
+        "id": "ev_658_732",
+        "sec": 4484,
+        "participant": 1,
+        "action": "substitution",
+        "headline": "Mikel Merino Zazon on for Daniel Olmo (Spain).",
+        "playerIn": "Mikel Merino Zazon",
+        "playerOut": "Daniel Olmo"
+      },
+      {
+        "id": "ev_659_733",
+        "sec": 4484,
+        "participant": 1,
+        "action": "substitution",
+        "headline": "Nico Williams on for Alex Baena (Spain).",
+        "playerIn": "Nico Williams",
+        "playerOut": "Alex Baena"
+      },
+      {
+        "id": "ev_662_737",
+        "sec": 4511,
+        "participant": 1,
+        "action": "free_kick",
+        "headline": "Free kick to Spain."
+      },
+      {
+        "id": "ev_671_746",
+        "sec": 4570,
+        "participant": 1,
+        "action": "big_chance",
+        "headline": "Big chance for Spain!",
+        "sub": "Spain are in a very dangerous position.",
+        "probAfter": 98
+      },
+      {
+        "id": "ev_672_748",
+        "sec": 4572,
+        "participant": 1,
+        "action": "shot",
+        "headline": "Spain attempt a shot.",
+        "shotOutcome": "OnTarget",
+        "probAfter": 98
+      },
+      {
+        "id": "ev_678_754",
+        "sec": 4593,
+        "participant": 1,
+        "action": "big_chance",
+        "headline": "Big chance for Spain!",
+        "sub": "Spain are in a very dangerous position.",
+        "probAfter": 98
+      },
+      {
+        "id": "ev_680_757",
+        "sec": 4602,
+        "participant": 1,
+        "action": "throw_in",
+        "headline": "Throw-in for Spain."
+      },
+      {
+        "id": "ev_682_760",
+        "sec": 4611,
+        "participant": 1,
+        "action": "shot",
+        "headline": "Spain attempt a shot.",
+        "shotOutcome": "OnTarget",
+        "probAfter": 98
+      },
+      {
+        "id": "ev_683_762",
+        "sec": 4615,
+        "participant": 1,
+        "action": "shot",
+        "headline": "Spain attempt a shot.",
+        "shotOutcome": "OnTarget",
+        "probAfter": 98
+      },
+      {
+        "id": "ev_685_765",
+        "sec": 4622,
+        "participant": 1,
+        "action": "corner",
+        "headline": "Corner kick awarded to Spain.",
+        "probAfter": 98
+      },
+      {
+        "id": "ev_687_768",
+        "sec": 4680,
+        "participant": 1,
+        "action": "big_chance",
+        "headline": "Big chance for Spain!",
+        "sub": "Spain are in a very dangerous position.",
+        "probAfter": 98
+      },
+      {
+        "id": "ev_689_771",
+        "sec": 4689,
+        "participant": 2,
+        "action": "throw_in",
+        "headline": "Throw-in for Argentina."
+      },
+      {
+        "id": "ev_704_786",
+        "sec": 4792,
+        "participant": 1,
+        "action": "big_chance",
+        "headline": "Big chance for Spain!",
+        "sub": "Spain are in a very dangerous position.",
+        "probAfter": 98
+      },
+      {
+        "id": "ev_705_788",
+        "sec": 4794,
+        "participant": 1,
+        "action": "corner",
+        "headline": "Corner kick awarded to Spain.",
+        "probAfter": 98
+      },
+      {
+        "id": "ev_707_790",
+        "sec": 4823,
+        "participant": 1,
+        "action": "big_chance",
+        "headline": "Big chance for Spain!",
+        "sub": "Spain are in a very dangerous position.",
+        "probAfter": 98
+      },
+      {
+        "id": "ev_708_792",
+        "sec": 4827,
+        "participant": 1,
+        "action": "shot",
+        "headline": "Spain attempt a shot.",
+        "shotOutcome": "OnTarget",
+        "probAfter": 98
+      },
+      {
+        "id": "ev_714_799",
+        "sec": 4841,
+        "participant": 1,
+        "action": "free_kick",
+        "headline": "Free kick to Spain."
+      },
+      {
+        "id": "ev_725_812",
+        "sec": 4918,
+        "participant": 2,
+        "action": "yellow_card",
+        "headline": "Yellow card — Enzo Fernandez (Argentina).",
+        "cardPlayer": "Enzo Fernandez"
+      },
+      {
+        "id": "ev_726_814",
+        "sec": 4935,
+        "participant": 1,
+        "action": "free_kick",
+        "headline": "Free kick to Spain."
+      },
+      {
+        "id": "ev_745_834",
+        "sec": 5032,
+        "participant": 1,
+        "action": "free_kick",
+        "headline": "Free kick to Spain."
+      },
+      {
+        "id": "ev_750_839",
+        "sec": 5065,
+        "participant": 1,
+        "action": "big_chance",
+        "headline": "Big chance for Spain!",
+        "sub": "Spain are in a very dangerous position.",
+        "probAfter": 98
+      },
+      {
+        "id": "ev_752_842",
+        "sec": 5069,
+        "participant": 1,
+        "action": "throw_in",
+        "headline": "Throw-in for Spain."
+      },
+      {
+        "id": "ev_759_850",
+        "sec": 5117,
+        "participant": 1,
+        "action": "throw_in",
+        "headline": "Throw-in for Spain."
+      },
+      {
+        "id": "ev_769_860",
+        "sec": 5182,
+        "participant": 1,
+        "action": "big_chance",
+        "headline": "Big chance for Spain!",
+        "sub": "Spain are in a very dangerous position.",
+        "probAfter": 98
+      },
+      {
+        "id": "ev_770_862",
+        "sec": 5185,
+        "participant": 1,
+        "action": "shot",
+        "headline": "Spain attempt a shot.",
+        "shotOutcome": "OffTarget",
+        "probAfter": 98
+      },
+      {
+        "id": "ev_773_865",
+        "sec": 5190,
+        "participant": 2,
+        "action": "goal_kick",
+        "headline": "Goal kick for Argentina."
+      },
+      {
+        "id": "ev_786_878",
+        "sec": 5284,
+        "participant": 1,
+        "action": "big_chance",
+        "headline": "Big chance for Spain!",
+        "sub": "Spain are in a very dangerous position.",
+        "probAfter": 98
+      },
+      {
+        "id": "ev_788_880",
+        "sec": 5299,
+        "participant": 1,
+        "action": "big_chance",
+        "headline": "Big chance for Spain!",
+        "sub": "Spain are in a very dangerous position.",
+        "probAfter": 98
+      },
+      {
+        "id": "ev_792_885",
+        "sec": 5311,
+        "participant": 1,
+        "action": "throw_in",
+        "headline": "Throw-in for Spain."
+      },
+      {
+        "id": "ev_797_891",
+        "sec": 5335,
+        "participant": 1,
+        "action": "shot",
+        "headline": "Spain attempt a shot.",
+        "shotOutcome": "OffTarget",
+        "probAfter": 98
+      },
+      {
+        "id": "ev_800_894",
+        "sec": 5339,
+        "participant": 2,
+        "action": "goal_kick",
+        "headline": "Goal kick for Argentina."
+      },
+      {
+        "id": "ev_806_901",
+        "sec": 5379,
+        "participant": 2,
+        "action": "throw_in",
+        "headline": "Throw-in for Argentina."
+      },
+      {
+        "id": "ev_807_903",
+        "sec": 5402,
+        "participant": 1,
+        "action": "additional_time",
+        "headline": "4 minutes of added time.",
+        "sub": "Referee signals added time in the second half.",
+        "addedMinutes": 4
+      },
+      {
+        "id": "ev_809_906",
+        "sec": 5410,
+        "participant": 2,
+        "action": "free_kick",
+        "headline": "Free kick to Argentina."
+      },
+      {
+        "id": "ev_817_915",
+        "sec": 5454,
+        "participant": 2,
+        "action": "free_kick",
+        "headline": "Free kick to Argentina."
+      },
+      {
+        "id": "ev_818_916",
+        "sec": 5487,
+        "participant": 2,
+        "action": "near_miss",
+        "headline": "So close for Argentina!",
+        "sub": "Officials pause to check the situation.",
+        "probAfter": 98
+      },
+      {
+        "id": "ev_828_926",
+        "sec": 5521,
+        "participant": 2,
+        "action": "big_chance",
+        "headline": "Big chance for Argentina!",
+        "sub": "Argentina are in a very dangerous position.",
+        "probAfter": 98
+      },
+      {
+        "id": "ev_832_930",
+        "sec": 5532,
+        "participant": 1,
+        "action": "near_miss",
+        "headline": "So close for Spain!",
+        "sub": "Officials pause to check the situation.",
+        "probAfter": 98
+      },
+      {
+        "id": "ev_834_932",
+        "sec": 5535,
+        "participant": 1,
+        "action": "big_chance",
+        "headline": "Big chance for Spain!",
+        "sub": "Spain are in a very dangerous position.",
+        "probAfter": 98
+      },
+      {
+        "id": "ev_835_934",
+        "sec": 5537,
+        "participant": 1,
+        "action": "shot",
+        "headline": "Spain attempt a shot.",
+        "shotOutcome": "OnTarget",
+        "probAfter": 98
+      },
+      {
+        "id": "ev_839_939",
+        "sec": 5546,
+        "participant": 1,
+        "action": "free_kick",
+        "headline": "Free kick to Spain."
+      },
+      {
+        "id": "ev_841_942",
+        "sec": 5552,
+        "participant": 2,
+        "action": "red_card",
+        "headline": "Red card for Argentina.",
+        "probAfter": 98
+      },
+      {
+        "id": "ev_845_948",
+        "sec": 5607,
+        "participant": 1,
+        "action": "injury",
+        "headline": "Pau Cubarsi (Spain) receives treatment.",
+        "injuryPlayer": "Pau Cubarsi"
+      },
+      {
+        "id": "ev_858_962",
+        "sec": 5755,
+        "participant": 1,
+        "action": "free_kick",
+        "headline": "Free kick to Spain."
+      },
+      {
+        "id": "ev_859_963",
+        "sec": 5757,
+        "participant": 1,
+        "action": "near_miss",
+        "headline": "So close for Spain!",
+        "sub": "Officials pause to check the situation.",
+        "probAfter": 98
+      },
+      {
+        "id": "ev_863_967",
+        "sec": 5877,
+        "participant": 1,
+        "action": "big_chance",
+        "headline": "Big chance for Spain!",
+        "sub": "Spain are in a very dangerous position.",
+        "probAfter": 98
+      },
+      {
+        "id": "ev_864_969",
+        "sec": 5878,
+        "participant": 1,
+        "action": "shot",
+        "headline": "Spain attempt a shot.",
+        "shotOutcome": "OnTarget",
+        "probAfter": 98
+      },
+      {
+        "id": "ev_866_972",
+        "sec": 5884,
+        "participant": 1,
+        "action": "corner",
+        "headline": "Corner kick awarded to Spain.",
+        "probAfter": 98
+      },
+      {
+        "id": "ev_868_974",
+        "sec": 5896,
+        "participant": 1,
+        "action": "big_chance",
+        "headline": "Big chance for Spain!",
+        "sub": "Spain are in a very dangerous position.",
+        "probAfter": 98
+      },
+      {
+        "id": "ev_873_979",
+        "sec": 5896,
+        "participant": 1,
+        "action": "fulltime",
+        "headline": "Full time — extra time!",
+        "sub": "Ninety minutes could not separate the teams."
+      },
+      {
+        "id": "ev_879_985",
+        "sec": 5400,
+        "participant": 1,
+        "action": "kickoff_team",
+        "headline": "Spain kick off."
+      },
+      {
+        "id": "ev_881_989",
+        "sec": 5400,
+        "participant": 1,
+        "action": "kickoff",
+        "headline": "Extra time, first half!",
+        "sub": "Spain vs Argentina — play is underway."
+      },
+      {
+        "id": "ev_894_1002",
+        "sec": 5479,
+        "participant": 2,
+        "action": "free_kick",
+        "headline": "Free kick to Argentina."
+      },
+      {
+        "id": "ev_898_1006",
+        "sec": 5525,
+        "participant": 1,
+        "action": "goal_kick",
+        "headline": "Goal kick for Spain."
+      },
+      {
+        "id": "ev_901_1009",
+        "sec": 5547,
+        "participant": 1,
+        "action": "big_chance",
+        "headline": "Big chance for Spain!",
+        "sub": "Spain are in a very dangerous position.",
+        "probAfter": 98
+      },
+      {
+        "id": "ev_907_1015",
+        "sec": 5563,
+        "participant": 1,
+        "action": "big_chance",
+        "headline": "Big chance for Spain!",
+        "sub": "Spain are in a very dangerous position.",
+        "probAfter": 98
+      },
+      {
+        "id": "ev_908_1017",
+        "sec": 5565,
+        "participant": 1,
+        "action": "shot",
+        "headline": "Spain attempt a shot.",
+        "shotOutcome": "OnTarget",
+        "probAfter": 98
+      },
+      {
+        "id": "ev_911_1021",
+        "sec": 5576,
+        "participant": 2,
+        "action": "free_kick",
+        "headline": "Free kick to Argentina."
+      },
+      {
+        "id": "ev_915_1025",
+        "sec": 5609,
+        "participant": 2,
+        "action": "goal_kick",
+        "headline": "Goal kick for Argentina."
+      },
+      {
+        "id": "ev_917_1028",
+        "sec": 5634,
+        "participant": 1,
+        "action": "free_kick",
+        "headline": "Free kick to Spain."
+      },
+      {
+        "id": "ev_932_1044",
+        "sec": 5714,
+        "participant": 1,
+        "action": "throw_in",
+        "headline": "Throw-in for Spain."
+      },
+      {
+        "id": "ev_936_1048",
+        "sec": 5735,
+        "participant": 1,
+        "action": "big_chance",
+        "headline": "Big chance for Spain!",
+        "sub": "Spain are in a very dangerous position.",
+        "probAfter": 98
+      },
+      {
+        "id": "ev_941_1056",
+        "sec": 5831,
+        "participant": 2,
+        "action": "injury",
+        "headline": "Damian Emiliano Martinez (Argentina) receives treatment.",
+        "injuryPlayer": "Damian Emiliano Martinez"
+      },
+      {
+        "id": "ev_942_1058",
+        "sec": 5905,
+        "participant": 1,
+        "action": "substitution",
+        "headline": "Eric Garcia Martret on for Aymeric Laporte (Spain).",
+        "playerIn": "Eric Garcia Martret",
+        "playerOut": "Aymeric Laporte"
+      },
+      {
+        "id": "ev_943_1059",
+        "sec": 5905,
+        "participant": 1,
+        "action": "substitution",
+        "headline": "Martin Zubimendi Ibanez on for Rodrigo Hernandez Cascante (Spain).",
+        "playerIn": "Martin Zubimendi Ibanez",
+        "playerOut": "Rodrigo Hernandez Cascante"
+      },
+      {
+        "id": "ev_939_1060",
+        "sec": 5907,
+        "participant": 1,
+        "action": "var_result",
+        "headline": "VAR — decision confirmed.",
+        "varOutcome": "Stands"
+      },
+      {
+        "id": "ev_944_1063",
+        "sec": 5917,
+        "participant": 2,
+        "action": "free_kick",
+        "headline": "Free kick to Argentina."
+      },
+      {
+        "id": "ev_958_1077",
+        "sec": 5970,
+        "participant": 1,
+        "action": "big_chance",
+        "headline": "Big chance for Spain!",
+        "sub": "Spain are in a very dangerous position.",
+        "probAfter": 98
+      },
+      {
+        "id": "ev_960_1080",
+        "sec": 5979,
+        "participant": 1,
+        "action": "free_kick",
+        "headline": "Free kick to Spain."
+      },
+      {
+        "id": "ev_967_1087",
+        "sec": 6019,
+        "participant": 1,
+        "action": "big_chance",
+        "headline": "Big chance for Spain!",
+        "sub": "Spain are in a very dangerous position.",
+        "probAfter": 98
+      },
+      {
+        "id": "ev_973_1094",
+        "sec": 6053,
+        "participant": 1,
+        "action": "shot",
+        "headline": "Spain attempt a shot.",
+        "shotOutcome": "OffTarget",
+        "probAfter": 98
+      },
+      {
+        "id": "ev_976_1097",
+        "sec": 6056,
+        "participant": 2,
+        "action": "goal_kick",
+        "headline": "Goal kick for Argentina."
+      },
+      {
+        "id": "ev_977_1099",
+        "sec": 6082,
+        "participant": 2,
+        "action": "substitution",
+        "headline": "Marcos Senesi on for Julian Alvarez (Argentina).",
+        "playerIn": "Marcos Senesi",
+        "playerOut": "Julian Alvarez"
+      },
+      {
+        "id": "ev_984_1106",
+        "sec": 6136,
+        "participant": 1,
+        "action": "big_chance",
+        "headline": "Big chance for Spain!",
+        "sub": "Spain are in a very dangerous position.",
+        "probAfter": 98
+      },
+      {
+        "id": "ev_985_1108",
+        "sec": 6138,
+        "participant": 1,
+        "action": "shot",
+        "headline": "Spain attempt a shot.",
+        "shotOutcome": "OffTarget",
+        "probAfter": 98
+      },
+      {
+        "id": "ev_988_1111",
+        "sec": 6142,
+        "participant": 2,
+        "action": "goal_kick",
+        "headline": "Goal kick for Argentina."
+      },
+      {
+        "id": "ev_998_1122",
+        "sec": 6209,
+        "participant": 1,
+        "action": "shot",
+        "headline": "Spain attempt a shot.",
+        "shotOutcome": "Blocked",
+        "probAfter": 98
+      },
+      {
+        "id": "ev_1006_1131",
+        "sec": 6231,
+        "participant": 2,
+        "action": "throw_in",
+        "headline": "Throw-in for Argentina."
+      },
+      {
+        "id": "ev_1008_1134",
+        "sec": 6279,
+        "participant": 2,
+        "action": "throw_in",
+        "headline": "Throw-in for Argentina."
+      },
+      {
+        "id": "ev_1012_1139",
+        "sec": 6301,
+        "participant": 1,
+        "action": "additional_time",
+        "headline": "3 minutes of added time.",
+        "sub": "Referee signals added time in the first half of extra time.",
+        "addedMinutes": 3
+      },
+      {
+        "id": "ev_1031_1159",
+        "sec": 6373,
+        "participant": 2,
+        "action": "throw_in",
+        "headline": "Throw-in for Argentina."
+      },
+      {
+        "id": "ev_1033_1162",
+        "sec": 6425,
+        "participant": 1,
+        "action": "throw_in",
+        "headline": "Throw-in for Spain."
+      },
+      {
+        "id": "ev_1035_1165",
+        "sec": 6447,
+        "participant": 2,
+        "action": "throw_in",
+        "headline": "Throw-in for Argentina."
+      },
+      {
+        "id": "ev_1039_1170",
+        "sec": 6477,
+        "participant": 1,
+        "action": "free_kick",
+        "headline": "Free kick to Spain."
+      },
+      {
+        "id": "ev_1040_1171",
+        "sec": 6477,
+        "participant": 1,
+        "action": "halftime",
+        "headline": "Half time in extra time."
+      },
+      {
+        "id": "ev_1045_1178",
+        "sec": 6300,
+        "participant": 1,
+        "action": "kickoff",
+        "headline": "Extra time, second half!",
+        "sub": "Spain vs Argentina — play is underway."
+      },
+      {
+        "id": "ev_1053_1185",
+        "sec": 6335,
+        "participant": 1,
+        "action": "big_chance",
+        "headline": "Big chance for Spain!",
+        "sub": "Spain are in a very dangerous position.",
+        "probAfter": 98
+      },
+      {
+        "id": "ev_1054_1188",
+        "sec": 6339,
+        "participant": 1,
+        "action": "goal",
+        "headline": "Ferran Torres Garcia scores for Spain!",
+        "sub": "The net ripples — a pivotal moment in the replay.",
+        "scorer": "Ferran Torres Garcia",
+        "goalType": "Shot",
+        "scoreAfter": [
+          1,
+          0
+        ],
+        "probAfter": 98
+      },
+      {
+        "id": "ev_1056_1190",
+        "sec": 6447,
+        "participant": 1,
+        "action": "kickoff",
+        "headline": "Extra time, second half!",
+        "sub": "Spain vs Argentina — play is underway."
+      },
+      {
+        "id": "ev_1060_1195",
+        "sec": 6455,
+        "participant": 2,
+        "action": "free_kick",
+        "headline": "Free kick to Argentina."
+      },
+      {
+        "id": "ev_1063_1198",
+        "sec": 6484,
+        "participant": 2,
+        "action": "big_chance",
+        "headline": "Big chance for Argentina!",
+        "sub": "Argentina are in a very dangerous position.",
+        "probAfter": 98
+      },
+      {
+        "id": "ev_1068_1204",
+        "sec": 6512,
+        "participant": 1,
+        "action": "throw_in",
+        "headline": "Throw-in for Spain."
+      },
+      {
+        "id": "ev_1076_1213",
+        "sec": 6550,
+        "participant": 2,
+        "action": "throw_in",
+        "headline": "Throw-in for Argentina."
+      },
+      {
+        "id": "ev_1093_1231",
+        "sec": 6661,
+        "participant": 1,
+        "action": "free_kick",
+        "headline": "Free kick to Spain."
+      },
+      {
+        "id": "ev_1094_1235",
+        "sec": 6667,
+        "participant": 2,
+        "action": "yellow_card",
+        "headline": "Yellow card — Alexis Mac Allister (Argentina).",
+        "cardPlayer": "Alexis Mac Allister"
+      },
+      {
+        "id": "ev_1108_1249",
+        "sec": 6746,
+        "participant": 2,
+        "action": "free_kick",
+        "headline": "Free kick to Argentina."
+      },
+      {
+        "id": "ev_1113_1254",
+        "sec": 6775,
+        "participant": 1,
+        "action": "near_miss",
+        "headline": "So close for Spain!",
+        "sub": "Officials pause to check the situation.",
+        "probAfter": 98
+      },
+      {
+        "id": "ev_1114_1255",
+        "sec": 6776,
+        "participant": 1,
+        "action": "big_chance",
+        "headline": "Big chance for Spain!",
+        "sub": "Spain are in a very dangerous position.",
+        "probAfter": 98
+      },
+      {
+        "id": "ev_1117_1261",
+        "sec": 6807,
+        "participant": 1,
+        "action": "var_result",
+        "headline": "VAR — original decision overturned!",
+        "varOutcome": "Overturned"
+      },
+      {
+        "id": "ev_1120_1265",
+        "sec": 6813,
+        "participant": 2,
+        "action": "free_kick",
+        "headline": "Free kick to Argentina."
+      },
+      {
+        "id": "ev_1122_1268",
+        "sec": 6818,
+        "participant": 2,
+        "action": "free_kick",
+        "headline": "Free kick to Argentina."
+      },
+      {
+        "id": "ev_1128_1274",
+        "sec": 6868,
+        "participant": 2,
+        "action": "big_chance",
+        "headline": "Big chance for Argentina!",
+        "sub": "Argentina are in a very dangerous position.",
+        "probAfter": 98
+      },
+      {
+        "id": "ev_1129_1276",
+        "sec": 6869,
+        "participant": 2,
+        "action": "corner",
+        "headline": "Corner kick awarded to Argentina.",
+        "probAfter": 98
+      },
+      {
+        "id": "ev_1130_1277",
+        "sec": 6876,
+        "participant": 2,
+        "action": "near_miss",
+        "headline": "So close for Argentina!",
+        "sub": "Officials pause to check the situation.",
+        "probAfter": 98
+      },
+      {
+        "id": "ev_1132_1279",
+        "sec": 6882,
+        "participant": 2,
+        "action": "big_chance",
+        "headline": "Big chance for Argentina!",
+        "sub": "Argentina are in a very dangerous position.",
+        "probAfter": 98
+      },
+      {
+        "id": "ev_1136_1283",
+        "sec": 6890,
+        "participant": 1,
+        "action": "goal_kick",
+        "headline": "Goal kick for Spain."
+      },
+      {
+        "id": "ev_1144_1291",
+        "sec": 6941,
+        "participant": 1,
+        "action": "big_chance",
+        "headline": "Big chance for Spain!",
+        "sub": "Spain are in a very dangerous position.",
+        "probAfter": 98
+      },
+      {
+        "id": "ev_1145_1292",
+        "sec": 6941,
+        "participant": 1,
+        "action": "near_miss",
+        "headline": "So close for Spain!",
+        "sub": "Officials pause to check the situation.",
+        "probAfter": 98
+      },
+      {
+        "id": "ev_1149_1296",
+        "sec": 6946,
+        "participant": 2,
+        "action": "goal_kick",
+        "headline": "Goal kick for Argentina."
+      },
+      {
+        "id": "ev_1154_1302",
+        "sec": 6983,
+        "participant": 2,
+        "action": "shot",
+        "headline": "Argentina attempt a shot.",
+        "shotOutcome": "Blocked",
+        "probAfter": 98
+      },
+      {
+        "id": "ev_1155_1303",
+        "sec": 6985,
+        "participant": 2,
+        "action": "big_chance",
+        "headline": "Big chance for Argentina!",
+        "sub": "Argentina are in a very dangerous position.",
+        "probAfter": 98
+      },
+      {
+        "id": "ev_1157_1307",
+        "sec": 6993,
+        "participant": 1,
+        "action": "injury",
+        "headline": "Mikel Merino Zazon (Spain) receives treatment.",
+        "injuryPlayer": "Mikel Merino Zazon"
+      },
+      {
+        "id": "ev_1162_1314",
+        "sec": 7115,
+        "participant": 2,
+        "action": "throw_in",
+        "headline": "Throw-in for Argentina."
+      },
+      {
+        "id": "ev_1167_1320",
+        "sec": 7140,
+        "participant": 2,
+        "action": "free_kick",
+        "headline": "Free kick to Argentina."
+      },
+      {
+        "id": "ev_1169_1323",
+        "sec": 7157,
+        "participant": 2,
+        "action": "near_miss",
+        "headline": "So close for Argentina!",
+        "sub": "Officials pause to check the situation.",
+        "probAfter": 98
+      },
+      {
+        "id": "ev_1173_1327",
+        "sec": 7177,
+        "participant": 2,
+        "action": "big_chance",
+        "headline": "Big chance for Argentina!",
+        "sub": "Argentina are in a very dangerous position.",
+        "probAfter": 98
+      },
+      {
+        "id": "ev_1174_1329",
+        "sec": 7181,
+        "participant": 2,
+        "action": "shot",
+        "headline": "Argentina attempt a shot.",
+        "shotOutcome": "OffTarget",
+        "probAfter": 98
+      },
+      {
+        "id": "ev_1175_1331",
+        "sec": 7188,
+        "participant": 2,
+        "action": "corner",
+        "headline": "Corner kick awarded to Argentina.",
+        "probAfter": 98
+      },
+      {
+        "id": "ev_1176_1332",
+        "sec": 7198,
+        "participant": 2,
+        "action": "near_miss",
+        "headline": "So close for Argentina!",
+        "sub": "Officials pause to check the situation.",
+        "probAfter": 98
+      },
+      {
+        "id": "ev_1178_1334",
+        "sec": 7217,
+        "participant": 2,
+        "action": "big_chance",
+        "headline": "Big chance for Argentina!",
+        "sub": "Argentina are in a very dangerous position.",
+        "probAfter": 98
+      },
+      {
+        "id": "ev_1180_1337",
+        "sec": 7229,
+        "participant": 1,
+        "action": "additional_time",
+        "headline": "5 minutes of added time.",
+        "sub": "Referee signals added time in the second half of extra time.",
+        "addedMinutes": 5
+      },
+      {
+        "id": "ev_1179_1338",
+        "sec": 7224,
+        "participant": 2,
+        "action": "corner",
+        "headline": "Corner kick awarded to Argentina.",
+        "probAfter": 98
+      },
+      {
+        "id": "ev_1181_1339",
+        "sec": 7257,
+        "participant": 2,
+        "action": "big_chance",
+        "headline": "Big chance for Argentina!",
+        "sub": "Argentina are in a very dangerous position.",
+        "probAfter": 98
+      },
+      {
+        "id": "ev_1182_1341",
+        "sec": 7261,
+        "participant": 2,
+        "action": "shot",
+        "headline": "Argentina attempt a shot.",
+        "shotOutcome": "OffTarget",
+        "probAfter": 98
+      },
+      {
+        "id": "ev_1186_1345",
+        "sec": 7264,
+        "participant": 1,
+        "action": "goal_kick",
+        "headline": "Goal kick for Spain."
+      },
+      {
+        "id": "ev_1192_1352",
+        "sec": 7327,
+        "participant": 2,
+        "action": "throw_in",
+        "headline": "Throw-in for Argentina."
+      },
+      {
+        "id": "ev_1197_1358",
+        "sec": 7355,
+        "participant": 1,
+        "action": "free_kick",
+        "headline": "Free kick to Spain."
+      },
+      {
+        "id": "ev_1200_1362",
+        "sec": 7411,
+        "participant": 2,
+        "action": "free_kick",
+        "headline": "Free kick to Argentina."
+      },
+      {
+        "id": "ev_1211_1374",
+        "sec": 7475,
+        "participant": 2,
+        "action": "free_kick",
+        "headline": "Free kick to Argentina."
+      },
+      {
+        "id": "ev_1212_1375",
+        "sec": 7489,
+        "participant": 2,
+        "action": "near_miss",
+        "headline": "So close for Argentina!",
+        "sub": "Officials pause to check the situation.",
+        "probAfter": 98
+      },
+      {
+        "id": "ev_1215_1378",
+        "sec": 7497,
+        "participant": 2,
+        "action": "big_chance",
+        "headline": "Big chance for Argentina!",
+        "sub": "Argentina are in a very dangerous position.",
+        "probAfter": 98
+      },
+      {
+        "id": "ev_1223_1385",
+        "sec": 7502,
+        "participant": 1,
+        "action": "fulltime",
+        "headline": "Final whistle!",
+        "sub": "The match is over. Full time."
+      }
+    ]
+  },
+  {
     "id": 18179551,
     "home": "Spain",
     "away": "Austria",

@@ -105,6 +105,74 @@ async function replay(response: ServerResponse, fixtureId: number, requestedSpee
   response.end();
 }
 
+let cachedUpcoming: any[] = [];
+let isFetchingUpcoming = false;
+
+async function refreshUpcomingMatches() {
+  if (isFetchingUpcoming) return;
+  isFetchingUpcoming = true;
+  try {
+    const { loadTxlineCredentials, TXLINE_API_BASE } = await import("./txline-client.js");
+    const creds = await loadTxlineCredentials();
+    const today = Math.floor(Date.now() / 86400000);
+    const starts = [today - 1, today, today + 3, today + 6];
+    const upcomingMatches = [];
+    const seen = new Set();
+    
+    for (const startEpochDay of starts) {
+      try {
+        const res = await fetch(`${TXLINE_API_BASE}/fixtures/snapshot?startEpochDay=${startEpochDay}`, {
+          headers: { Accept: "application/json", Authorization: `Bearer ${creds.jwt}`, "X-Api-Token": creds.apiToken },
+          signal: AbortSignal.timeout(10000),
+        });
+        if (!res.ok) continue;
+        const fixtures = await res.json() as Record<string, any>[];
+        for (const fixture of fixtures) {
+          if (fixture.GameState === 1 || String(fixture.Status || fixture.status).toLowerCase() === "upcoming") {
+            if (!seen.has(fixture.FixtureId)) {
+              seen.add(fixture.FixtureId);
+              const startTime = typeof fixture.StartTime === "number" ? fixture.StartTime : Date.now();
+              upcomingMatches.push({
+                fixtureId: fixture.FixtureId,
+                homeTeam: fixture.Participant1 || "Home",
+                awayTeam: fixture.Participant2 || "Away",
+                competition: fixture.CompetitionName || fixture.Competition || "World Match",
+                kickoffAt: new Date(startTime).toISOString(),
+                status: "upcoming" as const,
+                market: { home: 0, draw: 0, away: 0 },
+                score: { home: 0, away: 0 },
+                latestEvent: null,
+                community: { total: 0, counts: { home: 0, draw: 0, away: 0 }, percentages: { home: 0, draw: 0, away: 0 } },
+                events: [],
+                replayData: null,
+              });
+            }
+          }
+        }
+      } catch (err) {
+        console.warn("TxODDS fetch warning for day " + startEpochDay + ":", err);
+      }
+    }
+    if (upcomingMatches.length > 0) cachedUpcoming = upcomingMatches;
+  } catch (err) {
+    console.error("Failed to refresh upcoming matches:", err);
+  } finally {
+    isFetchingUpcoming = false;
+  }
+}
+
+// Initial fetch and 2-hour interval
+refreshUpcomingMatches().catch(console.error);
+setInterval(() => { refreshUpcomingMatches().catch(console.error); }, 2 * 60 * 60 * 1000).unref();
+
+async function getUpcomingFromTxodds(db: Database.Database) {
+  const filtered = cachedUpcoming.filter(m => {
+    const pm = publicMatch(db, m.fixtureId);
+    return !pm || pm.status !== "completed";
+  });
+  return filtered.map(match => ({ ...match, community: voteSummary(db, match.fixtureId) }));
+}
+
 const server = createServer(async (request, response) => {
   const url = new URL(request.url ?? "/", `http://${request.headers.host ?? "localhost"}`);
   const requestOrigin = request.headers.origin;
@@ -126,23 +194,49 @@ const leaderboardMatch = url.pathname.match(/^\/api\/leaderboard\/(\d+)$/);
       db.close();
       return json(response, 200, { source: "txline-captured-snapshot", fixtures }, requestOrigin);
     }
-    if (request.method === "GET" && (url.pathname === "/api/matches" || url.pathname === "/api/upcoming" || url.pathname === "/api/live")) {
+    if (request.method === "GET" && url.pathname === "/api/upcoming") {
+      try {
+        const db = database(false);
+        const withVotes = await getUpcomingFromTxodds(db);
+        db.close();
+        return json(response, 200, { matches: withVotes }, requestOrigin);
+      } catch (error) {
+        console.error("Failed to fetch upcoming from TxODDS", error);
+        return json(response, 200, { matches: [] }, requestOrigin);
+      }
+    }
+    
+    if (request.method === "GET" && (url.pathname === "/api/matches" || url.pathname === "/api/live")) {
       const db = database(false);
       const matches = confirmedMatches(db).map((match) => ({ ...match, community: voteSummary(db, match.fixtureId) }));
       db.close();
       const requestedState = url.searchParams.get("state");
-      const state = url.pathname === "/api/upcoming" ? "upcoming" : url.pathname === "/api/live" ? "live" : requestedState;
+      const state = url.pathname === "/api/live" ? "live" : requestedState;
       return json(response, 200, { matches: state ? matches.filter((match) => match.status === state) : matches }, requestOrigin);
     }
     if (request.method === "GET" && matchDetail) {
+      const fixtureId = Number(matchDetail[1]);
       const db = database(false);
-      const match = publicMatch(db, Number(matchDetail[1]));
+      let match = publicMatch(db, fixtureId);
+      if (!match) {
+        try {
+          const upcoming = await getUpcomingFromTxodds(db);
+          match = upcoming.find(m => m.fixtureId === fixtureId) || null;
+        } catch {}
+      }
       db.close();
       return match ? json(response, 200, { match }, requestOrigin) : json(response, 404, { error: "Match not found" }, requestOrigin);
     }
     if (request.method === "GET" && matchProbability) {
+      const fixtureId = Number(matchProbability[1]);
       const db = database(false);
-      const match = publicMatch(db, Number(matchProbability[1]));
+      let match = publicMatch(db, fixtureId);
+      if (!match) {
+        try {
+          const upcoming = await getUpcomingFromTxodds(db);
+          match = upcoming.find(m => m.fixtureId === fixtureId) || null;
+        } catch {}
+      }
       db.close();
       return match ? json(response, 200, { fixtureId: match.fixtureId, market: match.market, status: match.status }, requestOrigin) : json(response, 404, { error: "Match not found" }, requestOrigin);
     }
@@ -159,7 +253,14 @@ const leaderboardMatch = url.pathname.match(/^\/api\/leaderboard\/(\d+)$/);
       if (!(["home", "draw", "away"] as string[]).includes(String(choice))) return json(response, 400, { error: "choice must be home, draw, or away" }, requestOrigin);
       const db = database(false);
       const fixtureId = Number(matchVotes[1]);
-      if (!publicMatch(db, fixtureId)) { db.close(); return json(response, 404, { error: "Match not found" }, requestOrigin); }
+      let match = publicMatch(db, fixtureId);
+      if (!match) {
+        try {
+          const upcoming = await getUpcomingFromTxodds(db);
+          match = upcoming.find(m => m.fixtureId === fixtureId) || null;
+        } catch {}
+      }
+      if (!match) { db.close(); return json(response, 404, { error: "Match not found" }, requestOrigin); }
       if (voterId) db.prepare("INSERT INTO community_votes (fixture_id, choice, voter_id, created_at) VALUES (?, ?, ?, ?) ON CONFLICT(fixture_id, voter_id) DO UPDATE SET choice = excluded.choice, created_at = excluded.created_at").run(fixtureId, choice, voterId, new Date().toISOString());
       else db.prepare("INSERT INTO community_votes (fixture_id, choice, voter_id, created_at) VALUES (?, ?, NULL, ?)").run(fixtureId, choice, new Date().toISOString());
       const summary = voteSummary(db, fixtureId);

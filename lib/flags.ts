@@ -12,6 +12,9 @@ const COUNTRIES: Record<string, { code: CountryCode; name: string }> = {
   ZAF: { code: "ZAF", name: "South Africa" }, ESP: { code: "ESP", name: "Spain" }, SWE: { code: "SWE", name: "Sweden" },
   CHE: { code: "CHE", name: "Switzerland" }, DZA: { code: "DZA", name: "Algeria" }, USA: { code: "USA", name: "United States" },
   BIH: { code: "BIH", name: "Bosnia and Herzegovina" }, PRY: { code: "PRY", name: "Paraguay" },
+  NZL: { code: "NZL", name: "New Zealand" }, IND: { code: "IND", name: "India" },
+  LIE: { code: "LIE", name: "Liechtenstein" }, GIB: { code: "GIB", name: "Gibraltar" },
+  VNM: { code: "VNM", name: "Vietnam" }, MMR: { code: "MMR", name: "Myanmar" },
 };
 
 const ALIASES: Record<string, CountryCode> = {
@@ -23,6 +26,7 @@ const FLAG_CODES: Record<CountryCode, string> = {
   ARG: "AR", AUS: "AU", AUT: "AT", BEL: "BE", BRA: "BR", CAN: "CA", CPV: "CV", CIV: "CI", COL: "CO", COD: "CD",
   HRV: "HR", ECU: "EC", EGY: "EG", ENG: "GB", FRA: "FR", DEU: "DE", GHA: "GH", JPN: "JP", MAR: "MA", MEX: "MX",
   NLD: "NL", NOR: "NO", PRT: "PT", SEN: "SN", ZAF: "ZA", ESP: "ES", SWE: "SE", CHE: "CH", DZA: "DZ", USA: "US", BIH: "BA", PRY: "PY",
+  NZL: "NZ", IND: "IN", LIE: "LI", GIB: "GI", VNM: "VN", MMR: "MM",
 };
 
 export function countryCode(country: string): CountryCode {
