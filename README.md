@@ -44,11 +44,9 @@
 - [Technical implementation](#technical-implementation)
 - [API surface](#api-surface)
 - [Why MatchFlash matters](#why-matchflash-matters)
-- [Future opportunities](#future-opportunities)
 - [Demo and links](#demo-and-links)
 - [Run locally](#run-locally)
 - [Feedback for TxLINE](#feedback-for-txline)
-- [Roadmap](#roadmap)
 - [License](#license)
 
 ## The short version
@@ -351,39 +349,6 @@ Access matters too. The web experience is designed for immersive exploration; th
 
 Together, these choices make MatchFlash feel less like a score utility and more like a new way to enter football history: cinematic when discovery matters, precise when analysis matters, and portable when sharing matters.
 
-## Future opportunities
-
-Sports history has long-tail value. A live match has one peak audience; a well-preserved match can be revisited by fans, publishers, analysts, broadcasters, and communities for years.
-
-### Premium sports archives
-
-Offer deeper archive access, advanced filters, full-resolution event context, landmark-match collections, and private team or competition libraries.
-
-### AI-generated match narratives
-
-Turn a replay into a concise match report, a minute-by-minute story, a tactical explainer, or a “what changed the game?” briefing. The verified event sequence gives narrative generation a reliable source of truth.
-
-### Media and journalism tools
-
-Provide publishers with embeddable replay timelines, verified event cards, match retrospectives, and fast post-match packages that go beyond the final score.
-
-### Betting intelligence products
-
-TxODDS market movement and TxLINE event history can be combined into post-match analysis: what happened before a price moved, which events changed the state of the match, and how the market reacted.
-
-This is an analytics and historical-context opportunity, not a promise of betting outcomes.
-
-### Fan engagement platforms
-
-Clubs, leagues, broadcasters, and tournament operators can use replayable history for anniversary content, supporter education, match rooms, and interactive archive campaigns.
-
-### Telegram replay bots
-
-The Telegram surface lowers the access barrier: a supporter can search for a team, choose a fixture, browse key moments, and open the visual replay without starting on the website.
-
-### Historical analytics platforms
-
-As the archive grows, the same event model can support searchable tactical patterns, player histories, competition comparisons, and longitudinal match intelligence.
 
 ## Demo and links
 
@@ -487,22 +452,6 @@ npm run build
 - **Integration speed:** guest access, token activation, fixture snapshots, and streaming endpoints made it possible to move from first request to product behavior quickly.
 - **Historical data access:** historical score sequences created the foundation for a product that remains useful after the final whistle.
 
-### Future improvements
-
-- A longer or configurable historical-access window would make archive backfills less time-sensitive and enable a deeper World Cup record.
-- Stable pagination and bulk export primitives would help applications ingest entire competitions efficiently.
-- A first-class event identity or replay cursor across score and odds streams would simplify cross-stream deduplication and deterministic reconstruction.
-- More explicit versioning for schema changes would help downstream products safely evolve their normalizers.
-- A documented sandbox fixture set with predictable event sequences would make automated integration tests easier for hackathon teams and production partners.
-
-## Roadmap
-
-- [ ] Replace demo link placeholders with the deployed application, video, and repository URLs.
-- [ ] Expand archive coverage beyond the current captured fixtures.
-- [ ] Add richer cross-match archive search and competition filters.
-- [ ] Add narrative export for publishers and fan communities.
-- [ ] Add replay embeds for articles, social posts, and club sites.
-- [ ] Connect verified event history to historical analytics and comparison views.
 
 ## License
 
