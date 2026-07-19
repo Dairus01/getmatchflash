@@ -122,16 +122,17 @@ The result is a sports experience with an audit trail: every moment has a place 
 
 ### Screenshots
 
-The repository includes the current visual direction in [`image.png`](./image.png). Add final submission screenshots here before release:
+**Landing Page**
+![Landing Page](./public/image.png)
 
-> **Screenshot placeholder — landing page**
-> Add a wide capture of the cinematic hero, archive search, and replay cards.
+**Match Timeline & Replay**
+![Timeline View](./public/image%20copy.png)
 
-> **Screenshot placeholder — replay view**
-> Add a capture showing the match clock, timeline, momentum chart, and verification status.
+**Match Statistics**
+![Statistics View](./public/image%20copy%202.png)
 
-> **Screenshot placeholder — lineups and statistics**
-> Add a capture showing the visual pitch, formations, bench, and match totals.
+**Lineups & Formations**
+![Lineups View](./public/image%20copy%203.png)
 
 ## What makes it different
 
@@ -381,11 +382,11 @@ As the archive grows, the same event model can support searchable tactical patte
 
 | Resource | Link |
 | --- | --- |
-| Demo video | `[Add final demo video URL]` |
-| Live application | `[Add deployed MatchFlash URL]` |
-| Source code | `[Add public GitHub repository URL]` |
+| Demo video | [YouTube Video](https://youtu.be/o4CqM7dh-p4) <br/> [Local MP4](./public/mathchflash.mp4) |
+| Live application | [https://getmatchflash.vercel.app/](https://getmatchflash.vercel.app/) |
+| Source code | [https://github.com/Dairus01/getmatchflash](https://github.com/Dairus01/getmatchflash) |
 | TxLINE OpenAPI contract | [`docs/txline-openapi.yaml`](./docs/txline-openapi.yaml) |
-| Hackathon submission | `[Add TxLINE World Cup Hackathon submission URL]` |
+| Hackathon submission | _Pending submission_ |
 
 The intended demo flow is short and legible:
 
@@ -408,7 +409,7 @@ The intended demo flow is short and legible:
 ### Install
 
 ```bash
-git clone [Add repository URL]
+git clone https://github.com/Dairus01/getmatchflash.git
 cd getmatchflash
 npm install
 cd server
