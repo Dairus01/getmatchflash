@@ -109,8 +109,8 @@ function stateOf(payload: TxlineFixture, kickoffAt: string): MatchStatus {
   if (/live|progress|half.?time|playing/.test(state) || [2, 3].includes(numberValue(payload.GameState, -1))) return "live";
   const kickoffMilliseconds = Date.parse(kickoffAt);
   if (kickoffMilliseconds > Date.now()) return "upcoming";
-  // Increased fallback to 24 hours to handle long-running devnet simulations
-  return Date.now() - kickoffMilliseconds > 24 * 60 * 60 * 1000 ? "completed" : "live";
+  // Fallback to 4 hours as a typical match doesn't exceed this duration
+  return Date.now() - kickoffMilliseconds > 4 * 60 * 60 * 1000 ? "completed" : "live";
 }
 
 function normalizeMarket(values: unknown, fallback: { home: number; draw: number; away: number }) {

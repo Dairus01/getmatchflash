@@ -27319,7 +27319,7 @@ export const MATCHES: MatchData[] = [
     "away": "England",
     "date": "Jul 18, 2026",
     "maxSec": 5905,
-    "totalEvents": 379,
+    "totalEvents": 1197,
     "finalScore": [
       4,
       6
@@ -27331,11 +27331,11 @@ export const MATCHES: MatchData[] = [
     },
     "periodBreakdown": {
       "h1": {
-        "home": 2,
+        "home": 0,
         "away": 3
       },
       "h2": {
-        "home": 2,
+        "home": 3,
         "away": 1
       },
       "et": {
@@ -27345,17 +27345,17 @@ export const MATCHES: MatchData[] = [
     },
     "finalStats": {
       "home": {
-        "shots": 6,
-        "shotsOnTarget": 2,
-        "possession": 51,
+        "shots": 14,
+        "shotsOnTarget": 6,
+        "possession": 43,
         "yellowCards": 0,
         "redCards": 0,
         "corners": 3
       },
       "away": {
-        "shots": 3,
-        "shotsOnTarget": 1,
-        "possession": 49,
+        "shots": 14,
+        "shotsOnTarget": 4,
+        "possession": 57,
         "yellowCards": 0,
         "redCards": 0,
         "corners": 4
@@ -27889,76 +27889,6 @@ export const MATCHES: MatchData[] = [
     },
     "events": [
       {
-        "id": "ev_synthetic_goal_0_0",
-        "sec": 500,
-        "participant": 2,
-        "action": "goal",
-        "headline": "Goal! England score!",
-        "sub": "The net ripples — a pivotal moment in the replay.",
-        "goalType": "Regular",
-        "scoreAfter": [
-          0,
-          1
-        ],
-        "probAfter": 32
-      },
-      {
-        "id": "ev_synthetic_goal_1_1",
-        "sec": 1000,
-        "participant": 1,
-        "action": "goal",
-        "headline": "Goal! France score!",
-        "sub": "The net ripples — a pivotal moment in the replay.",
-        "goalType": "Regular",
-        "scoreAfter": [
-          1,
-          1
-        ],
-        "probAfter": 50
-      },
-      {
-        "id": "ev_synthetic_goal_2_2",
-        "sec": 1500,
-        "participant": 2,
-        "action": "goal",
-        "headline": "Goal! England score!",
-        "sub": "The net ripples — a pivotal moment in the replay.",
-        "goalType": "Regular",
-        "scoreAfter": [
-          1,
-          2
-        ],
-        "probAfter": 25
-      },
-      {
-        "id": "ev_synthetic_goal_3_3",
-        "sec": 2000,
-        "participant": 2,
-        "action": "goal",
-        "headline": "Goal! England score!",
-        "sub": "The net ripples — a pivotal moment in the replay.",
-        "goalType": "Regular",
-        "scoreAfter": [
-          1,
-          3
-        ],
-        "probAfter": 2
-      },
-      {
-        "id": "ev_synthetic_goal_4_4",
-        "sec": 2500,
-        "participant": 1,
-        "action": "goal",
-        "headline": "Goal! France score!",
-        "sub": "The net ripples — a pivotal moment in the replay.",
-        "goalType": "Regular",
-        "scoreAfter": [
-          2,
-          3
-        ],
-        "probAfter": 18
-      },
-      {
         "id": "ev_12_5",
         "sec": 0,
         "participant": 1,
@@ -27967,18 +27897,11 @@ export const MATCHES: MatchData[] = [
         "sub": "Match officials make final preparations."
       },
       {
-        "id": "ev_synthetic_goal_5_5",
-        "sec": 3000,
-        "participant": 2,
-        "action": "goal",
-        "headline": "Goal! England score!",
-        "sub": "The net ripples — a pivotal moment in the replay.",
-        "goalType": "Regular",
-        "scoreAfter": [
-          2,
-          4
-        ],
-        "probAfter": 2
+        "id": "ev_13_6",
+        "sec": 0,
+        "participant": 1,
+        "action": "prematch_info",
+        "headline": "Pitch: Excellent."
       },
       {
         "id": "ev_14_7",
@@ -27988,11 +27911,26 @@ export const MATCHES: MatchData[] = [
         "headline": "Pitch: Dry, Excellent."
       },
       {
+        "id": "ev_15_8",
+        "sec": 0,
+        "participant": 1,
+        "action": "prematch_info",
+        "headline": "Conditions: Day."
+      },
+      {
         "id": "ev_16_9",
         "sec": 0,
         "participant": 1,
         "action": "prematch_info",
         "headline": "Conditions: Cloudy, Day."
+      },
+      {
+        "id": "ev_20_12",
+        "sec": 0,
+        "participant": 2,
+        "action": "jersey",
+        "headline": "England in white.",
+        "jerseyColor": "white"
       },
       {
         "id": "ev_21_13",
@@ -28010,13 +27948,817 @@ export const MATCHES: MatchData[] = [
         "headline": "France kick off."
       },
       {
-        "id": "ev_423_455",
-        "sec": 2259,
+        "id": "ev_25_19",
+        "sec": 0,
         "participant": 1,
-        "action": "var",
-        "headline": "VAR review in progress.",
-        "sub": "The video assistant is checking the incident.",
-        "varType": "Goal"
+        "action": "kickoff",
+        "headline": "Kickoff!",
+        "sub": "France vs England — play is underway."
+      },
+      {
+        "id": "ev_28_22",
+        "sec": 7,
+        "participant": 2,
+        "action": "throw_in",
+        "headline": "Throw-in for England."
+      },
+      {
+        "id": "ev_44_38",
+        "sec": 90,
+        "participant": 2,
+        "action": "big_chance",
+        "headline": "Big chance for England!",
+        "sub": "England are in a very dangerous position.",
+        "probAfter": 48
+      },
+      {
+        "id": "ev_49_44",
+        "sec": 109,
+        "participant": 1,
+        "action": "throw_in",
+        "headline": "Throw-in for France."
+      },
+      {
+        "id": "ev_55_50",
+        "sec": 136,
+        "participant": 2,
+        "action": "big_chance",
+        "headline": "Big chance for England!",
+        "sub": "England are in a very dangerous position.",
+        "probAfter": 46
+      },
+      {
+        "id": "ev_56_53",
+        "sec": 137,
+        "participant": 2,
+        "action": "goal",
+        "headline": "Declan Rice scores for England!",
+        "sub": "The net ripples — a pivotal moment in the replay.",
+        "scorer": "Declan Rice",
+        "goalType": "Shot",
+        "scoreAfter": [
+          0,
+          1
+        ],
+        "probAfter": 30
+      },
+      {
+        "id": "ev_58_55",
+        "sec": 220,
+        "participant": 1,
+        "action": "kickoff",
+        "headline": "Kickoff!",
+        "sub": "France vs England — play is underway."
+      },
+      {
+        "id": "ev_74_71",
+        "sec": 274,
+        "participant": 1,
+        "action": "big_chance",
+        "headline": "Big chance for France!",
+        "sub": "France are in a very dangerous position.",
+        "probAfter": 31
+      },
+      {
+        "id": "ev_75_73",
+        "sec": 277,
+        "participant": 1,
+        "action": "shot",
+        "headline": "France attempt a shot.",
+        "shotOutcome": "Blocked",
+        "probAfter": 32
+      },
+      {
+        "id": "ev_99_97",
+        "sec": 363,
+        "participant": 2,
+        "action": "near_miss",
+        "headline": "So close for England!",
+        "sub": "Officials pause to check the situation.",
+        "probAfter": 30
+      },
+      {
+        "id": "ev_101_99",
+        "sec": 366,
+        "participant": 2,
+        "action": "big_chance",
+        "headline": "Big chance for England!",
+        "sub": "England are in a very dangerous position.",
+        "probAfter": 28
+      },
+      {
+        "id": "ev_103_102",
+        "sec": 372,
+        "participant": 2,
+        "action": "corner",
+        "headline": "Corner kick awarded to England.",
+        "probAfter": 28
+      },
+      {
+        "id": "ev_102_104",
+        "sec": 370,
+        "participant": 2,
+        "action": "shot",
+        "headline": "England attempt a shot.",
+        "shotOutcome": "Blocked",
+        "probAfter": 27
+      },
+      {
+        "id": "ev_105_105",
+        "sec": 417,
+        "participant": 2,
+        "action": "big_chance",
+        "headline": "Big chance for England!",
+        "sub": "England are in a very dangerous position.",
+        "probAfter": 25
+      },
+      {
+        "id": "ev_108_108",
+        "sec": 432,
+        "participant": 2,
+        "action": "big_chance",
+        "headline": "Big chance for England!",
+        "sub": "England are in a very dangerous position.",
+        "probAfter": 23
+      },
+      {
+        "id": "ev_109_109",
+        "sec": 435,
+        "participant": 2,
+        "action": "big_chance",
+        "headline": "Big chance for England!",
+        "sub": "England are in a very dangerous position.",
+        "probAfter": 21
+      },
+      {
+        "id": "ev_110_111",
+        "sec": 436,
+        "participant": 2,
+        "action": "shot",
+        "headline": "England attempt a shot.",
+        "shotOutcome": "Blocked",
+        "probAfter": 20
+      },
+      {
+        "id": "ev_113_114",
+        "sec": 441,
+        "participant": 1,
+        "action": "big_chance",
+        "headline": "Big chance for France!",
+        "sub": "France are in a very dangerous position.",
+        "probAfter": 22
+      },
+      {
+        "id": "ev_114_115",
+        "sec": 442,
+        "participant": 1,
+        "action": "near_miss",
+        "headline": "So close for France!",
+        "sub": "Officials pause to check the situation.",
+        "probAfter": 23
+      },
+      {
+        "id": "ev_123_124",
+        "sec": 479,
+        "participant": 2,
+        "action": "big_chance",
+        "headline": "Big chance for England!",
+        "sub": "England are in a very dangerous position.",
+        "probAfter": 21
+      },
+      {
+        "id": "ev_125_127",
+        "sec": 484,
+        "participant": 2,
+        "action": "free_kick",
+        "headline": "Free kick to England."
+      },
+      {
+        "id": "ev_126_128",
+        "sec": 487,
+        "participant": 2,
+        "action": "near_miss",
+        "headline": "So close for England!",
+        "sub": "Officials pause to check the situation.",
+        "probAfter": 19
+      },
+      {
+        "id": "ev_127_129",
+        "sec": 535,
+        "participant": 2,
+        "action": "big_chance",
+        "headline": "Big chance for England!",
+        "sub": "England are in a very dangerous position.",
+        "probAfter": 17
+      },
+      {
+        "id": "ev_145_147",
+        "sec": 604,
+        "participant": 1,
+        "action": "big_chance",
+        "headline": "Big chance for France!",
+        "sub": "France are in a very dangerous position.",
+        "probAfter": 19
+      },
+      {
+        "id": "ev_146_148",
+        "sec": 607,
+        "participant": 1,
+        "action": "big_chance",
+        "headline": "Big chance for France!",
+        "sub": "France are in a very dangerous position.",
+        "probAfter": 21
+      },
+      {
+        "id": "ev_147_150",
+        "sec": 609,
+        "participant": 1,
+        "action": "shot",
+        "headline": "France attempt a shot.",
+        "shotOutcome": "OnTarget",
+        "probAfter": 23
+      },
+      {
+        "id": "ev_149_153",
+        "sec": 614,
+        "participant": 1,
+        "action": "shot",
+        "headline": "France attempt a shot.",
+        "shotOutcome": "Blocked",
+        "probAfter": 23
+      },
+      {
+        "id": "ev_158_162",
+        "sec": 654,
+        "participant": 2,
+        "action": "near_miss",
+        "headline": "So close for England!",
+        "sub": "Officials pause to check the situation.",
+        "probAfter": 22
+      },
+      {
+        "id": "ev_159_163",
+        "sec": 655,
+        "participant": 2,
+        "action": "big_chance",
+        "headline": "Big chance for England!",
+        "sub": "England are in a very dangerous position.",
+        "probAfter": 20
+      },
+      {
+        "id": "ev_162_168",
+        "sec": 688,
+        "participant": 1,
+        "action": "free_kick",
+        "headline": "Free kick to France."
+      },
+      {
+        "id": "ev_165_171",
+        "sec": 693,
+        "participant": 1,
+        "action": "big_chance",
+        "headline": "Big chance for France!",
+        "sub": "France are in a very dangerous position.",
+        "probAfter": 22
+      },
+      {
+        "id": "ev_170_177",
+        "sec": 704,
+        "participant": 2,
+        "action": "throw_in",
+        "headline": "Throw-in for England."
+      },
+      {
+        "id": "ev_184_191",
+        "sec": 775,
+        "participant": 1,
+        "action": "big_chance",
+        "headline": "Big chance for France!",
+        "sub": "France are in a very dangerous position.",
+        "probAfter": 23
+      },
+      {
+        "id": "ev_187_195",
+        "sec": 783,
+        "participant": 2,
+        "action": "free_kick",
+        "headline": "Free kick to England."
+      },
+      {
+        "id": "ev_197_205",
+        "sec": 839,
+        "participant": 1,
+        "action": "big_chance",
+        "headline": "Big chance for France!",
+        "sub": "France are in a very dangerous position.",
+        "probAfter": 25
+      },
+      {
+        "id": "ev_198_207",
+        "sec": 845,
+        "participant": 1,
+        "action": "corner",
+        "headline": "Corner kick awarded to France.",
+        "probAfter": 25
+      },
+      {
+        "id": "ev_201_210",
+        "sec": 862,
+        "participant": 1,
+        "action": "big_chance",
+        "headline": "Big chance for France!",
+        "sub": "France are in a very dangerous position.",
+        "probAfter": 27
+      },
+      {
+        "id": "ev_234_243",
+        "sec": 1023,
+        "participant": 2,
+        "action": "near_miss",
+        "headline": "So close for England!",
+        "sub": "Officials pause to check the situation.",
+        "probAfter": 24
+      },
+      {
+        "id": "ev_235_244",
+        "sec": 1026,
+        "participant": 2,
+        "action": "big_chance",
+        "headline": "Big chance for England!",
+        "sub": "England are in a very dangerous position.",
+        "probAfter": 22
+      },
+      {
+        "id": "ev_237_247",
+        "sec": 1030,
+        "participant": 2,
+        "action": "corner",
+        "headline": "Corner kick awarded to England.",
+        "probAfter": 22
+      },
+      {
+        "id": "ev_236_248",
+        "sec": 1028,
+        "participant": 2,
+        "action": "shot",
+        "headline": "England attempt a shot.",
+        "shotOutcome": "Blocked",
+        "probAfter": 21
+      },
+      {
+        "id": "ev_238_249",
+        "sec": 1072,
+        "participant": 2,
+        "action": "big_chance",
+        "headline": "Big chance for England!",
+        "sub": "England are in a very dangerous position.",
+        "probAfter": 19
+      },
+      {
+        "id": "ev_239_253",
+        "sec": 1075,
+        "participant": 2,
+        "action": "goal",
+        "headline": "Ezri Konsa Ngoyo scores for England!",
+        "sub": "The net ripples — a pivotal moment in the replay.",
+        "scorer": "Ezri Konsa Ngoyo",
+        "goalType": "Head",
+        "scoreAfter": [
+          0,
+          2
+        ],
+        "probAfter": 2
+      },
+      {
+        "id": "ev_242_255",
+        "sec": 1150,
+        "participant": 1,
+        "action": "kickoff",
+        "headline": "Kickoff!",
+        "sub": "France vs England — play is underway."
+      },
+      {
+        "id": "ev_249_263",
+        "sec": 1163,
+        "participant": 1,
+        "action": "free_kick",
+        "headline": "Free kick to France."
+      },
+      {
+        "id": "ev_257_272",
+        "sec": 1203,
+        "participant": 2,
+        "action": "free_kick",
+        "headline": "Free kick to England."
+      },
+      {
+        "id": "ev_261_276",
+        "sec": 1239,
+        "participant": 2,
+        "action": "big_chance",
+        "headline": "Big chance for England!",
+        "sub": "England are in a very dangerous position.",
+        "probAfter": 2
+      },
+      {
+        "id": "ev_262_277",
+        "sec": 1243,
+        "participant": 2,
+        "action": "big_chance",
+        "headline": "Big chance for England!",
+        "sub": "England are in a very dangerous position.",
+        "probAfter": 2
+      },
+      {
+        "id": "ev_264_281",
+        "sec": 1252,
+        "participant": 1,
+        "action": "free_kick",
+        "headline": "Free kick to France."
+      },
+      {
+        "id": "ev_278_296",
+        "sec": 1317,
+        "participant": 1,
+        "action": "shot",
+        "headline": "France attempt a shot.",
+        "shotOutcome": "OffTarget",
+        "probAfter": 2
+      },
+      {
+        "id": "ev_281_299",
+        "sec": 1324,
+        "participant": 2,
+        "action": "goal_kick",
+        "headline": "Goal kick for England."
+      },
+      {
+        "id": "ev_292_311",
+        "sec": 1560,
+        "participant": 2,
+        "action": "throw_in",
+        "headline": "Throw-in for England."
+      },
+      {
+        "id": "ev_310_329",
+        "sec": 1634,
+        "participant": 1,
+        "action": "big_chance",
+        "headline": "Big chance for France!",
+        "sub": "France are in a very dangerous position.",
+        "probAfter": 2
+      },
+      {
+        "id": "ev_313_334",
+        "sec": 1662,
+        "participant": 2,
+        "action": "free_kick",
+        "headline": "Free kick to England."
+      },
+      {
+        "id": "ev_333_355",
+        "sec": 1754,
+        "participant": 1,
+        "action": "big_chance",
+        "headline": "Big chance for France!",
+        "sub": "France are in a very dangerous position.",
+        "probAfter": 2
+      },
+      {
+        "id": "ev_344_366",
+        "sec": 1797,
+        "participant": 1,
+        "action": "big_chance",
+        "headline": "Big chance for France!",
+        "sub": "France are in a very dangerous position.",
+        "probAfter": 2
+      },
+      {
+        "id": "ev_348_371",
+        "sec": 1810,
+        "participant": 2,
+        "action": "throw_in",
+        "headline": "Throw-in for England."
+      },
+      {
+        "id": "ev_363_387",
+        "sec": 1894,
+        "participant": 2,
+        "action": "free_kick",
+        "headline": "Free kick to England."
+      },
+      {
+        "id": "ev_378_403",
+        "sec": 1971,
+        "participant": 2,
+        "action": "shot",
+        "headline": "England attempt a shot.",
+        "shotOutcome": "OnTarget",
+        "probAfter": 2
+      },
+      {
+        "id": "ev_379_405",
+        "sec": 1988,
+        "participant": 1,
+        "action": "free_kick",
+        "headline": "Free kick to France."
+      },
+      {
+        "id": "ev_386_413",
+        "sec": 2029,
+        "participant": 1,
+        "action": "free_kick",
+        "headline": "Free kick to France."
+      },
+      {
+        "id": "ev_390_417",
+        "sec": 2047,
+        "participant": 1,
+        "action": "big_chance",
+        "headline": "Big chance for France!",
+        "sub": "France are in a very dangerous position.",
+        "probAfter": 2
+      },
+      {
+        "id": "ev_392_420",
+        "sec": 2052,
+        "participant": 1,
+        "action": "corner",
+        "headline": "Corner kick awarded to France.",
+        "probAfter": 2
+      },
+      {
+        "id": "ev_391_421",
+        "sec": 2051,
+        "participant": 1,
+        "action": "shot",
+        "headline": "France attempt a shot.",
+        "shotOutcome": "OnTarget",
+        "probAfter": 2
+      },
+      {
+        "id": "ev_397_426",
+        "sec": 2090,
+        "participant": 2,
+        "action": "big_chance",
+        "headline": "Big chance for England!",
+        "sub": "England are in a very dangerous position.",
+        "probAfter": 2
+      },
+      {
+        "id": "ev_398_427",
+        "sec": 2093,
+        "participant": 2,
+        "action": "big_chance",
+        "headline": "Big chance for England!",
+        "sub": "England are in a very dangerous position.",
+        "probAfter": 2
+      },
+      {
+        "id": "ev_403_432",
+        "sec": 2114,
+        "participant": 1,
+        "action": "big_chance",
+        "headline": "Big chance for France!",
+        "sub": "France are in a very dangerous position.",
+        "probAfter": 2
+      },
+      {
+        "id": "ev_410_439",
+        "sec": 2138,
+        "participant": 1,
+        "action": "big_chance",
+        "headline": "Big chance for France!",
+        "sub": "France are in a very dangerous position.",
+        "probAfter": 2
+      },
+      {
+        "id": "ev_411_440",
+        "sec": 2144,
+        "participant": 1,
+        "action": "big_chance",
+        "headline": "Big chance for France!",
+        "sub": "France are in a very dangerous position.",
+        "probAfter": 2
+      },
+      {
+        "id": "ev_412_441",
+        "sec": 2150,
+        "participant": 1,
+        "action": "big_chance",
+        "headline": "Big chance for France!",
+        "sub": "France are in a very dangerous position.",
+        "probAfter": 2
+      },
+      {
+        "id": "ev_415_444",
+        "sec": 2158,
+        "participant": 2,
+        "action": "big_chance",
+        "headline": "Big chance for England!",
+        "sub": "England are in a very dangerous position.",
+        "probAfter": 2
+      },
+      {
+        "id": "ev_416_445",
+        "sec": 2158,
+        "participant": 2,
+        "action": "near_miss",
+        "headline": "So close for England!",
+        "sub": "Officials pause to check the situation.",
+        "probAfter": 2
+      },
+      {
+        "id": "ev_417_446",
+        "sec": 2162,
+        "participant": 2,
+        "action": "big_chance",
+        "headline": "Big chance for England!",
+        "sub": "England are in a very dangerous position.",
+        "probAfter": 2
+      },
+      {
+        "id": "ev_418_448",
+        "sec": 2164,
+        "participant": 2,
+        "action": "shot",
+        "headline": "England attempt a shot.",
+        "shotOutcome": "OnTarget",
+        "probAfter": 2
+      },
+      {
+        "id": "ev_419_449",
+        "sec": 2166,
+        "participant": 2,
+        "action": "big_chance",
+        "headline": "Big chance for England!",
+        "sub": "England are in a very dangerous position.",
+        "probAfter": 2
+      },
+      {
+        "id": "ev_420_451",
+        "sec": 2168,
+        "participant": 2,
+        "action": "shot",
+        "headline": "England attempt a shot.",
+        "shotOutcome": "Blocked",
+        "probAfter": 2
+      },
+      {
+        "id": "ev_421_452",
+        "sec": 2171,
+        "participant": 2,
+        "action": "big_chance",
+        "headline": "Big chance for England!",
+        "sub": "England are in a very dangerous position.",
+        "probAfter": 2
+      },
+      {
+        "id": "ev_423_456",
+        "sec": 2268,
+        "participant": 1,
+        "action": "var_result",
+        "headline": "VAR — decision confirmed.",
+        "varOutcome": "Stands"
+      },
+      {
+        "id": "ev_422_459",
+        "sec": 2173,
+        "participant": 2,
+        "action": "goal",
+        "headline": "Bukayo Saka scores for England!",
+        "sub": "The net ripples — a pivotal moment in the replay.",
+        "scorer": "Bukayo Saka",
+        "goalType": "Shot",
+        "scoreAfter": [
+          0,
+          3
+        ],
+        "probAfter": 2
+      },
+      {
+        "id": "ev_426_461",
+        "sec": 2272,
+        "participant": 1,
+        "action": "kickoff",
+        "headline": "Kickoff!",
+        "sub": "France vs England — play is underway."
+      },
+      {
+        "id": "ev_435_470",
+        "sec": 2300,
+        "participant": 2,
+        "action": "big_chance",
+        "headline": "Big chance for England!",
+        "sub": "England are in a very dangerous position.",
+        "probAfter": 2
+      },
+      {
+        "id": "ev_447_482",
+        "sec": 2347,
+        "participant": 2,
+        "action": "big_chance",
+        "headline": "Big chance for England!",
+        "sub": "England are in a very dangerous position.",
+        "probAfter": 2
+      },
+      {
+        "id": "ev_453_489",
+        "sec": 2379,
+        "participant": 1,
+        "action": "free_kick",
+        "headline": "Free kick to France."
+      },
+      {
+        "id": "ev_454_490",
+        "sec": 2386,
+        "participant": 1,
+        "action": "big_chance",
+        "headline": "Big chance for France!",
+        "sub": "France are in a very dangerous position.",
+        "probAfter": 2
+      },
+      {
+        "id": "ev_457_493",
+        "sec": 2392,
+        "participant": 2,
+        "action": "goal_kick",
+        "headline": "Goal kick for England."
+      },
+      {
+        "id": "ev_461_497",
+        "sec": 2424,
+        "participant": 2,
+        "action": "big_chance",
+        "headline": "Big chance for England!",
+        "sub": "England are in a very dangerous position.",
+        "probAfter": 2
+      },
+      {
+        "id": "ev_462_499",
+        "sec": 2428,
+        "participant": 2,
+        "action": "shot",
+        "headline": "England attempt a shot.",
+        "shotOutcome": "OffTarget",
+        "probAfter": 2
+      },
+      {
+        "id": "ev_465_502",
+        "sec": 2433,
+        "participant": 1,
+        "action": "goal_kick",
+        "headline": "Goal kick for France."
+      },
+      {
+        "id": "ev_474_511",
+        "sec": 2472,
+        "participant": 2,
+        "action": "big_chance",
+        "headline": "Big chance for England!",
+        "sub": "England are in a very dangerous position.",
+        "probAfter": 2
+      },
+      {
+        "id": "ev_480_517",
+        "sec": 2489,
+        "participant": 1,
+        "action": "big_chance",
+        "headline": "Big chance for France!",
+        "sub": "France are in a very dangerous position.",
+        "probAfter": 2
+      },
+      {
+        "id": "ev_482_519",
+        "sec": 2497,
+        "participant": 1,
+        "action": "big_chance",
+        "headline": "Big chance for France!",
+        "sub": "France are in a very dangerous position.",
+        "probAfter": 2
+      },
+      {
+        "id": "ev_496_534",
+        "sec": 2566,
+        "participant": 1,
+        "action": "throw_in",
+        "headline": "Throw-in for France."
+      },
+      {
+        "id": "ev_498_537",
+        "sec": 2596,
+        "participant": 1,
+        "action": "throw_in",
+        "headline": "Throw-in for France."
+      },
+      {
+        "id": "ev_506_545",
+        "sec": 2627,
+        "participant": 1,
+        "action": "big_chance",
+        "headline": "Big chance for France!",
+        "sub": "France are in a very dangerous position.",
+        "probAfter": 2
       },
       {
         "id": "ev_523_563",
@@ -28028,6 +28770,79 @@ export const MATCHES: MatchData[] = [
         "addedMinutes": 4
       },
       {
+        "id": "ev_525_566",
+        "sec": 2721,
+        "participant": 2,
+        "action": "free_kick",
+        "headline": "Free kick to England."
+      },
+      {
+        "id": "ev_526_567",
+        "sec": 2728,
+        "participant": 2,
+        "action": "near_miss",
+        "headline": "So close for England!",
+        "sub": "Officials pause to check the situation.",
+        "probAfter": 2
+      },
+      {
+        "id": "ev_532_573",
+        "sec": 2753,
+        "participant": 2,
+        "action": "big_chance",
+        "headline": "Big chance for England!",
+        "sub": "England are in a very dangerous position.",
+        "probAfter": 2
+      },
+      {
+        "id": "ev_533_576",
+        "sec": 2755,
+        "participant": 2,
+        "action": "goal",
+        "headline": "Bukayo Saka scores for England!",
+        "sub": "The net ripples — a pivotal moment in the replay.",
+        "scorer": "Bukayo Saka",
+        "goalType": "Shot",
+        "scoreAfter": [
+          0,
+          4
+        ],
+        "probAfter": 2
+      },
+      {
+        "id": "ev_535_578",
+        "sec": 2847,
+        "participant": 1,
+        "action": "kickoff",
+        "headline": "Second half kickoff!",
+        "sub": "France vs England — play is underway."
+      },
+      {
+        "id": "ev_542_585",
+        "sec": 2873,
+        "participant": 2,
+        "action": "big_chance",
+        "headline": "Big chance for England!",
+        "sub": "England are in a very dangerous position.",
+        "probAfter": 2
+      },
+      {
+        "id": "ev_545_588",
+        "sec": 2883,
+        "participant": 1,
+        "action": "goal_kick",
+        "headline": "Goal kick for France."
+      },
+      {
+        "id": "ev_550_593",
+        "sec": 2905,
+        "participant": 2,
+        "action": "big_chance",
+        "headline": "Big chance for England!",
+        "sub": "England are in a very dangerous position.",
+        "probAfter": 2
+      },
+      {
         "id": "ev_552_596",
         "sec": 2909,
         "participant": 2,
@@ -28036,12 +28851,73 @@ export const MATCHES: MatchData[] = [
         "probAfter": 2
       },
       {
-        "id": "ev_558_604",
-        "sec": 3000,
+        "id": "ev_551_597",
+        "sec": 2907,
+        "participant": 2,
+        "action": "shot",
+        "headline": "England attempt a shot.",
+        "shotOutcome": "Blocked",
+        "probAfter": 2
+      },
+      {
+        "id": "ev_553_598",
+        "sec": 2960,
+        "participant": 2,
+        "action": "big_chance",
+        "headline": "Big chance for England!",
+        "sub": "England are in a very dangerous position.",
+        "probAfter": 2
+      },
+      {
+        "id": "ev_554_600",
+        "sec": 2965,
+        "participant": 1,
+        "action": "free_kick",
+        "headline": "Free kick to France."
+      },
+      {
+        "id": "ev_555_601",
+        "sec": 2965,
         "participant": 1,
         "action": "halftime",
         "headline": "Half time.",
-        "sub": "The referee brings the half to a close."
+        "sub": "The referee brings the first half to a close."
+      },
+      {
+        "id": "ev_560_607",
+        "sec": 2700,
+        "participant": 1,
+        "action": "substitution",
+        "headline": "Lucas Digne on for Ibrahima Konate (France).",
+        "playerIn": "Lucas Digne",
+        "playerOut": "Ibrahima Konate"
+      },
+      {
+        "id": "ev_561_608",
+        "sec": 2700,
+        "participant": 1,
+        "action": "substitution",
+        "headline": "Dayotchanculle Upamecano on for Theo Hernandez (France).",
+        "playerIn": "Dayotchanculle Upamecano",
+        "playerOut": "Theo Hernandez"
+      },
+      {
+        "id": "ev_562_609",
+        "sec": 2700,
+        "participant": 1,
+        "action": "substitution",
+        "headline": "Ousmane Dembele on for Desire Doue (France).",
+        "playerIn": "Ousmane Dembele",
+        "playerOut": "Desire Doue"
+      },
+      {
+        "id": "ev_563_610",
+        "sec": 2700,
+        "participant": 1,
+        "action": "substitution",
+        "headline": "Bradley Barcola on for Mathis Rayan Cherki (France).",
+        "playerIn": "Bradley Barcola",
+        "playerOut": "Mathis Rayan Cherki"
       },
       {
         "id": "ev_564_612",
@@ -28053,11 +28929,50 @@ export const MATCHES: MatchData[] = [
         "playerOut": "Marcus Rashford"
       },
       {
+        "id": "ev_566_616",
+        "sec": 2700,
+        "participant": 1,
+        "action": "kickoff",
+        "headline": "Second half kickoff!",
+        "sub": "France vs England — play is underway."
+      },
+      {
         "id": "ev_577_627",
         "sec": 2751,
         "participant": 1,
         "action": "free_kick",
         "headline": "Free kick to France."
+      },
+      {
+        "id": "ev_579_630",
+        "sec": 2779,
+        "participant": 2,
+        "action": "throw_in",
+        "headline": "Throw-in for England."
+      },
+      {
+        "id": "ev_600_651",
+        "sec": 2850,
+        "participant": 1,
+        "action": "big_chance",
+        "headline": "Big chance for France!",
+        "sub": "France are in a very dangerous position.",
+        "probAfter": 2
+      },
+      {
+        "id": "ev_601_654",
+        "sec": 2852,
+        "participant": 1,
+        "action": "goal",
+        "headline": "Kylian Mbappe Lottin scores for France!",
+        "sub": "The net ripples — a pivotal moment in the replay.",
+        "scorer": "Kylian Mbappe Lottin",
+        "goalType": "Shot",
+        "scoreAfter": [
+          1,
+          4
+        ],
+        "probAfter": 2
       },
       {
         "id": "ev_603_656",
@@ -28066,6 +28981,65 @@ export const MATCHES: MatchData[] = [
         "action": "kickoff",
         "headline": "Second half kickoff!",
         "sub": "France vs England — play is underway."
+      },
+      {
+        "id": "ev_621_674",
+        "sec": 2971,
+        "participant": 2,
+        "action": "big_chance",
+        "headline": "Big chance for England!",
+        "sub": "England are in a very dangerous position.",
+        "probAfter": 2
+      },
+      {
+        "id": "ev_622_676",
+        "sec": 2973,
+        "participant": 2,
+        "action": "shot",
+        "headline": "England attempt a shot.",
+        "shotOutcome": "OffTarget",
+        "probAfter": 2
+      },
+      {
+        "id": "ev_625_679",
+        "sec": 2981,
+        "participant": 1,
+        "action": "goal_kick",
+        "headline": "Goal kick for France."
+      },
+      {
+        "id": "ev_629_683",
+        "sec": 2996,
+        "participant": 1,
+        "action": "big_chance",
+        "headline": "Big chance for France!",
+        "sub": "France are in a very dangerous position.",
+        "probAfter": 2
+      },
+      {
+        "id": "ev_638_692",
+        "sec": 3039,
+        "participant": 1,
+        "action": "big_chance",
+        "headline": "Big chance for France!",
+        "sub": "France are in a very dangerous position.",
+        "probAfter": 2
+      },
+      {
+        "id": "ev_639_694",
+        "sec": 3042,
+        "participant": 1,
+        "action": "shot",
+        "headline": "France attempt a shot.",
+        "shotOutcome": "OffTarget",
+        "probAfter": 2
+      },
+      {
+        "id": "ev_642_697",
+        "sec": 3048,
+        "participant": 2,
+        "action": "goal_kick",
+        "headline": "Goal kick for England."
       },
       {
         "id": "ev_654_710",
@@ -28118,6 +29092,15 @@ export const MATCHES: MatchData[] = [
         "probAfter": 2
       },
       {
+        "id": "ev_678_735",
+        "sec": 3218,
+        "participant": 1,
+        "action": "near_miss",
+        "headline": "So close for France!",
+        "sub": "Officials pause to check the situation.",
+        "probAfter": 2
+      },
+      {
         "id": "ev_679_739",
         "sec": 3220,
         "participant": 1,
@@ -28130,7 +29113,7 @@ export const MATCHES: MatchData[] = [
           2,
           4
         ],
-        "probAfter": 15
+        "probAfter": 2
       },
       {
         "id": "ev_682_741",
@@ -28141,6 +29124,83 @@ export const MATCHES: MatchData[] = [
         "sub": "France vs England — play is underway."
       },
       {
+        "id": "ev_687_747",
+        "sec": 3307,
+        "participant": 2,
+        "action": "free_kick",
+        "headline": "Free kick to England."
+      },
+      {
+        "id": "ev_688_748",
+        "sec": 3310,
+        "participant": 2,
+        "action": "near_miss",
+        "headline": "So close for England!",
+        "sub": "Officials pause to check the situation.",
+        "probAfter": 2
+      },
+      {
+        "id": "ev_689_749",
+        "sec": 3347,
+        "participant": 2,
+        "action": "big_chance",
+        "headline": "Big chance for England!",
+        "sub": "England are in a very dangerous position.",
+        "probAfter": 2
+      },
+      {
+        "id": "ev_694_754",
+        "sec": 3357,
+        "participant": 1,
+        "action": "big_chance",
+        "headline": "Big chance for France!",
+        "sub": "France are in a very dangerous position.",
+        "probAfter": 2
+      },
+      {
+        "id": "ev_695_755",
+        "sec": 3358,
+        "participant": 1,
+        "action": "near_miss",
+        "headline": "So close for France!",
+        "sub": "Officials pause to check the situation.",
+        "probAfter": 2
+      },
+      {
+        "id": "ev_696_756",
+        "sec": 3360,
+        "participant": 1,
+        "action": "big_chance",
+        "headline": "Big chance for France!",
+        "sub": "France are in a very dangerous position.",
+        "probAfter": 2
+      },
+      {
+        "id": "ev_697_758",
+        "sec": 3363,
+        "participant": 1,
+        "action": "shot",
+        "headline": "France attempt a shot.",
+        "shotOutcome": "OnTarget",
+        "probAfter": 2
+      },
+      {
+        "id": "ev_698_759",
+        "sec": 3366,
+        "participant": 1,
+        "action": "big_chance",
+        "headline": "Big chance for France!",
+        "sub": "France are in a very dangerous position.",
+        "probAfter": 2
+      },
+      {
+        "id": "ev_701_764",
+        "sec": 3376,
+        "participant": 2,
+        "action": "free_kick",
+        "headline": "Free kick to England."
+      },
+      {
         "id": "ev_709_774",
         "sec": 3427,
         "participant": 2,
@@ -28148,12 +29208,46 @@ export const MATCHES: MatchData[] = [
         "headline": "Free kick to England."
       },
       {
+        "id": "ev_714_779",
+        "sec": 3480,
+        "participant": 2,
+        "action": "near_miss",
+        "headline": "So close for England!",
+        "sub": "Officials pause to check the situation.",
+        "probAfter": 2
+      },
+      {
         "id": "ev_715_781",
         "sec": 3483,
         "participant": 2,
         "action": "corner",
         "headline": "Corner kick awarded to England.",
-        "probAfter": 13
+        "probAfter": 2
+      },
+      {
+        "id": "ev_717_783",
+        "sec": 3527,
+        "participant": 2,
+        "action": "big_chance",
+        "headline": "Big chance for England!",
+        "sub": "England are in a very dangerous position.",
+        "probAfter": 2
+      },
+      {
+        "id": "ev_718_785",
+        "sec": 3530,
+        "participant": 2,
+        "action": "shot",
+        "headline": "England attempt a shot.",
+        "shotOutcome": "OnTarget",
+        "probAfter": 2
+      },
+      {
+        "id": "ev_725_792",
+        "sec": 3550,
+        "participant": 1,
+        "action": "goal_kick",
+        "headline": "Goal kick for France."
       },
       {
         "id": "ev_739_806",
@@ -28162,7 +29256,7 @@ export const MATCHES: MatchData[] = [
         "action": "big_chance",
         "headline": "Big chance for France!",
         "sub": "France are in a very dangerous position.",
-        "probAfter": 14
+        "probAfter": 2
       },
       {
         "id": "ev_748_816",
@@ -28171,7 +29265,7 @@ export const MATCHES: MatchData[] = [
         "action": "shot",
         "headline": "France attempt a shot.",
         "shotOutcome": "OffTarget",
-        "probAfter": 15
+        "probAfter": 2
       },
       {
         "id": "ev_751_819",
@@ -28181,13 +29275,126 @@ export const MATCHES: MatchData[] = [
         "headline": "Goal kick for England."
       },
       {
+        "id": "ev_755_823",
+        "sec": 3663,
+        "participant": 2,
+        "action": "near_miss",
+        "headline": "So close for England!",
+        "sub": "Officials pause to check the situation.",
+        "probAfter": 2
+      },
+      {
+        "id": "ev_766_834",
+        "sec": 3713,
+        "participant": 2,
+        "action": "big_chance",
+        "headline": "Big chance for England!",
+        "sub": "England are in a very dangerous position.",
+        "probAfter": 2
+      },
+      {
+        "id": "ev_768_836",
+        "sec": 3720,
+        "participant": 2,
+        "action": "big_chance",
+        "headline": "Big chance for England!",
+        "sub": "England are in a very dangerous position.",
+        "probAfter": 2
+      },
+      {
+        "id": "ev_771_840",
+        "sec": 3728,
+        "participant": 1,
+        "action": "free_kick",
+        "headline": "Free kick to France."
+      },
+      {
+        "id": "ev_780_849",
+        "sec": 3771,
+        "participant": 2,
+        "action": "big_chance",
+        "headline": "Big chance for England!",
+        "sub": "England are in a very dangerous position.",
+        "probAfter": 2
+      },
+      {
+        "id": "ev_781_850",
+        "sec": 3775,
+        "participant": 2,
+        "action": "big_chance",
+        "headline": "Big chance for England!",
+        "sub": "England are in a very dangerous position.",
+        "probAfter": 2
+      },
+      {
+        "id": "ev_782_851",
+        "sec": 3779,
+        "participant": 2,
+        "action": "big_chance",
+        "headline": "Big chance for England!",
+        "sub": "England are in a very dangerous position.",
+        "probAfter": 2
+      },
+      {
+        "id": "ev_783_853",
+        "sec": 3780,
+        "participant": 2,
+        "action": "shot",
+        "headline": "England attempt a shot.",
+        "shotOutcome": "Blocked",
+        "probAfter": 2
+      },
+      {
+        "id": "ev_786_856",
+        "sec": 3793,
+        "participant": 2,
+        "action": "big_chance",
+        "headline": "Big chance for England!",
+        "sub": "England are in a very dangerous position.",
+        "probAfter": 2
+      },
+      {
+        "id": "ev_793_863",
+        "sec": 3819,
+        "participant": 1,
+        "action": "big_chance",
+        "headline": "Big chance for France!",
+        "sub": "France are in a very dangerous position.",
+        "probAfter": 2
+      },
+      {
+        "id": "ev_794_864",
+        "sec": 3821,
+        "participant": 1,
+        "action": "big_chance",
+        "headline": "Big chance for France!",
+        "sub": "France are in a very dangerous position.",
+        "probAfter": 2
+      },
+      {
+        "id": "ev_795_866",
+        "sec": 3824,
+        "participant": 1,
+        "action": "shot",
+        "headline": "France attempt a shot.",
+        "shotOutcome": "OnTarget",
+        "probAfter": 2
+      },
+      {
+        "id": "ev_799_871",
+        "sec": 3850,
+        "participant": 1,
+        "action": "throw_in",
+        "headline": "Throw-in for France."
+      },
+      {
         "id": "ev_805_878",
         "sec": 3884,
         "participant": 1,
         "action": "shot",
         "headline": "France attempt a shot.",
         "shotOutcome": "OnTarget",
-        "probAfter": 15
+        "probAfter": 2
       },
       {
         "id": "ev_810_883",
@@ -28196,7 +29403,7 @@ export const MATCHES: MatchData[] = [
         "action": "big_chance",
         "headline": "Big chance for France!",
         "sub": "France are in a very dangerous position.",
-        "probAfter": 17
+        "probAfter": 2
       },
       {
         "id": "ev_811_884",
@@ -28205,7 +29412,16 @@ export const MATCHES: MatchData[] = [
         "action": "big_chance",
         "headline": "Big chance for France!",
         "sub": "France are in a very dangerous position.",
-        "probAfter": 19
+        "probAfter": 2
+      },
+      {
+        "id": "ev_821_894",
+        "sec": 3949,
+        "participant": 1,
+        "action": "big_chance",
+        "headline": "Big chance for France!",
+        "sub": "France are in a very dangerous position.",
+        "probAfter": 2
       },
       {
         "id": "ev_822_897",
@@ -28220,7 +29436,7 @@ export const MATCHES: MatchData[] = [
           3,
           4
         ],
-        "probAfter": 60
+        "probAfter": 2
       },
       {
         "id": "ev_824_899",
@@ -28237,7 +29453,7 @@ export const MATCHES: MatchData[] = [
         "action": "big_chance",
         "headline": "Big chance for France!",
         "sub": "France are in a very dangerous position.",
-        "probAfter": 62
+        "probAfter": 2
       },
       {
         "id": "ev_830_905",
@@ -28274,7 +29490,7 @@ export const MATCHES: MatchData[] = [
         "action": "big_chance",
         "headline": "Big chance for France!",
         "sub": "France are in a very dangerous position.",
-        "probAfter": 64
+        "probAfter": 2
       },
       {
         "id": "ev_863_942",
@@ -28283,7 +29499,7 @@ export const MATCHES: MatchData[] = [
         "action": "shot",
         "headline": "France attempt a shot.",
         "shotOutcome": "OffTarget",
-        "probAfter": 65
+        "probAfter": 2
       },
       {
         "id": "ev_866_945",
@@ -28299,7 +29515,7 @@ export const MATCHES: MatchData[] = [
         "action": "big_chance",
         "headline": "Big chance for France!",
         "sub": "France are in a very dangerous position.",
-        "probAfter": 67
+        "probAfter": 2
       },
       {
         "id": "ev_879_958",
@@ -28308,7 +29524,7 @@ export const MATCHES: MatchData[] = [
         "action": "big_chance",
         "headline": "Big chance for France!",
         "sub": "France are in a very dangerous position.",
-        "probAfter": 69
+        "probAfter": 2
       },
       {
         "id": "ev_883_963",
@@ -28332,7 +29548,7 @@ export const MATCHES: MatchData[] = [
         "action": "big_chance",
         "headline": "Big chance for France!",
         "sub": "France are in a very dangerous position.",
-        "probAfter": 71
+        "probAfter": 2
       },
       {
         "id": "ev_892_975",
@@ -28348,7 +29564,7 @@ export const MATCHES: MatchData[] = [
         "action": "big_chance",
         "headline": "Big chance for France!",
         "sub": "France are in a very dangerous position.",
-        "probAfter": 73
+        "probAfter": 4
       },
       {
         "id": "ev_895_978",
@@ -28357,7 +29573,7 @@ export const MATCHES: MatchData[] = [
         "action": "big_chance",
         "headline": "Big chance for France!",
         "sub": "France are in a very dangerous position.",
-        "probAfter": 75
+        "probAfter": 6
       },
       {
         "id": "ev_897_981",
@@ -28373,7 +29589,7 @@ export const MATCHES: MatchData[] = [
         "action": "near_miss",
         "headline": "So close for France!",
         "sub": "Officials pause to check the situation.",
-        "probAfter": 76
+        "probAfter": 7
       },
       {
         "id": "ev_899_983",
@@ -28382,7 +29598,7 @@ export const MATCHES: MatchData[] = [
         "action": "big_chance",
         "headline": "Big chance for France!",
         "sub": "France are in a very dangerous position.",
-        "probAfter": 78
+        "probAfter": 9
       },
       {
         "id": "ev_904_988",
@@ -28391,7 +29607,7 @@ export const MATCHES: MatchData[] = [
         "action": "big_chance",
         "headline": "Big chance for France!",
         "sub": "France are in a very dangerous position.",
-        "probAfter": 80
+        "probAfter": 11
       },
       {
         "id": "ev_905_989",
@@ -28400,7 +29616,7 @@ export const MATCHES: MatchData[] = [
         "action": "big_chance",
         "headline": "Big chance for France!",
         "sub": "France are in a very dangerous position.",
-        "probAfter": 82
+        "probAfter": 13
       },
       {
         "id": "ev_909_994",
@@ -28434,7 +29650,7 @@ export const MATCHES: MatchData[] = [
         "action": "big_chance",
         "headline": "Big chance for France!",
         "sub": "France are in a very dangerous position.",
-        "probAfter": 84
+        "probAfter": 14
       },
       {
         "id": "ev_925_1007",
@@ -28443,7 +29659,7 @@ export const MATCHES: MatchData[] = [
         "action": "near_miss",
         "headline": "So close for England!",
         "sub": "Officials pause to check the situation.",
-        "probAfter": 83
+        "probAfter": 13
       },
       {
         "id": "ev_927_1009",
@@ -28452,7 +29668,7 @@ export const MATCHES: MatchData[] = [
         "action": "big_chance",
         "headline": "Big chance for England!",
         "sub": "England are in a very dangerous position.",
-        "probAfter": 81
+        "probAfter": 11
       },
       {
         "id": "ev_928_1011",
@@ -28461,7 +29677,7 @@ export const MATCHES: MatchData[] = [
         "action": "shot",
         "headline": "England attempt a shot.",
         "shotOutcome": "OnTarget",
-        "probAfter": 79
+        "probAfter": 9
       },
       {
         "id": "ev_929_1013",
@@ -28470,7 +29686,7 @@ export const MATCHES: MatchData[] = [
         "action": "shot",
         "headline": "England attempt a shot.",
         "shotOutcome": "Blocked",
-        "probAfter": 78
+        "probAfter": 8
       },
       {
         "id": "ev_935_1019",
@@ -28479,7 +29695,7 @@ export const MATCHES: MatchData[] = [
         "action": "big_chance",
         "headline": "Big chance for France!",
         "sub": "France are in a very dangerous position.",
-        "probAfter": 80
+        "probAfter": 10
       },
       {
         "id": "ev_936_1020",
@@ -28488,7 +29704,7 @@ export const MATCHES: MatchData[] = [
         "action": "big_chance",
         "headline": "Big chance for France!",
         "sub": "France are in a very dangerous position.",
-        "probAfter": 82
+        "probAfter": 12
       },
       {
         "id": "ev_937_1021",
@@ -28497,7 +29713,7 @@ export const MATCHES: MatchData[] = [
         "action": "big_chance",
         "headline": "Big chance for France!",
         "sub": "France are in a very dangerous position.",
-        "probAfter": 84
+        "probAfter": 14
       },
       {
         "id": "ev_938_1022",
@@ -28506,7 +29722,7 @@ export const MATCHES: MatchData[] = [
         "action": "big_chance",
         "headline": "Big chance for France!",
         "sub": "France are in a very dangerous position.",
-        "probAfter": 86
+        "probAfter": 16
       },
       {
         "id": "ev_939_1024",
@@ -28515,7 +29731,7 @@ export const MATCHES: MatchData[] = [
         "action": "shot",
         "headline": "France attempt a shot.",
         "shotOutcome": "OffTarget",
-        "probAfter": 87
+        "probAfter": 17
       },
       {
         "id": "ev_942_1027",
@@ -28548,7 +29764,7 @@ export const MATCHES: MatchData[] = [
         "action": "shot",
         "headline": "France attempt a shot.",
         "shotOutcome": "OnTarget",
-        "probAfter": 89
+        "probAfter": 18
       },
       {
         "id": "ev_968_1057",
@@ -28557,7 +29773,7 @@ export const MATCHES: MatchData[] = [
         "action": "big_chance",
         "headline": "Big chance for England!",
         "sub": "England are in a very dangerous position.",
-        "probAfter": 87
+        "probAfter": 15
       },
       {
         "id": "ev_969_1059",
@@ -28589,7 +29805,7 @@ export const MATCHES: MatchData[] = [
         "participant": 1,
         "action": "corner",
         "headline": "Corner kick awarded to France.",
-        "probAfter": 87
+        "probAfter": 13
       },
       {
         "id": "ev_1003_1098",
@@ -28607,7 +29823,7 @@ export const MATCHES: MatchData[] = [
         "action": "big_chance",
         "headline": "Big chance for France!",
         "sub": "France are in a very dangerous position.",
-        "probAfter": 89
+        "probAfter": 15
       },
       {
         "id": "ev_1005_1100",
@@ -28616,7 +29832,7 @@ export const MATCHES: MatchData[] = [
         "action": "near_miss",
         "headline": "So close for France!",
         "sub": "Officials pause to check the situation.",
-        "probAfter": 90
+        "probAfter": 16
       },
       {
         "id": "ev_1007_1103",
@@ -28632,7 +29848,7 @@ export const MATCHES: MatchData[] = [
         "action": "shot",
         "headline": "France attempt a shot.",
         "shotOutcome": "Blocked",
-        "probAfter": 91
+        "probAfter": 17
       },
       {
         "id": "ev_1017_1115",
@@ -28657,7 +29873,7 @@ export const MATCHES: MatchData[] = [
         "action": "big_chance",
         "headline": "Big chance for France!",
         "sub": "France are in a very dangerous position.",
-        "probAfter": 93
+        "probAfter": 18
       },
       {
         "id": "ev_1028_1127",
@@ -28666,7 +29882,7 @@ export const MATCHES: MatchData[] = [
         "action": "big_chance",
         "headline": "Big chance for France!",
         "sub": "France are in a very dangerous position.",
-        "probAfter": 95
+        "probAfter": 20
       },
       {
         "id": "ev_1037_1136",
@@ -28675,7 +29891,7 @@ export const MATCHES: MatchData[] = [
         "action": "big_chance",
         "headline": "Big chance for France!",
         "sub": "France are in a very dangerous position.",
-        "probAfter": 97
+        "probAfter": 22
       },
       {
         "id": "ev_1044_1145",
@@ -28692,7 +29908,7 @@ export const MATCHES: MatchData[] = [
         "action": "near_miss",
         "headline": "So close for France!",
         "sub": "Officials pause to check the situation.",
-        "probAfter": 98
+        "probAfter": 22
       },
       {
         "id": "ev_1066_1163",
@@ -28701,7 +29917,7 @@ export const MATCHES: MatchData[] = [
         "action": "big_chance",
         "headline": "Big chance for France!",
         "sub": "France are in a very dangerous position.",
-        "probAfter": 98
+        "probAfter": 24
       },
       {
         "id": "ev_1067_1167",
@@ -28716,7 +29932,7 @@ export const MATCHES: MatchData[] = [
           4,
           5
         ],
-        "probAfter": 98
+        "probAfter": 78
       },
       {
         "id": "ev_1070_1169",
@@ -28733,7 +29949,7 @@ export const MATCHES: MatchData[] = [
         "action": "near_miss",
         "headline": "So close for England!",
         "sub": "Officials pause to check the situation.",
-        "probAfter": 98
+        "probAfter": 77
       },
       {
         "id": "ev_1085_1184",
@@ -28742,7 +29958,7 @@ export const MATCHES: MatchData[] = [
         "action": "big_chance",
         "headline": "Big chance for England!",
         "sub": "England are in a very dangerous position.",
-        "probAfter": 98
+        "probAfter": 75
       },
       {
         "id": "ev_1086_1189",
@@ -28757,7 +29973,7 @@ export const MATCHES: MatchData[] = [
           4,
           6
         ],
-        "probAfter": 97
+        "probAfter": 20
       },
       {
         "id": "ev_1090_1191",

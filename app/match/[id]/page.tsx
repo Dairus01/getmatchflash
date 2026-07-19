@@ -24,6 +24,16 @@ export default async function MatchPage({ params }: { params: Promise<{ id: stri
   const fixtureId = Number(id);
   const match = MATCHES.find((item) => item.id === Number(id));
 
+  // If match is in the static archive, always serve as a replay (even if it was a confirmed fixture)
+  if (match) {
+    return (
+      <MatchLayout>
+        <MatchReplay match={match} />
+      </MatchLayout>
+    );
+  }
+
+  // For confirmed fixtures not yet archived, use the live/upcoming experience
   if (fixtureId === 18257865 || fixtureId === 18257739) {
     return (
       <MatchLayout>
@@ -34,20 +44,12 @@ export default async function MatchPage({ params }: { params: Promise<{ id: stri
     );
   }
 
-  if (!match) {
-    return (
-      <MatchLayout>
-        <div className="mf-match-page mf-not-found">
-          <p>Match not found.</p>
-          <Link href="/" className="mf-back-link">← Back to archive</Link>
-        </div>
-      </MatchLayout>
-    );
-  }
-
   return (
     <MatchLayout>
-      <MatchReplay match={match} />
+      <div className="mf-match-page mf-not-found">
+        <p>Match not found.</p>
+        <Link href="/" className="mf-back-link">← Back to archive</Link>
+      </div>
     </MatchLayout>
   );
 }

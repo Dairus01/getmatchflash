@@ -166,6 +166,40 @@ const leaderboardMatch = url.pathname.match(/^\/api\/leaderboard\/(\d+)$/);
       db.close();
       return json(response, 201, { fixtureId, choice: choice as PredictionChoice, ...summary }, requestOrigin);
     }
+    if (request.method === "GET" && url.pathname === "/api/completed") {
+      // Returns confirmed fixtures that have a game_finalised event in matchflash.sqlite.
+      // Used by the archive page to show newly completed matches without a Next.js rebuild.
+      const db = database(true);
+      const rows = db.prepare(`
+        SELECT DISTINCT fixture_id FROM txline_events
+        WHERE source = 'scores' AND payload LIKE '%game_finalised%'
+      `).all() as { fixture_id: number }[];
+      const completed = [];
+      for (const { fixture_id } of rows) {
+        const confirmed = [{ fixtureId: 18257865, homeTeam: "France", awayTeam: "England", competition: "World Cup 2026", kickoffAt: "2026-07-18T19:00:00.000Z" }, { fixtureId: 18257739, homeTeam: "Spain", awayTeam: "Argentina", competition: "World Cup 2026", kickoffAt: "2026-07-19T19:00:00.000Z" }].find((f) => f.fixtureId === fixture_id);
+        if (!confirmed) continue;
+        const fixtureRow = db.prepare("SELECT snapshot_payload FROM txline_fixtures WHERE fixture_id = ?").get(fixture_id) as { snapshot_payload: string } | undefined;
+        const fixture = fixtureRow ? JSON.parse(fixtureRow.snapshot_payload) as Record<string, unknown> : {};
+        const eventCount = (db.prepare("SELECT COUNT(*) AS c FROM txline_events WHERE fixture_id = ? AND source = 'scores'").get(fixture_id) as { c: number }).c;
+        const scoreRow = db.prepare("SELECT payload FROM txline_events WHERE fixture_id = ? AND source = 'scores' AND payload LIKE '%Score%' ORDER BY id DESC LIMIT 1").get(fixture_id) as { payload: string } | undefined;
+        let finalScore: [number, number] = [0, 0];
+        if (scoreRow) {
+          try {
+            const p = JSON.parse(scoreRow.payload) as Record<string, unknown>;
+            const s = (p.Score ?? p.score) as Record<string, unknown> | undefined;
+            finalScore = [
+              Number(((s?.Participant1 as Record<string, unknown>)?.Total as Record<string, unknown> | undefined)?.Goals ?? 0),
+              Number(((s?.Participant2 as Record<string, unknown>)?.Total as Record<string, unknown> | undefined)?.Goals ?? 0),
+            ];
+          } catch { /* keep default */ }
+        }
+        const startTime = fixture.StartTime;
+        const kickoffAt = startTime ? (typeof startTime === "number" ? new Date(startTime).toISOString() : String(startTime)) : confirmed.kickoffAt;
+        completed.push({ fixtureId: fixture_id, homeTeam: String(fixture.Participant1 ?? confirmed.homeTeam), awayTeam: String(fixture.Participant2 ?? confirmed.awayTeam), competition: confirmed.competition, kickoffAt, finalScore, totalEvents: eventCount });
+      }
+      db.close();
+      return json(response, 200, { matches: completed }, requestOrigin);
+    }
     if (request.method === "GET" && (url.pathname === "/api/archive" || archiveSearch)) {
       let archive: Database.Database;
       try { archive = new Database(ARCHIVE_DB_PATH, { readonly: true }); } catch { return json(response, 200, { fixtures: [] }, requestOrigin); }
